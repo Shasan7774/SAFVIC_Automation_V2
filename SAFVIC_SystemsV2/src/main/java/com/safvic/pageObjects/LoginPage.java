@@ -9,7 +9,6 @@ public class LoginPage {
 	
 	public LoginPage(WebDriver rdriver){
 		this.ldriver = rdriver;
-		
 	}
 	
 	By email =  By.id("Email");   

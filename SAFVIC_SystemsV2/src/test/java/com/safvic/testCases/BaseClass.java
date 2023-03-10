@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
+
 public class BaseClass {
 	public String baseURL="https://safv.stellasoftware.com/";
 	public String officerEmail="hasan.shahria@brainstation-23.com";
@@ -17,7 +18,7 @@ public class BaseClass {
 	}
 	
 	@AfterClass
-	public void terDown() {
+	public void tearDown() {
 		driver.quit();
 	}
 

@@ -7,6 +7,7 @@ import com.safvic.pageObjects.LoginPage;
 
 
 public class TC_LoginTest_001 extends BaseClass{
+	
 	@Test
 	public void loginTest() {
 		driver.get(baseURL);
