@@ -3,7 +3,7 @@
 <suite name="SafvicSystemsAutomation_V2">
 
 	<test name="OfficerSideTest">
-		<parameter name="browser" value="firefox" />
+		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.safvic.testCases.TC_LoginTest_001" />
 		</classes>

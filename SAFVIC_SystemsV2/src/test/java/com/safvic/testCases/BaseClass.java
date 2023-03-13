@@ -1,13 +1,16 @@
 package com.safvic.testCases;
 
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
-import org.apache.log4j.PropertyConfigurator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -34,12 +37,18 @@ public class BaseClass {
 		{	
 			//System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");
 			System.setProperty("webdriver.chrome.driver", rconfig.getChromeDriverPath());
-			driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--remote-allow-origins=*");
+			
+			driver = new ChromeDriver(options);
 			driver.manage().window().maximize();
 		}
 		else if(br.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver", rconfig.getFirefoxDriverPath());
-			driver = new FirefoxDriver();
+			FirefoxOptions options = new FirefoxOptions();
+			options.addArguments("--remote-allow-origins=*");
+			
+			driver = new FirefoxDriver(options);
 			driver.manage().window().maximize();
 		}
 		else if(br.equals("edge")) {
@@ -49,6 +58,7 @@ public class BaseClass {
 		}
 
 		driver.get(baseURL);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 
 	@AfterClass

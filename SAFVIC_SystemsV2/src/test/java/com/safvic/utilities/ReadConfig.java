@@ -27,7 +27,6 @@ public class ReadConfig {
 	public String getOfficerEmail() {
 		String ofEmail = pro.getProperty("officerEmail");
 		return ofEmail;
-
 	}
 
 	public String getOfficerPassword() {

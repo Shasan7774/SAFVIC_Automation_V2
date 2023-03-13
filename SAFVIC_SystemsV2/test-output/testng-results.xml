@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-12T22:27:44 BDT" name="SafvicSystemsAutomation_V2" finished-at="2023-03-12T22:27:47 BDT" duration-ms="2969">
+  <suite started-at="2023-03-13T11:55:58 BDT" name="SafvicSystemsAutomation_V2" finished-at="2023-03-13T11:55:59 BDT" duration-ms="819">
     <groups>
     </groups>
-    <test started-at="2023-03-12T22:27:44 BDT" name="OfficerSideTest" finished-at="2023-03-12T22:27:47 BDT" duration-ms="2969">
+    <test started-at="2023-03-13T11:55:58 BDT" name="OfficerSideTest" finished-at="2023-03-13T11:55:59 BDT" duration-ms="819">
       <class name="com.safvic.testCases.TC_LoginTest_001">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@4c402120]" started-at="2023-03-12T22:27:44 BDT" name="setup" finished-at="2023-03-12T22:27:47 BDT" duration-ms="2848" status="FAIL">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@4c402120]" started-at="2023-03-13T11:55:58 BDT" name="setup" finished-at="2023-03-13T11:55:59 BDT" duration-ms="774" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -17,33 +17,18 @@
           </params>
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
-Host info: host: 'DESKTOP-CBNV9KU', ip: '192.168.0.113'
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]]]>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'BS-606', ip: '172.16.205.107']]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
-Host info: host: 'DESKTOP-CBNV9KU', ip: '192.168.0.113'
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'BS-606', ip: '172.16.205.107'
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
 at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
 at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
 at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:111)
 at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
-at com.safvic.testCases.BaseClass.setup(BaseClass.java:42)
+at com.safvic.testCases.BaseClass.setup(BaseClass.java:48)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -70,42 +55,35 @@ at org.testng.TestNG.run(TestNG.java:1067)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.WebDriverException: Driver server process died prematurely.
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: driver.version: FirefoxDriver
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:239)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:98)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+... 31 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@4c402120]" started-at="2023-03-12T22:27:47 BDT" name="loginTest" finished-at="2023-03-12T22:27:47 BDT" duration-ms="0" status="SKIP">
+        <test-method signature="loginTest()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@4c402120]" started-at="2023-03-13T11:55:59 BDT" name="loginTest" finished-at="2023-03-13T11:55:59 BDT" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
-Host info: host: 'DESKTOP-CBNV9KU', ip: '192.168.0.113'
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]]]>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'BS-606', ip: '172.16.205.107']]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
-Host info: host: 'DESKTOP-CBNV9KU', ip: '192.168.0.113'
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'BS-606', ip: '172.16.205.107'
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
 at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
 at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
 at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:111)
 at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
-at com.safvic.testCases.BaseClass.setup(BaseClass.java:42)
+at com.safvic.testCases.BaseClass.setup(BaseClass.java:48)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -132,13 +110,21 @@ at org.testng.TestNG.run(TestNG.java:1067)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.WebDriverException: Driver server process died prematurely.
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: driver.version: FirefoxDriver
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:239)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:98)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+... 31 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@4c402120]" started-at="2023-03-12T22:27:47 BDT" name="tearDown" finished-at="2023-03-12T22:27:47 BDT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@4c402120]" started-at="2023-03-13T11:55:59 BDT" name="tearDown" finished-at="2023-03-13T11:55:59 BDT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
