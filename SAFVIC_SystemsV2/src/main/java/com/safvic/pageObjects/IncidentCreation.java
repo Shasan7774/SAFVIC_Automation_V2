@@ -6,6 +6,8 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
+
 
 public class IncidentCreation {
 	WebDriver ldriver;
@@ -15,27 +17,62 @@ public class IncidentCreation {
 		PageFactory.initElements(rdriver,this);
 	}
 	
-	@FindBy(how=How.XPATH, using="Email")
+	@FindBy(how=How.LINK_TEXT, using="/IncidentArea/Incidents")
 	@CacheLookup
-	WebElement txtEmail;
+	WebElement incidentArea;
 	
-	@FindBy(id="Password")
+	@FindBy(how =How.LINK_TEXT, using="/IncidentArea/Incidents/QuickCreate")
 	@CacheLookup
-	WebElement txtPassword;
+	WebElement incidentQuickCreate;
 	
-	@FindBy(xpath="//div/button")
+	@FindBy(how=How.CSS, using="#IncidentDate")
 	@CacheLookup
-	WebElement btnLogin;
+	WebElement incidentDate;
 	
-	public void setEmail(String uemail) {
-		txtEmail.sendKeys(uemail);
+	@FindBy(how =How.CSS, using="#AgencyIdentifier")
+	@CacheLookup
+	WebElement incidentCaseNumber;
+	
+	@FindBy(how =How.CSS, using="#IncidentTypeId")
+	@CacheLookup
+	WebElement incidentType;
+	
+	@FindBy(how =How.CSS, using="#IncidentTypeId")
+	@CacheLookup
+	WebElement btnCreateIncident;
+	
+	public void navigateIncident() {
+		incidentArea.click();
 	}
-	public void setPassword(String upassword) {
-		txtPassword.sendKeys(upassword);
+	public void clickCreateIncident(){
+		incidentQuickCreate.click();
 	}
-	public void clickLogin() {
-		btnLogin.click();
+	public void selectIncidentDate() {
+		incidentDate.sendKeys("t");
 	}
+	public void setIncidentCaseNumber() {
+		incidentCaseNumber.sendKeys("Test Incident");
+	}
+	public void selectIncidentType() {
+		incidentType.click();
+		Select sel = new  Select(ldriver.findElement(By.cssSelector("#IncidentTypeId")));
+		sel.selectByVisibleText("Sexual Assault");
+	}
+	public void createIncident() {
+		btnCreateIncident.click();
+	}
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+
 	
 	 
 }

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [SafvicSystemsAutomation_V2]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="OfficerSideTest(failed)">
-    <parameter name="browser" value="firefox"/>
+  <test thread-count="5" name="CreateIncidentTest(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.safvic.testCases.TC_LoginTest_001">
+      <class name="com.safvic.testCases.TC_CreateIncidentTest_002">
         <methods>
+          <include name="CreateIncidentTest"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="loginTest"/>
         </methods>
-      </class> <!-- com.safvic.testCases.TC_LoginTest_001 -->
+      </class> <!-- com.safvic.testCases.TC_CreateIncidentTest_002 -->
     </classes>
-  </test> <!-- OfficerSideTest(failed) -->
+  </test> <!-- CreateIncidentTest(failed) -->
 </suite> <!-- Failed suite [SafvicSystemsAutomation_V2] -->

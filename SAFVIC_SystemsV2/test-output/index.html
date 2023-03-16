@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-SafvicSystemsAutomation_V2" class="navigator-link">
-              <span class="suite-name border-skipped">SafvicSystemsAutomation_V2</span>
+              <span class="suite-name border-failed">SafvicSystemsAutomation_V2</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -55,7 +55,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-SafvicSystemsAutomation_V2" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,21 +92,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,  1 skipped,  </span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-SafvicSystemsAutomation_V2" class="hide-methods skipped suite-SafvicSystemsAutomation_V2"> (hide)</a> <!-- hide-methods skipped suite-SafvicSystemsAutomation_V2 -->
-                      <a href="#" panel-name="suite-SafvicSystemsAutomation_V2" class="show-methods skipped suite-SafvicSystemsAutomation_V2"> (show)</a> <!-- show-methods skipped suite-SafvicSystemsAutomation_V2 -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SafvicSystemsAutomation_V2" class="hide-methods failed suite-SafvicSystemsAutomation_V2"> (hide)</a> <!-- hide-methods failed suite-SafvicSystemsAutomation_V2 -->
+                      <a href="#" panel-name="suite-SafvicSystemsAutomation_V2" class="show-methods failed suite-SafvicSystemsAutomation_V2"> (show)</a> <!-- show-methods failed suite-SafvicSystemsAutomation_V2 -->
                     </span>
-                    <div class="method-list-content skipped suite-SafvicSystemsAutomation_V2">
+                    <div class="method-list-content failed suite-SafvicSystemsAutomation_V2">
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SafvicSystemsAutomation_V2" title="com.safvic.testCases.TC_CreateIncidentTest_002" class="method navigator-link" hash-for-method="CreateIncidentTest">CreateIncidentTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SafvicSystemsAutomation_V2 -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-SafvicSystemsAutomation_V2" class="hide-methods passed suite-SafvicSystemsAutomation_V2"> (hide)</a> <!-- hide-methods passed suite-SafvicSystemsAutomation_V2 -->
+                      <a href="#" panel-name="suite-SafvicSystemsAutomation_V2" class="show-methods passed suite-SafvicSystemsAutomation_V2"> (show)</a> <!-- show-methods passed suite-SafvicSystemsAutomation_V2 -->
+                    </span>
+                    <div class="method-list-content passed suite-SafvicSystemsAutomation_V2">
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-SafvicSystemsAutomation_V2" title="com.safvic.testCases.TC_LoginTest_001" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-SafvicSystemsAutomation_V2 -->
+                    </div> <!-- method-list-content passed suite-SafvicSystemsAutomation_V2 -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,9 +132,33 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SafvicSystemsAutomation_V2" class="panel SafvicSystemsAutomation_V2">
-          <div class="suite-SafvicSystemsAutomation_V2-class-skipped">
+          <div class="suite-SafvicSystemsAutomation_V2-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">com.safvic.testCases.TC_CreateIncidentTest_002</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateIncidentTest">
+                  </a> <!-- CreateIncidentTest -->
+                  <span class="method-name">CreateIncidentTest</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at com.safvic.pageObjects.IncidentCreation.navigateIncident(IncidentCreation.java:45)
+	at com.safvic.testCases.TC_CreateIncidentTest_002.CreateIncidentTest(TC_CreateIncidentTest_002.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SafvicSystemsAutomation_V2-class-failed -->
+          <div class="suite-SafvicSystemsAutomation_V2-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">com.safvic.testCases.TC_LoginTest_001</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -129,29 +167,10 @@
                   <a name="loginTest">
                   </a> <!-- loginTest -->
                   <span class="method-name">loginTest</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: &apos;BS-606&apos;, ip: &apos;172.16.205.107&apos;
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:111)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
-	at com.safvic.testCases.BaseClass.setup(BaseClass.java:48)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.WebDriverException: Driver server process died prematurely.
-Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: driver.version: FirefoxDriver
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:239)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:98)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	... 31 more
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-SafvicSystemsAutomation_V2-class-skipped -->
+          </div> <!-- suite-SafvicSystemsAutomation_V2-class-passed -->
         </div> <!-- panel SafvicSystemsAutomation_V2 -->
         <div panel-name="test-xml-SafvicSystemsAutomation_V2" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -163,11 +182,17 @@ Driver info: driver.version: FirefoxDriver
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;SafvicSystemsAutomation_V2&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;OfficerSideTest&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.safvic.testCases.TC_LoginTest_001&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- OfficerSideTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;CreateIncidentTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.safvic.testCases.TC_CreateIncidentTest_002&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CreateIncidentTest --&gt;
 &lt;/suite&gt; &lt;!-- SafvicSystemsAutomation_V2 --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -180,6 +205,9 @@ Driver info: driver.version: FirefoxDriver
             <ul>
               <li>
                 <span class="test-name">OfficerSideTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">CreateIncidentTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -205,16 +233,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginTest')
 data.setCell(0, 2, 'com.safvic.testCases.TC_LoginTest_001')
-data.setCell(0, 3, 0);
+data.setCell(0, 3, 6959);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'CreateIncidentTest')
+data.setCell(1, 2, 'com.safvic.testCases.TC_CreateIncidentTest_002')
+data.setCell(1, 3, 2);
 window.suiteTableData['SafvicSystemsAutomation_V2']= { tableData: data, tableDiv: 'times-div-SafvicSystemsAutomation_V2'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-SafvicSystemsAutomation_V2">
               </div> <!-- times-div-SafvicSystemsAutomation_V2 -->
             </div> <!-- times-div -->
@@ -242,18 +274,33 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.safvic.testCases.TC_LoginTest_001</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">setup(firefox)</span>
+                <span class="method-name">setup(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">789 ms</span>
+                <span class="method-start">3613 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">792 ms</span>
+                <span class="method-start">10578 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.safvic.testCases.TC_CreateIncidentTest_002</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">10791 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CreateIncidentTest</span>
+                <span class="method-start">13550 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">13554 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

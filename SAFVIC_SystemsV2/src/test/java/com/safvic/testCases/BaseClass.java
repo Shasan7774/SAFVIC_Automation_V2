@@ -30,6 +30,7 @@ public class BaseClass {
 	@BeforeClass
 	public void setup(String br) {
 		
+		
 		log = LogManager.getLogger(BaseClass.class);
 		//PropertyConfigurator.configure("log4j2.properties");
 		
