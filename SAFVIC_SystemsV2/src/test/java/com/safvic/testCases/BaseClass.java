@@ -59,12 +59,13 @@ public class BaseClass {
 		}
 
 		driver.get(baseURL);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 
+	/*
 	@AfterClass
 	public void tearDown() {
 		driver.quit();
 	}
-
+*/
 }

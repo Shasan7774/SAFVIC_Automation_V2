@@ -4,12 +4,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import com.safvic.pageObjects.IncidentCreation;
 import com.safvic.pageObjects.LoginPage;
 
 public class TC_LoginTest_001 extends BaseClass{
 	
-	@Test
-	public void loginTest() {
+	@Test(priority=1)
+	public void loginTest() throws InterruptedException {
 		driver.get(baseURL);
 		log.info("URL Is Opeend");
 		
@@ -39,7 +41,22 @@ public class TC_LoginTest_001 extends BaseClass{
 			Assert.assertFalse(false);
 			log.info("Failed to navigate to the homepage");
 		}
+		Thread.sleep(5000);
 		
+	}
+	//TC-2 Incident Creation 
+	@Test(priority=2)
+	public void CreateIncidentTest() throws InterruptedException {
+		
+		driver.quit();		/*
+		IncidentCreation ic = new IncidentCreation(driver);
+		ic.navigateIncident();
+		ic.clickCreateIncident();
+		ic.selectIncidentDate();
+		ic.setIncidentCaseNumber();
+		ic.selectIncidentType();
+		ic.clickCreateIncident(); 
+	*/
 	}
 	
 

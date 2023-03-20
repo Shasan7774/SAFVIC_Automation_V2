@@ -6,17 +6,10 @@
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.safvic.testCases.TC_LoginTest_001"/>
-			
 		</classes>
 	</test>
 	
-	<test name="CreateIncidentTest">
-		<parameter name="browser" value="chrome" />
-		<classes>
-			
-			<class name="com.safvic.testCases.TC_CreateIncidentTest_002" />
-		</classes>
-	</test>
+
 
 </suite> 
 

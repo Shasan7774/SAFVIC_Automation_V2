@@ -17,7 +17,8 @@ public class IncidentCreation {
 		PageFactory.initElements(rdriver,this);
 	}
 	
-	@FindBy(how=How.LINK_TEXT, using="/IncidentArea/Incidents")
+	@FindBy(how=How.LINK_TEXT, using="IncidentArea")
+	//@FindBy(how=How.XPATH,using="//div[@class='info-box bg-white'])[1]")
 	@CacheLookup
 	WebElement incidentArea;
 	
