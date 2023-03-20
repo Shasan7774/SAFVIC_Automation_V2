@@ -8,6 +8,7 @@
           <include name="setup"/>
           <include name="tearDown"/>
           <include name="loginTest"/>
+          <include name="CreateIncidentTest"/>
         </methods>
       </class> <!-- com.safvic.testCases.TC_LoginTest_001 -->
     </classes>
