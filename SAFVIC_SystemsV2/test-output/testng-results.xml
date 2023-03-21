@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-20T09:25:05 BDT" name="SafvicSystemsAutomation_V2" finished-at="2023-03-20T09:25:25 BDT" duration-ms="19448">
+  <suite started-at="2023-03-21T15:43:09 BDT" name="SAFVSuite" finished-at="2023-03-21T15:43:30 BDT" duration-ms="20543">
     <groups>
     </groups>
-    <test started-at="2023-03-20T09:25:05 BDT" name="OfficerSideTest" finished-at="2023-03-20T09:25:25 BDT" duration-ms="19448">
+    <test started-at="2023-03-21T15:43:09 BDT" name="Test" finished-at="2023-03-21T15:43:30 BDT" duration-ms="20543">
+      <class name="com.safvic.testCases.TC_CreateIncidentTest_002">
+        <test-method signature="CreateIncidentTest()[pri:0, instance:com.safvic.testCases.TC_CreateIncidentTest_002@6150c3ec]" started-at="2023-03-21T15:43:27 BDT" name="CreateIncidentTest" finished-at="2023-03-21T15:43:30 BDT" duration-ms="3419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateIncidentTest -->
+      </class> <!-- com.safvic.testCases.TC_CreateIncidentTest_002 -->
       <class name="com.safvic.testCases.TC_LoginTest_001">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@4c402120]" started-at="2023-03-20T09:25:05 BDT" name="setup" finished-at="2023-03-20T09:25:11 BDT" duration-ms="5743" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@327514f]" started-at="2023-03-21T15:43:09 BDT" name="setup" finished-at="2023-03-21T15:43:14 BDT" duration-ms="4277" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +24,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:1, instance:com.safvic.testCases.TC_LoginTest_001@4c402120]" started-at="2023-03-20T09:25:11 BDT" name="loginTest" finished-at="2023-03-20T09:25:24 BDT" duration-ms="12387" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@327514f]" started-at="2023-03-21T15:43:14 BDT" name="loginTest" finished-at="2023-03-21T15:43:27 BDT" duration-ms="12814" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="CreateIncidentTest()[pri:2, instance:com.safvic.testCases.TC_LoginTest_001@4c402120]" started-at="2023-03-20T09:25:24 BDT" name="CreateIncidentTest" finished-at="2023-03-20T09:25:25 BDT" duration-ms="1249" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreateIncidentTest -->
       </class> <!-- com.safvic.testCases.TC_LoginTest_001 -->
-    </test> <!-- OfficerSideTest -->
-  </suite> <!-- SafvicSystemsAutomation_V2 -->
+    </test> <!-- Test -->
+  </suite> <!-- SAFVSuite -->
 </testng-results>

@@ -1,5 +1,7 @@
  package com.safvic.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
@@ -10,7 +12,7 @@ import com.safvic.pageObjects.LoginPage;
 
 public class TC_LoginTest_001 extends BaseClass{
 	
-	@Test(priority=1)
+	@Test
 	public void loginTest() throws InterruptedException {
 		driver.get(baseURL);
 		log.info("URL Is Opeend");
@@ -33,31 +35,28 @@ public class TC_LoginTest_001 extends BaseClass{
 		*/
 		if(driver.getTitle().equals("Home Page - SAFV_Site"))
 		{
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			log.info("Navigated to the homepage");
 		}
 		else
 		{
-			Assert.assertFalse(false);
+			AssertJUnit.assertFalse(false);
 			log.info("Failed to navigate to the homepage");
 		}
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 		
 	}
+	/*
 	//TC-2 Incident Creation 
 	@Test(priority=2)
 	public void CreateIncidentTest() throws InterruptedException {
 		
-		driver.quit();		/*
+		//driver.quit();		
 		IncidentCreation ic = new IncidentCreation(driver);
-		ic.navigateIncident();
-		ic.clickCreateIncident();
-		ic.selectIncidentDate();
-		ic.setIncidentCaseNumber();
-		ic.selectIncidentType();
-		ic.clickCreateIncident(); 
-	*/
-	}
+		ic.clickHeaderSettings();
+		ic.clcikLogout();
 	
+	}
+	*/
 
 }

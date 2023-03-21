@@ -1,5 +1,6 @@
  package com.safvic.testCases;
 
+import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,17 +13,19 @@ import com.safvic.pageObjects.IncidentCreation;
 import com.safvic.pageObjects.LoginPage;
 
 public class TC_CreateIncidentTest_002 extends BaseClass{
-	WebDriver driver;
 	
 	@Test
-	public void CreateIncidentTest() {
+	public void CreateIncidentTest() throws InterruptedException {
 		IncidentCreation ic = new IncidentCreation(driver);
+		//ic.clickHeaderSettings();
+		//ic.clcikLogout();
+	
 		ic.navigateIncident();
 		ic.clickCreateIncident();
 		ic.selectIncidentDate();
 		ic.setIncidentCaseNumber();
 		ic.selectIncidentType();
-		ic.clickCreateIncident();
+		ic.clickCreateIncidentPeople();
 		
 		/*
 		Assert.assertTrue(validateToastMessageAppearance, "Information has been saved successfully");

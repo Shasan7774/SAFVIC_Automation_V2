@@ -13,6 +13,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
 import com.safvic.utilities.ReadConfig;
@@ -26,10 +29,9 @@ public class BaseClass {
 	public static WebDriver driver;// initiated webdriver object driver
 	public static Logger log;
 
-	@Parameters("browser")
-	@BeforeClass
+	@Parameters("browser") 
+	@BeforeTest
 	public void setup(String br) {
-		
 		
 		log = LogManager.getLogger(BaseClass.class);
 		//PropertyConfigurator.configure("log4j2.properties");
