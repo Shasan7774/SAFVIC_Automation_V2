@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 import com.safvic.pageObjects.IncidentUpdate;
 
-public class TC_UpdateIncidentTest_003 extends BaseClass{
+public class TC_CreatePeopleTest_004 extends BaseClass{
 	
 	@Test
 	public void UpdateIncidenTest() throws InterruptedException {

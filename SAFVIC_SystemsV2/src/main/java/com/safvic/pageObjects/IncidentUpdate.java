@@ -24,7 +24,7 @@ public class IncidentUpdate {
 	@FindBy(how =How.CSS, using="#District")
 	@CacheLookup
 	WebElement txtDistrict;
-	
+
 	@FindBy(how =How.CSS, using="#InvolvesChildren")
 	@CacheLookup
 	WebElement toggleChildrenInvolved;
@@ -44,12 +44,29 @@ public class IncidentUpdate {
 	@FindBy(how =How.CSS, using="#Covid19")
 	@CacheLookup
 	WebElement toggleCovid19;
-	
+	/*
 	@FindBy(how =How.XPATH, using="//span[@aria-owns='ReasonForContactId_listbox']")
 	@CacheLookup
 	WebElement selectReasonForContact;
+	*/
+	@FindBy(how =How.ID, using="ReasonForContactId_label")
+	@CacheLookup
+	WebElement howPoliceContacted;
 	
+	@FindBy(how =How.ID, using="ReasonForContactId")
+	@CacheLookup
+	WebElement selectReasonForContact; 
+	
+	/*
 	@FindBy(how =How.XPATH, using="//span[@aria-owns='ReportedId_listbox']")
+	@CacheLookup
+	WebElement selectReportedDetails;
+	*/
+	@FindBy(how =How.ID, using="ReportedId_label")
+	@CacheLookup
+	WebElement whatWasReported;
+	
+	@FindBy(how =How.ID, using="ReportedId_listbox")
 	@CacheLookup
 	WebElement selectReportedDetails;
 	
@@ -87,14 +104,18 @@ public class IncidentUpdate {
 		toggleCovid19.click();
 	}
 	public void selectReasonContactPolice() {
+		howPoliceContacted.sendKeys("911 call from within location");
 		selectReasonForContact.click();
-		Select sel = new  Select(ldriver.findElement(By.cssSelector("#ReasonForContactId_listbox")));
-		sel.selectByVisibleText("911 call from within location");
+		
+		//Select sel = new  Select(ldriver.findElement(By.cssSelector("#ReasonForContactId_listbox")));
+		//sel.selectByVisibleText("911 call from within location");
 	}
 	public void selectReportedDetails() {
-		toggleCovid19.click();
-		Select sel = new  Select(ldriver.findElement(By.cssSelector("#ReportedId_listbox")));
-		sel.selectByVisibleText("Disturbance - Physical");
+		whatWasReported.sendKeys("Injury");
+		selectReportedDetails.click();
+		
+		//Select sel = new  Select(ldriver.findElement(By.cssSelector("#ReportedId_listbox")));
+		//sel.selectByVisibleText("Disturbance - Physical");
 	}
 	public void selectDispatchedDate() {
 		selectDispatchedDate.sendKeys("t");

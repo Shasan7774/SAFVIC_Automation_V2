@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-SAFVSuite" class="navigator-link">
-              <span class="suite-name border-failed">SAFVSuite</span>
+              <span class="suite-name border-passed">SAFVSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-SAFVSuite" class="navigator-link ">
-                    <span>C:\Users\shahr\git\SAFVIC_Automation_V2\SAFVIC_SystemsV2\testng.xml</span>
+                    <span>C:\Users\BS702\git\SAFVIC_Automation_V2\SAFVIC_SystemsV2\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-SAFVSuite" class="hide-methods failed suite-SAFVSuite"> (hide)</a> <!-- hide-methods failed suite-SAFVSuite -->
-                      <a href="#" panel-name="suite-SAFVSuite" class="show-methods failed suite-SAFVSuite"> (show)</a> <!-- show-methods failed suite-SAFVSuite -->
-                    </span>
-                    <div class="method-list-content failed suite-SAFVSuite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SAFVSuite" title="com.safvic.testCases.TC_UpdateIncidentTest_003" class="method navigator-link" hash-for-method="UpdateIncidenTest">UpdateIncidenTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-SAFVSuite -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,6 +104,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-SAFVSuite" title="com.safvic.testCases.TC_CreateIncidentTest_002" class="method navigator-link" hash-for-method="CreateIncidentTest">CreateIncidentTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SAFVSuite" title="com.safvic.testCases.TC_UpdateIncidentTest_003" class="method navigator-link" hash-for-method="UpdateIncidenTest">UpdateIncidenTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -137,9 +128,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SAFVSuite" class="panel SAFVSuite">
-          <div class="suite-SAFVSuite-class-failed">
+          <div class="suite-SAFVSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.safvic.testCases.TC_UpdateIncidentTest_003</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -148,35 +139,10 @@
                   <a name="UpdateIncidenTest">
                   </a> <!-- UpdateIncidenTest -->
                   <span class="method-name">UpdateIncidenTest</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=111.0.5563.65)
-Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [994c92d10514b11702f2a4ee2b21d8ae, clickElement {id=513c521d-252d-417f-a8f6-2b6b1776278c}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\BS702\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61361}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61361/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (994c92d10514b11702f2a4ee2b21d8ae)] -&gt; css selector: #InvolvesChildren]
-Session ID: 994c92d10514b11702f2a4ee2b21d8ae
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
-	at com.safvic.pageObjects.IncidentUpdate.enableChildrenInvolved(IncidentUpdate.java:75)
-	at com.safvic.testCases.TC_UpdateIncidentTest_003.UpdateIncidenTest(TC_UpdateIncidentTest_003.java:15)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-SAFVSuite-class-failed -->
+          </div> <!-- suite-SAFVSuite-class-passed -->
           <div class="suite-SAFVSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -210,7 +176,7 @@ Session ID: 994c92d10514b11702f2a4ee2b21d8ae
         </div> <!-- panel SAFVSuite -->
         <div panel-name="test-xml-SAFVSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\shahr\git\SAFVIC_Automation_V2\SAFVIC_SystemsV2\testng.xml</span>
+            <span class="header-content">C:\Users\BS702\git\SAFVIC_Automation_V2\SAFVIC_SystemsV2\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -264,38 +230,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-<<<<<<< HEAD
-data.setCell(0, 1, 'CreateIncidentTest')
-data.setCell(0, 2, 'com.safvic.testCases.TC_CreateIncidentTest_002')
-data.setCell(0, 3, 11326);
-=======
 data.setCell(0, 1, 'loginTest')
 data.setCell(0, 2, 'com.safvic.testCases.TC_LoginTest_001')
-data.setCell(0, 3, 15563);
->>>>>>> branch 'master' of https://github.com/Shasan7774/SAFVIC_Automation_V2.git
+data.setCell(0, 3, 15692);
 data.setCell(1, 0, 1)
-<<<<<<< HEAD
-data.setCell(1, 1, 'loginTest')
-data.setCell(1, 2, 'com.safvic.testCases.TC_LoginTest_001')
-data.setCell(1, 3, 9221);
-=======
 data.setCell(1, 1, 'UpdateIncidenTest')
 data.setCell(1, 2, 'com.safvic.testCases.TC_UpdateIncidentTest_003')
-data.setCell(1, 3, 3758);
+data.setCell(1, 3, 9273);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'CreateIncidentTest')
 data.setCell(2, 2, 'com.safvic.testCases.TC_CreateIncidentTest_002')
-data.setCell(2, 3, 2845);
->>>>>>> branch 'master' of https://github.com/Shasan7774/SAFVIC_Automation_V2.git
+data.setCell(2, 3, 2910);
 window.suiteTableData['SAFVSuite']= { tableData: data, tableDiv: 'times-div-SAFVSuite'}
 return data;
 }
               </script>
-<<<<<<< HEAD
-              <span class="suite-total-time">Total running time: 20 seconds</span>
-=======
-              <span class="suite-total-time">Total running time: 22 seconds</span>
->>>>>>> branch 'master' of https://github.com/Shasan7774/SAFVIC_Automation_V2.git
+              <span class="suite-total-time">Total running time: 27 seconds</span>
               <div id="times-div-SAFVSuite">
               </div> <!-- times-div-SAFVSuite -->
             </div> <!-- times-div -->
@@ -310,11 +260,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-SAFVSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-<<<<<<< HEAD
-            <span class="header-content">2 ignored methods</span>
-=======
             <span class="header-content">4 ignored methods</span>
->>>>>>> branch 'master' of https://github.com/Shasan7774/SAFVIC_Automation_V2.git
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -350,45 +296,28 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-<<<<<<< HEAD
-                <span class="method-start">5610 ms</span>
-=======
-                <span class="method-start">3715 ms</span>
->>>>>>> branch 'master' of https://github.com/Shasan7774/SAFVIC_Automation_V2.git
+                <span class="method-start">3689 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.safvic.testCases.TC_CreateIncidentTest_002</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">CreateIncidentTest</span>
-<<<<<<< HEAD
-                <span class="method-start">14840 ms</span>
-=======
-                <span class="method-start">19282 ms</span>
->>>>>>> branch 'master' of https://github.com/Shasan7774/SAFVIC_Automation_V2.git
+                <span class="method-start">19385 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-<<<<<<< HEAD
-              <div class="chronological-class-name">com.safvic.testCases.TC_LoginTest_001</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">26168 ms</span>
-=======
               <div class="chronological-class-name">com.safvic.testCases.TC_UpdateIncidentTest_003</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">UpdateIncidenTest</span>
-                <span class="method-start">22129 ms</span>
+                <span class="method-start">22297 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.safvic.testCases.TC_LoginTest_001</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25891 ms</span>
->>>>>>> branch 'master' of https://github.com/Shasan7774/SAFVIC_Automation_V2.git
+                <span class="method-start">31571 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
