@@ -8,6 +8,7 @@
         <methods>
           <include name="CreateIncidentTest"/>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.safvic.testCases.TC_CreateIncidentTest_002 -->
     </classes>
