@@ -4,13 +4,16 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.safvic.testCases.TC_CreateIncidentTest_002">
+      <class name="com.safvic.testCases.TC_UpdateIncidentTest_003">
         <methods>
-          <include name="CreateIncidentTest"/>
           <include name="setup"/>
           <include name="tearDown"/>
+<<<<<<< HEAD
+=======
+          <include name="UpdateIncidenTest"/>
+>>>>>>> branch 'master' of https://github.com/Shasan7774/SAFVIC_Automation_V2.git
         </methods>
-      </class> <!-- com.safvic.testCases.TC_CreateIncidentTest_002 -->
+      </class> <!-- com.safvic.testCases.TC_UpdateIncidentTest_003 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [SAFVSuite] -->

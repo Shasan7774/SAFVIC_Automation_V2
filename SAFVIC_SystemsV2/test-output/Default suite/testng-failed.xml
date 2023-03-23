@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.safvic.testCases.TC_CreateIncidentTest_002">
+      <class name="com.safvic.testCases.TC_UpdateIncidentTest_003">
         <methods>
-          <include name="CreateIncidentTest"/>
           <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="UpdateIncidenTest"/>
         </methods>
-      </class> <!-- com.safvic.testCases.TC_CreateIncidentTest_002 -->
+      </class> <!-- com.safvic.testCases.TC_UpdateIncidentTest_003 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
