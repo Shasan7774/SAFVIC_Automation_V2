@@ -15,7 +15,8 @@ public class TC_LoginTest_001 extends BaseClass{
 	@Test
 	public void loginTest() throws InterruptedException {
 		driver.get(baseURL);
-		log.info("URL Is Opeend");
+		
+		log.info("URL Is Opened");
 		
 		LoginPage lp = new LoginPage(driver);
 		
@@ -46,17 +47,4 @@ public class TC_LoginTest_001 extends BaseClass{
 		//Thread.sleep(5000);
 		
 	}
-	/*
-	//TC-2 Incident Creation 
-	@Test(priority=2)
-	public void CreateIncidentTest() throws InterruptedException {
-		
-		//driver.quit();		
-		IncidentCreation ic = new IncidentCreation(driver);
-		ic.clickHeaderSettings();
-		ic.clcikLogout();
-	
-	}
-	*/
-
 }

@@ -74,6 +74,22 @@ public class CreatePeople {
 	@CacheLookup
 	WebElement toggleVictimPseudonym;
 
+	@FindBy(how = How.XPATH, using = "//button[normalize-space()='Confirm']")
+	@CacheLookup
+	WebElement btnConfirmPseudonym;
+
+	@FindBy(how = How.XPATH, using = "//input[@id='VictimRealFirstName']")
+	@CacheLookup
+	WebElement txtPseudoRealFirstName;
+
+	@FindBy(how = How.XPATH, using = "//input[@id='VictimRealLastName']")
+	@CacheLookup
+	WebElement txtPseudoRealLastName;
+
+	@FindBy(how = How.XPATH, using = "//input[@id='VictimRealMiddleName']")
+	@CacheLookup
+	WebElement txtPseudoRealMiddleName;
+
 	@FindBy(how = How.XPATH, using = "")
 	@CacheLookup
 	WebElement selectEthnicity;
@@ -192,6 +208,10 @@ public class CreatePeople {
 	WebElement btnSavePhoneNumber;
 
 	// Add New Address
+	@FindBy(how = How.XPATH, using = "//button[normalize-space()='Add new address']")
+	@CacheLookup
+	WebElement btnAddNewAddress;
+	
 	@FindBy(how = How.XPATH, using = "//span[@aria-owns='AddressGroupId_listbox']")
 	@CacheLookup
 	WebElement selectAddressGroup;
@@ -279,90 +299,162 @@ public class CreatePeople {
 	public void viewPseudonymVictim() {
 		toggleVictimPseudonym.click();
 	}
-	// first name
-	public void setPseudoLastNameVictim() {
 
+	public void confirmViewPseudonymVictim() {
+		btnConfirmPseudonym.click();
 	}
-	// last name
+
+	//Victim real last name
 	public void setPseudoFirstNameVictim() {
-
+		txtPseudoRealFirstName.sendKeys("Test Victim Real First Name");
 	}
-	// middle name
+
+	//Victim Real first name
+	public void setPseudoLastNameVictim() {
+		txtPseudoRealLastName.sendKeys("Test Victim Real Last Name");
+	}
+
+	//Victim Real middle name
 	public void setPseudoMiddleNameVictim() {
-
+		txtPseudoRealMiddleName.sendKeys("Test Victim Real Last Name");
 	}
-	
+
 	public void selectPersonEthnicity() {
 		selectEthnicity.click();
 	}
+
 	public void setPersonHeightFeet() {
 		txtHeightFeet.sendKeys("5");
 	}
+
 	public void setPersonHeightInch() {
 		txtHeightInch.sendKeys("10");
 	}
+
 	public void setPersonWeight() {
 		txtWeight.sendKeys("100");
 	}
+
 	public void viewSSNPerson() {
 		btnViewSSN.click();
 	}
+
 	public void setSSNPerson() {
 		txtSSN.sendKeys("123-123-1234");
 	}
+
 	public void saveSSNPerson() {
 		btnSaveSSN.click();
 	}
+
 	public void selectPrimaryLanguagePerson() {
 		selectPrimaryLanguage.click();
 	}
+
 	public void selectPersonIDType() {
 		selectPersonIDType.click();
 	}
+
 	public void setPersonIDNo() {
 		txtIDNo.sendKeys("123123123");
 	}
+
 	public void setPersonIDCardState() {
 		txtIDCardNoState.sendKeys("Test State ID Card");
 	}
+
 	public void setPersonEmail() {
 		txtEmail.sendKeys("testperson@gmail.com");
 	}
+
 	public void enableSafeViaEmail() {
 		toggleSafeViaEmail.click();
 	}
+
 	public void setPersonOccupation() {
 		txtOccupation.sendKeys("Test Occupation");
 	}
+
 	public void setEmployerName() {
 		txtEmployerName.sendKeys("Test Employer Of The Person");
 	}
+
 	public void setTxSID() {
 		txtEmployerName.sendKeys("Test TxSID: 1234 ");
 	}
+
 	public void enablePlacedIntoHandCuffs() {
 		togglePlacedIntoHandCuffs.click();
 	}
+
 	public void enableChildJuvenille() {
 		toggleChildJuvenille.click();
 	}
+
 	public void enableMirandaWarning() {
 		toggleMirandaWarning.click();
 	}
+
 	public void setMirandaDate() {
 		mirandaDate.sendKeys("t");
 	}
+
 	public void setMirandaTime() {
 		mirandaTime.sendKeys("t");
 	}
+
 	public void setStatementsAfterMiranda() {
 		StatementsAfter.sendKeys("Test Statementes Made After Miranda");
 	}
+
 	public void enablePersonElderly() {
-		togglePersonElderly.clear();
-	}
-	public void enablePersonDisabled() {
-		togglePersonDisabled.clear();
+		togglePersonElderly.click();
 	}
 
+	public void enablePersonDisabled() {
+		togglePersonDisabled.click();
+	}
+	
+	//Add Person Phone Number 
+	public void clickAddNewPhoneNumber() {
+		btnAddNewPhoneNumber.click();
+	}
+	public void setPhoneNumber() {
+		txtPhoneNumber.sendKeys("123-321-3214");
+	}
+	public void enablePrimaryContact() {
+		togglePrimaryContact.click();
+	}
+	public void savePhoneNumber() {
+		btnSavePhoneNumber.click();
+	}
+	//Add New Address
+	public void clickAddNewAddress() {
+		btnAddNewAddress.click();
+	}
+	public void selectAddressGroup() {
+		selectAddressGroup.click();
+	}
+	public void setAddress1() {
+		txtAddress1.sendKeys("Test Address1");
+	}
+	public void setAddress2() {
+		txtAddress2.sendKeys("Test Address2");
+	}
+	public void setCity() {
+		txtCity.sendKeys("Test City");
+	}
+	public void setState() {
+		txtState.sendKeys("Test State");
+	}
+	public void selectCounty() {
+		selectCounty.click();
+	}
+	public void setZipCode() {
+		txtZipCode.sendKeys("12345");
+	}
+	public void saveAddress() {
+		btnSaveAddress.click();
+	}
+	
 }
