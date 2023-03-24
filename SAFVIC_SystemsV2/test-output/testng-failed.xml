@@ -8,10 +8,7 @@
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-<<<<<<< HEAD
-=======
           <include name="UpdateIncidenTest"/>
->>>>>>> branch 'master' of https://github.com/Shasan7774/SAFVIC_Automation_V2.git
         </methods>
       </class> <!-- com.safvic.testCases.TC_UpdateIncidentTest_003 -->
     </classes>

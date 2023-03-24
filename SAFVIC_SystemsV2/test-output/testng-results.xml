@@ -1,39 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
-=======
 <testng-results ignored="4" total="7" passed="2" failed="1" skipped="0">
->>>>>>> branch 'master' of https://github.com/Shasan7774/SAFVIC_Automation_V2.git
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2023-03-22T07:16:23 BDT" name="SAFVSuite" finished-at="2023-03-22T07:16:50 BDT" duration-ms="26513">
-=======
-  <suite started-at="2023-03-22T20:03:48 BDT" name="SAFVSuite" finished-at="2023-03-22T20:04:14 BDT" duration-ms="26099">
->>>>>>> branch 'master' of https://github.com/Shasan7774/SAFVIC_Automation_V2.git
+  <suite started-at="2023-03-23T07:18:45 BDT" name="SAFVSuite" finished-at="2023-03-23T07:19:22 BDT" duration-ms="37291">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test started-at="2023-03-22T07:16:23 BDT" name="Test" finished-at="2023-03-22T07:16:50 BDT" duration-ms="26513">
-=======
-    <test started-at="2023-03-22T20:03:48 BDT" name="Test" finished-at="2023-03-22T20:04:14 BDT" duration-ms="26099">
->>>>>>> branch 'master' of https://github.com/Shasan7774/SAFVIC_Automation_V2.git
+    <test started-at="2023-03-23T07:18:45 BDT" name="Test" finished-at="2023-03-23T07:19:22 BDT" duration-ms="37291">
       <class name="com.safvic.testCases.TC_CreateIncidentTest_002">
-<<<<<<< HEAD
-        <test-method signature="CreateIncidentTest()[pri:0, instance:com.safvic.testCases.TC_CreateIncidentTest_002@7e6f74c]" started-at="2023-03-22T07:16:38 BDT" name="CreateIncidentTest" finished-at="2023-03-22T07:16:49 BDT" duration-ms="11326" status="PASS">
-=======
-        <test-method signature="CreateIncidentTest()[pri:0, instance:com.safvic.testCases.TC_CreateIncidentTest_002@6a78afa0]" started-at="2023-03-22T20:04:07 BDT" name="CreateIncidentTest" finished-at="2023-03-22T20:04:10 BDT" duration-ms="2845" status="PASS">
->>>>>>> branch 'master' of https://github.com/Shasan7774/SAFVIC_Automation_V2.git
+        <test-method signature="CreateIncidentTest()[pri:0, instance:com.safvic.testCases.TC_CreateIncidentTest_002@6a78afa0]" started-at="2023-03-23T07:19:06 BDT" name="CreateIncidentTest" finished-at="2023-03-23T07:19:12 BDT" duration-ms="5922" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateIncidentTest -->
       </class> <!-- com.safvic.testCases.TC_CreateIncidentTest_002 -->
       <class name="com.safvic.testCases.TC_LoginTest_001">
-<<<<<<< HEAD
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@1165b38]" started-at="2023-03-22T07:16:23 BDT" name="setup" finished-at="2023-03-22T07:16:29 BDT" duration-ms="5573" status="PASS">
-=======
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@7586beff]" started-at="2023-03-22T20:03:48 BDT" name="setup" finished-at="2023-03-22T20:03:52 BDT" duration-ms="3690" status="PASS">
->>>>>>> branch 'master' of https://github.com/Shasan7774/SAFVIC_Automation_V2.git
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@7586beff]" started-at="2023-03-23T07:18:45 BDT" name="setup" finished-at="2023-03-23T07:18:57 BDT" duration-ms="12009" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -44,47 +24,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-<<<<<<< HEAD
-        <test-method signature="loginTest()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@1165b38]" started-at="2023-03-22T07:16:29 BDT" name="loginTest" finished-at="2023-03-22T07:16:38 BDT" duration-ms="9221" status="PASS">
-=======
-        <test-method signature="loginTest()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@7586beff]" started-at="2023-03-22T20:03:52 BDT" name="loginTest" finished-at="2023-03-22T20:04:07 BDT" duration-ms="15563" status="PASS">
->>>>>>> branch 'master' of https://github.com/Shasan7774/SAFVIC_Automation_V2.git
+        <test-method signature="loginTest()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@7586beff]" started-at="2023-03-23T07:18:57 BDT" name="loginTest" finished-at="2023-03-23T07:19:06 BDT" duration-ms="8632" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-<<<<<<< HEAD
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@1165b38]" started-at="2023-03-22T07:16:49 BDT" name="tearDown" finished-at="2023-03-22T07:16:50 BDT" duration-ms="320" status="PASS">
-=======
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@7586beff]" started-at="2023-03-22T20:04:14 BDT" name="tearDown" finished-at="2023-03-22T20:04:14 BDT" duration-ms="199" status="PASS">
->>>>>>> branch 'master' of https://github.com/Shasan7774/SAFVIC_Automation_V2.git
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@7586beff]" started-at="2023-03-23T07:19:22 BDT" name="tearDown" finished-at="2023-03-23T07:19:22 BDT" duration-ms="323" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.safvic.testCases.TC_LoginTest_001 -->
       <class name="com.safvic.testCases.TC_UpdateIncidentTest_003">
-        <test-method signature="UpdateIncidenTest()[pri:0, instance:com.safvic.testCases.TC_UpdateIncidentTest_003@2f4948e4]" started-at="2023-03-22T20:04:10 BDT" name="UpdateIncidenTest" finished-at="2023-03-22T20:04:14 BDT" duration-ms="3758" status="FAIL">
+        <test-method signature="UpdateIncidenTest()[pri:0, instance:com.safvic.testCases.TC_UpdateIncidentTest_003@2f4948e4]" started-at="2023-03-23T07:19:12 BDT" name="UpdateIncidenTest" finished-at="2023-03-23T07:19:22 BDT" duration-ms="10327" status="FAIL">
           <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
               <![CDATA[element not interactable
-  (Session info: chrome=111.0.5563.65)
+  (Session info: chrome=110.0.5481.178)
 Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [994c92d10514b11702f2a4ee2b21d8ae, clickElement {id=513c521d-252d-417f-a8f6-2b6b1776278c}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\BS702\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61361}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61361/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (994c92d10514b11702f2a4ee2b21d8ae)] -> css selector: #InvolvesChildren]
-Session ID: 994c92d10514b11702f2a4ee2b21d8ae]]>
+Command: [e482a9e5a0b3be51b1da5d37766bd199, clickElement {id=4e330067-8eed-45b7-9555-d6fba7f04d4f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\shahr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51025}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51025/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (e482a9e5a0b3be51b1da5d37766bd199)] -> css selector: #InvolvesChildren]
+Session ID: e482a9e5a0b3be51b1da5d37766bd199]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=111.0.5563.65)
+  (Session info: chrome=110.0.5481.178)
 Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [994c92d10514b11702f2a4ee2b21d8ae, clickElement {id=513c521d-252d-417f-a8f6-2b6b1776278c}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\BS702\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61361}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61361/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (994c92d10514b11702f2a4ee2b21d8ae)] -> css selector: #InvolvesChildren]
-Session ID: 994c92d10514b11702f2a4ee2b21d8ae
+Command: [e482a9e5a0b3be51b1da5d37766bd199, clickElement {id=4e330067-8eed-45b7-9555-d6fba7f04d4f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\shahr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51025}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51025/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (e482a9e5a0b3be51b1da5d37766bd199)] -> css selector: #InvolvesChildren]
+Session ID: e482a9e5a0b3be51b1da5d37766bd199
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
