@@ -1,7 +1,8 @@
 package com.safvic.testCases;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
+
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -28,7 +29,7 @@ public class BaseClass {
 	@BeforeTest
 	public void setup(String br) {
 		
-		log = LogManager.getLogger(BaseClass.class);
+		log = LogManager.getLogger(BaseClass.class.getName());
 		//PropertyConfigurator.configure("log4j2.properties");
 		
 		if(br.equals("chrome"))

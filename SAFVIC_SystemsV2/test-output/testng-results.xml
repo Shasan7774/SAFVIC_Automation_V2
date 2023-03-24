@@ -1,19 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="4" total="7" passed="2" failed="1" skipped="0">
+=======
+<testng-results ignored="4" total="7" passed="3" failed="0" skipped="0">
+>>>>>>> branch 'master' of https://github.com/Shasan7774/SAFVIC_Automation_V2.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2023-03-23T07:18:45 BDT" name="SAFVSuite" finished-at="2023-03-23T07:19:22 BDT" duration-ms="37291">
+=======
+  <suite started-at="2023-03-23T15:27:08 BDT" name="SAFVSuite" finished-at="2023-03-23T15:27:40 BDT" duration-ms="31837">
+>>>>>>> branch 'master' of https://github.com/Shasan7774/SAFVIC_Automation_V2.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2023-03-23T07:18:45 BDT" name="Test" finished-at="2023-03-23T07:19:22 BDT" duration-ms="37291">
+=======
+    <test started-at="2023-03-23T15:27:08 BDT" name="Test" finished-at="2023-03-23T15:27:40 BDT" duration-ms="31837">
+>>>>>>> branch 'master' of https://github.com/Shasan7774/SAFVIC_Automation_V2.git
       <class name="com.safvic.testCases.TC_CreateIncidentTest_002">
+<<<<<<< HEAD
         <test-method signature="CreateIncidentTest()[pri:0, instance:com.safvic.testCases.TC_CreateIncidentTest_002@6a78afa0]" started-at="2023-03-23T07:19:06 BDT" name="CreateIncidentTest" finished-at="2023-03-23T07:19:12 BDT" duration-ms="5922" status="PASS">
+=======
+        <test-method signature="CreateIncidentTest()[pri:0, instance:com.safvic.testCases.TC_CreateIncidentTest_002@6a78afa0]" started-at="2023-03-23T15:27:27 BDT" name="CreateIncidentTest" finished-at="2023-03-23T15:27:30 BDT" duration-ms="2910" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Shasan7774/SAFVIC_Automation_V2.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateIncidentTest -->
       </class> <!-- com.safvic.testCases.TC_CreateIncidentTest_002 -->
       <class name="com.safvic.testCases.TC_LoginTest_001">
+<<<<<<< HEAD
         <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@7586beff]" started-at="2023-03-23T07:18:45 BDT" name="setup" finished-at="2023-03-23T07:18:57 BDT" duration-ms="12009" status="PASS">
+=======
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@7586beff]" started-at="2023-03-23T15:27:08 BDT" name="setup" finished-at="2023-03-23T15:27:12 BDT" duration-ms="3666" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Shasan7774/SAFVIC_Automation_V2.git
           <params>
             <param index="0">
               <value>
@@ -24,16 +44,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
+<<<<<<< HEAD
         <test-method signature="loginTest()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@7586beff]" started-at="2023-03-23T07:18:57 BDT" name="loginTest" finished-at="2023-03-23T07:19:06 BDT" duration-ms="8632" status="PASS">
+=======
+        <test-method signature="loginTest()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@7586beff]" started-at="2023-03-23T15:27:12 BDT" name="loginTest" finished-at="2023-03-23T15:27:27 BDT" duration-ms="15692" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Shasan7774/SAFVIC_Automation_V2.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="tearDown()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@7586beff]" started-at="2023-03-23T07:19:22 BDT" name="tearDown" finished-at="2023-03-23T07:19:22 BDT" duration-ms="323" status="PASS">
+=======
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@7586beff]" started-at="2023-03-23T15:27:40 BDT" name="tearDown" finished-at="2023-03-23T15:27:40 BDT" duration-ms="256" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Shasan7774/SAFVIC_Automation_V2.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.safvic.testCases.TC_LoginTest_001 -->
       <class name="com.safvic.testCases.TC_UpdateIncidentTest_003">
+<<<<<<< HEAD
         <test-method signature="UpdateIncidenTest()[pri:0, instance:com.safvic.testCases.TC_UpdateIncidentTest_003@2f4948e4]" started-at="2023-03-23T07:19:12 BDT" name="UpdateIncidenTest" finished-at="2023-03-23T07:19:22 BDT" duration-ms="10327" status="FAIL">
           <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
@@ -110,6 +139,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+=======
+        <test-method signature="UpdateIncidenTest()[pri:0, instance:com.safvic.testCases.TC_UpdateIncidentTest_003@2f4948e4]" started-at="2023-03-23T15:27:30 BDT" name="UpdateIncidenTest" finished-at="2023-03-23T15:27:40 BDT" duration-ms="9273" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Shasan7774/SAFVIC_Automation_V2.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UpdateIncidenTest -->

@@ -70,7 +70,6 @@ public class IncidentCreation {
 		btnCreateIncidentPeople.click();
 	}
 	
-	
 	/*
 	@FindBy(how =How.CSS, using="#headerSettingButton")
 	@CacheLookup
@@ -88,17 +87,5 @@ public class IncidentCreation {
 		logOut.click();
 	}
 	*/
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-
-	
 	 
 }
