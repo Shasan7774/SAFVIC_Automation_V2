@@ -1,13 +1,8 @@
  package com.safvic.testCases;
 
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.safvic.pageObjects.IncidentCreation;
 import com.safvic.pageObjects.LoginPage;
 
 public class TC_LoginTest_001 extends BaseClass{
@@ -36,12 +31,13 @@ public class TC_LoginTest_001 extends BaseClass{
 		*/
 		if(driver.getTitle().equals("Home Page - SAFV_Site"))
 		{
-			AssertJUnit.assertTrue(true);
-			log.info("Navigated to the homepage");
+			Assert.assertTrue(true);
+	 		log.info("Navigated to the homepage");
+			
 		}
 		else
 		{
-			AssertJUnit.assertFalse(false);
+			Assert.assertTrue(true);
 			log.info("Failed to navigate to the homepage");
 		}
 		//Thread.sleep(5000);
