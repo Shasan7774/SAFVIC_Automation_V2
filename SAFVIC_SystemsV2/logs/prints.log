@@ -1,1 +1,7 @@
-01:05:53.329 [main] INFO  com.safvic.testCases.BaseClass - Failed to navigate to the homepage
+15:58:04.505 [main] INFO  com.safvic.testCases.BaseClass - Login Clicked
+15:58:04.517 [main] INFO  com.safvic.testCases.BaseClass - Navigated to the homepage
+18:06:33.673 [main] INFO  com.safvic.testCases.BaseClass - URL Is Opened
+18:06:33.782 [main] INFO  com.safvic.testCases.BaseClass - Officer Email Entered
+18:06:33.842 [main] INFO  com.safvic.testCases.BaseClass - Officer Password Entered
+18:06:39.947 [main] INFO  com.safvic.testCases.BaseClass - Login Clicked
+18:06:39.954 [main] INFO  com.safvic.testCases.BaseClass - Navigated to the homepage

@@ -7,31 +7,38 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import com.safvic.testCases.BaseClass;
 
 public class TestNG_Listeners extends BaseClass implements ITestListener  {
-
+	ExtentTest test;
+	ExtentReports extents = ExtentReporter.getExtentReportObject();
 	@Override
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
-		ITestListener.super.onTestStart(result);
+		test = extents.createTest(result.getMethod().getMethodName());
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
-		ITestListener.super.onTestSuccess(result);
+		test.log(Status.PASS, "Test Passed");
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
-		//ITestListener.super.onTestFailure(result);
+		test.fail(result.getThrowable());
+		  
 		WebDriver driver = null;
 		String failedTestMethodName = result.getMethod().getMethodName();
 		
 		try {
-			driver = (WebDriver)result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
+			driver = (WebDriver)result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
+			//getDeclaredField -> getField 
+			//getField can get a field inherited from a superclass but getDeclaredField cannot.
 		} catch (Exception e) {
 			
 		}
@@ -70,7 +77,7 @@ public class TestNG_Listeners extends BaseClass implements ITestListener  {
 	@Override
 	public void onFinish(ITestContext context) {
 		// TODO Auto-generated method stub
-		ITestListener.super.onFinish(context);
+		extents.flush();
 	}
 
 }
