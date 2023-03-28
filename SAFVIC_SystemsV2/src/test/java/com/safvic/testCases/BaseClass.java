@@ -62,21 +62,13 @@ public class BaseClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 
-	public void getFailedTestScreeshotPath(String failedTestCaseName, WebDriver driver) throws IOException {
+	public String getFailedTestScreeshotPath(String failedTestCaseName, WebDriver driver) throws IOException {
 		TakesScreenshot screenShot = (TakesScreenshot) driver;
 		File source = screenShot.getScreenshotAs(OutputType.FILE);
 		String destination = System.getProperty("user.dir") + "\\Screenshots\\" + failedTestCaseName + ".png";
 		FileUtils.copyFile(source, new File(destination));
-
-		// return destination;
-		/*
-		 * TakesScreenshot ts = (TakesScreenshot)driver; File source =
-		 * ts.getScreenshotAs(OutputType.FILE); String destinationFile =
-		 * System.getProperty("user.dir")+"\\reports\\"+testCaseName+".png";
-		 * FileUtils.copyFile(source, new File(destinationFile));
-		 * 
-		 * return destinationFile;
-		 */
+		
+		return destination;
 	}
 
 	@AfterTest

@@ -9,9 +9,9 @@ public class ExtentReporter {
 
 	public static ExtentReports getExtentReportObject() {
 		//this method is responsible to complete all the reporting configuration
-		String path = System.getProperty("user.dir")+"\\reports\\index.html";
+		String path = System.getProperty("user.dir")+"\\reports\\TestReport.html";
 		ExtentSparkReporter reporter = new ExtentSparkReporter(path);
-		reporter.config().setReportName("SAFV Web Automation Results");
+		reporter.config().setReportName("SAFVIC Automation Test Results");
 		reporter.config().setDocumentTitle("Test Results");
 		
 		extents = new ExtentReports();

@@ -9,90 +9,25 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-public class CreatePeople {
+public class PeopleBasicInfo {
 	WebDriver ldriver;
 
-	public CreatePeople(WebDriver rdriver) {
+	public PeopleBasicInfo(WebDriver rdriver) {
 		this.ldriver = rdriver;
 		PageFactory.initElements(rdriver, this);
 	}
-
-	@FindBy(how = How.XPATH, using = "//span[normalize-space()='People']")
-	@CacheLookup
-	WebElement navigatePeople;
-
-	@FindBy(how = How.XPATH, using = "//a[normalize-space()='Add Person']")
-	@CacheLookup
-	WebElement btnAddPerson;
-
-	// People Basic Info
-	@FindBy(how = How.XPATH, using = "//input[@id='FirstName']")
-	@CacheLookup
-	WebElement personFirstName;
-
-	@FindBy(how = How.XPATH, using = "//input[@id='LastName']")
-	@CacheLookup
-	WebElement personLastName;
-
-	@FindBy(how = How.XPATH, using = "//input[@id='MiddleName']")
-	@CacheLookup
-	WebElement personMiddleName;
-
-	@FindBy(how = How.XPATH, using = "")
-	@CacheLookup
-	WebElement toggleAlias;
-
-	@FindBy(how = How.XPATH, using = "//input[@id='AliasDesc']")
-	@CacheLookup
-	WebElement txtAliasDescription;
-
-	@FindBy(how = How.XPATH, using = "")
-	@CacheLookup
-	WebElement personType;
-
-	@FindBy(how = How.XPATH, using = "")
-	@CacheLookup
-	WebElement toggleUnknownPerson;
-
-	@FindBy(how = How.XPATH, using = "")
-	@CacheLookup
-	WebElement selectRace;
-
-	@FindBy(how = How.XPATH, using = "")
-	@CacheLookup
-	WebElement selectSex;
-
-	@FindBy(how = How.XPATH, using = "//input[@id='DateOfBirth']")
-	@CacheLookup
-	WebElement personDOB;
-
-	@FindBy(how = How.XPATH, using = "//*[text()='Save & Show More']")
-	@CacheLookup
-	WebElement btnSaveShowMore;
-
-	@FindBy(how = How.XPATH, using = "")
-	@CacheLookup
-	WebElement toggleVictimPseudonym;
-
-	@FindBy(how = How.XPATH, using = "//button[normalize-space()='Confirm']")
-	@CacheLookup
-	WebElement btnConfirmPseudonym;
-
-	@FindBy(how = How.XPATH, using = "//input[@id='VictimRealFirstName']")
-	@CacheLookup
-	WebElement txtPseudoRealFirstName;
-
-	@FindBy(how = How.XPATH, using = "//input[@id='VictimRealLastName']")
-	@CacheLookup
-	WebElement txtPseudoRealLastName;
-
-	@FindBy(how = How.XPATH, using = "//input[@id='VictimRealMiddleName']")
-	@CacheLookup
-	WebElement txtPseudoRealMiddleName;
-
+	
 	@FindBy(how = How.XPATH, using = "")
 	@CacheLookup
 	WebElement selectEthnicity;
+	
+	@FindBy(how = How.XPATH, using = "")
+	@CacheLookup
+	WebElement selectEyeColor;
+	
+	@FindBy(how = How.XPATH, using = "")
+	@CacheLookup
+	WebElement selectHairColor;
 
 	@FindBy(how = How.XPATH, using = "//input[@id='HeightFt']")
 	@CacheLookup
@@ -106,7 +41,7 @@ public class CreatePeople {
 	@CacheLookup
 	WebElement txtWeight;
 
-	@FindBy(how = How.XPATH, using = "")
+	@FindBy(how = How.XPATH, using = "//form[@id='createbasicinfoform']/div/div/div[@data-bind='invisible: isSSNShow']/button[@data-bind='click: onSSNShowChange']")
 	@CacheLookup
 	WebElement btnViewSSN;
 
@@ -137,34 +72,28 @@ public class CreatePeople {
 	@FindBy(how = How.XPATH, using = "//input[@id='EmailAddress']")
 	@CacheLookup
 	WebElement txtEmail;
+	
+	@FindBy(how = How.XPATH, using = "//input[@id='SpecialNeeds']")
+	@CacheLookup
+	WebElement txtSpecialNeeds;
 
 	@FindBy(how = How.XPATH, using = "")
 	@CacheLookup
-	WebElement toggleSafeViaEmail;
+	WebElement clickSafeViaEmail;
 
-	@FindBy(how = How.XPATH, using = "//textarea[@id='Occupation']")
-	@CacheLookup
-	WebElement txtOccupation;
+	
 
-	@FindBy(how = How.XPATH, using = "//input[@id='PlaceOfEmployment']")
+	@FindBy(how = How.XPATH, using = "//span[@aria-labelledby='RestraintPriorToArrest_label']/span")
 	@CacheLookup
-	WebElement txtEmployerName;
+	WebElement checkPlacedIntoHandCuffs;
 
-	@FindBy(how = How.XPATH, using = "//input[@id='TxSID']")
+	@FindBy(how = How.XPATH, using = "//span[@aria-labelledby='ChildPresent_label']/span")
 	@CacheLookup
-	WebElement txtTxSID;
+	WebElement checkChildJuvenille;
 
-	@FindBy(how = How.XPATH, using = "")
+	@FindBy(how = How.XPATH, using = "//span[@aria-labelledby='MirandaWarning_label']/span")
 	@CacheLookup
-	WebElement togglePlacedIntoHandCuffs;
-
-	@FindBy(how = How.XPATH, using = "")
-	@CacheLookup
-	WebElement toggleChildJuvenille;
-
-	@FindBy(how = How.XPATH, using = "")
-	@CacheLookup
-	WebElement toggleMirandaWarning;
+	WebElement checkMirandaWarning;
 
 	@FindBy(how = How.XPATH, using = "//input[@id='MirandaWhenDate']")
 	@CacheLookup
@@ -178,15 +107,15 @@ public class CreatePeople {
 	@CacheLookup
 	WebElement StatementsAfter;
 
-	@FindBy(how = How.XPATH, using = "")
+	@FindBy(how = How.XPATH, using = "//span[@aria-labelledby='Elderly_label']/span")
 	@CacheLookup
-	WebElement togglePersonElderly;
+	WebElement checkPersonElderly;
 
-	@FindBy(how = How.XPATH, using = "")
+	@FindBy(how = How.XPATH, using = "//span[@aria-labelledby='Disabled_label']/span")
 	@CacheLookup
-	WebElement togglePersonDisabled;
+	WebElement checkPersonDisabled;
 
-	// Add New Phone Number
+	//Add New Phone Number
 	@FindBy(how = How.XPATH, using = "//button[@data-target='#phoneModalCreate']")
 	@CacheLookup
 	WebElement btnAddNewPhoneNumber;
@@ -207,7 +136,7 @@ public class CreatePeople {
 	@CacheLookup
 	WebElement btnSavePhoneNumber;
 
-	// Add New Address
+	//Add New Address
 	@FindBy(how = How.XPATH, using = "//button[normalize-space()='Add new address']")
 	@CacheLookup
 	WebElement btnAddNewAddress;
@@ -243,81 +172,6 @@ public class CreatePeople {
 	@FindBy(how = How.XPATH, using = "//button[@onclick='onCreate()']")
 	@CacheLookup
 	WebElement btnSaveAddress;
-
-	public void navigatePeople() {
-		navigatePeople.click();
-	}
-
-	public void clickAddPerson() {
-		btnAddPerson.click();
-	}
-
-	public void setPersonFirstName() {
-		personFirstName.sendKeys("Test First Name");
-	}
-
-	public void setPersonLastName() {
-		personLastName.sendKeys("Test Last Name");
-	}
-
-	public void setPersonMiddleName() {
-		personMiddleName.sendKeys("Test Middle Name");
-	}
-
-	public void enableAlias() {
-		toggleAlias.click();
-	}
-
-	public void setAliasName() {
-		txtAliasDescription.sendKeys("Test Alias Name");
-	}
-
-	public void enablePersonType() {
-		personType.click();
-	}
-
-	public void enableUnknownPerson() {
-		toggleUnknownPerson.click();
-	}
-
-	public void selectPersonRace() {
-		selectRace.click();
-	}
-
-	public void selectPersonSex() {
-		selectSex.click();
-	}
-
-	public void setPersonDOB() {
-		personDOB.sendKeys("t");
-	}
-
-	public void savePersonInitialInformation() {
-		btnSaveShowMore.click();
-	}
-
-	public void viewPseudonymVictim() {
-		toggleVictimPseudonym.click();
-	}
-
-	public void confirmViewPseudonymVictim() {
-		btnConfirmPseudonym.click();
-	}
-
-	//Victim real last name
-	public void setPseudoFirstNameVictim() {
-		txtPseudoRealFirstName.sendKeys("Test Victim Real First Name");
-	}
-
-	//Victim Real first name
-	public void setPseudoLastNameVictim() {
-		txtPseudoRealLastName.sendKeys("Test Victim Real Last Name");
-	}
-
-	//Victim Real middle name
-	public void setPseudoMiddleNameVictim() {
-		txtPseudoRealMiddleName.sendKeys("Test Victim Real Last Name");
-	}
 
 	public void selectPersonEthnicity() {
 		selectEthnicity.click();
@@ -384,15 +238,15 @@ public class CreatePeople {
 	}
 
 	public void enablePlacedIntoHandCuffs() {
-		togglePlacedIntoHandCuffs.click();
+		checkPlacedIntoHandCuffs.click();
 	}
 
 	public void enableChildJuvenille() {
-		toggleChildJuvenille.click();
+		checkChildJuvenille.click();
 	}
 
 	public void enableMirandaWarning() {
-		toggleMirandaWarning.click();
+		checkMirandaWarning.click();
 	}
 
 	public void setMirandaDate() {
@@ -408,11 +262,11 @@ public class CreatePeople {
 	}
 
 	public void enablePersonElderly() {
-		togglePersonElderly.click();
+		checkPersonElderly.click();
 	}
 
 	public void enablePersonDisabled() {
-		togglePersonDisabled.click();
+		checkPersonDisabled.click();
 	}
 	
 	//Add Person Phone Number 
