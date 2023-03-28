@@ -55,7 +55,7 @@ public class BaseClass {
 		} else if (browserName.equals("edge")) {
 			System.setProperty("webdriver.edge.driver", rconfig.getEdgeDriverPath());
 			driver = new EdgeDriver();
-			driver.manage().window().maximize();
+			driver.manage().window().maximize();//
 		}
 
 		driver.get(baseURL);
