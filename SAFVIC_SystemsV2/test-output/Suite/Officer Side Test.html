@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Officer Side Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Mar 28 12:55:02 BDT 2023</td>
+<td>Started on:</td><td>Wed Mar 29 15:49:56 BDT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>65 seconds (65475 ms)</td>
+<tr><td>Total time:</td><td>39 seconds (39771 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,17 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.safvic.testCases.TC_UpdateIncidentTest_003.UpdateIncidenTest()'><b>UpdateIncidenTest</b><br>Test class: com.safvic.testCases.TC_UpdateIncidentTest_003</td>
-<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression 1//button[@class=&apos;btn btn-success&apos;] because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: Type conversion failed while evaluating the expression.
+<td title='com.safvic.testCases.TC_CreateVictimTest_004.CreateVictim()'><b>CreateVictim</b><br>Test class: com.safvic.testCases.TC_CreateVictimTest_004</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=111.0.5563.112)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b34de62d4c5fca1e894bdd6206e4e34c, findElement {using=xpath, value=1//button[@class=&apos;btn btn-success&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.112, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\BS702\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51797}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51797/devtoo..., se:cdpVersion: 111.0.5563.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b34de62d4c5fca1e894bdd6206e4e34c
+Command: [f8f5592eb56b6d4b760657759e46e447, sendKeysToElement {id=15e37445-30c6-4090-8e45-62633240e741, value=[Ljava.lang.CharSequence;@45900b64}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.112, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\BS702\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60881}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60881/devtoo..., se:cdpVersion: 111.0.5563.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f8f5592eb56b6d4b760657759e46e447)] -&gt; xpath: //span[@aria-labelledby=&apos;SexId_label&apos;]/span]
+Session ID: f8f5592eb56b6d4b760657759e46e447
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -94,27 +93,23 @@ Session ID: b34de62d4c5fca1e894bdd6206e4e34c
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy34.click(Unknown Source)
-	at com.safvic.pageObjects.IncidentUpdate.saveIncidentUpdate(IncidentUpdate.java:127)
-	at com.safvic.testCases.TC_UpdateIncidentTest_003.UpdateIncidenTest(TC_UpdateIncidentTest_003.java:27)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy34.sendKeys(Unknown Source)
+	at com.safvic.pageObjects.QuickCreatePeople.selectPersonSex(QuickCreatePeople.java:186)
+	at com.safvic.testCases.TC_CreateVictimTest_004.CreateVictim(TC_CreateVictimTest_004.java:32)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1711154833", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1711154833'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression 1//button[@class=&apos;btn btn-success&apos;] because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: Type conversion failed while evaluating the expression.
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace966567431", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace966567431'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=111.0.5563.112)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b34de62d4c5fca1e894bdd6206e4e34c, findElement {using=xpath, value=1//button[@class=&apos;btn btn-success&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.112, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\BS702\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51797}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51797/devtoo..., se:cdpVersion: 111.0.5563.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b34de62d4c5fca1e894bdd6206e4e34c
+Command: [f8f5592eb56b6d4b760657759e46e447, sendKeysToElement {id=15e37445-30c6-4090-8e45-62633240e741, value=[Ljava.lang.CharSequence;@45900b64}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.112, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\BS702\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60881}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60881/devtoo..., se:cdpVersion: 111.0.5563.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f8f5592eb56b6d4b760657759e46e447)] -&gt; xpath: //span[@aria-labelledby=&apos;SexId_label&apos;]/span]
+Session ID: f8f5592eb56b6d4b760657759e46e447
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -127,15 +122,15 @@ Session ID: b34de62d4c5fca1e894bdd6206e4e34c
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy34.click(Unknown Source)
-	at com.safvic.pageObjects.IncidentUpdate.saveIncidentUpdate(IncidentUpdate.java:127)
-	at com.safvic.testCases.TC_UpdateIncidentTest_003.UpdateIncidenTest(TC_UpdateIncidentTest_003.java:27)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy34.sendKeys(Unknown Source)
+	at com.safvic.pageObjects.QuickCreatePeople.selectPersonSex(QuickCreatePeople.java:186)
+	at com.safvic.testCases.TC_CreateVictimTest_004.CreateVictim(TC_CreateVictimTest_004.java:32)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -165,8 +160,8 @@ Session ID: b34de62d4c5fca1e894bdd6206e4e34c
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>8</td>
-<td>com.safvic.testCases.TC_UpdateIncidentTest_003@642a7222</td></tr>
+<td>7</td>
+<td>com.safvic.testCases.TC_CreateVictimTest_004@4f49f6af</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -179,13 +174,18 @@ Session ID: b34de62d4c5fca1e894bdd6206e4e34c
 <tr>
 <td title='com.safvic.testCases.TC_LoginTest_001.loginTest()'><b>loginTest</b><br>Test class: com.safvic.testCases.TC_LoginTest_001</td>
 <td></td>
-<td>30</td>
-<td>com.safvic.testCases.TC_LoginTest_001@565f390</td></tr>
+<td>14</td>
+<td>com.safvic.testCases.TC_LoginTest_001@2f67a4d3</td></tr>
 <tr>
 <td title='com.safvic.testCases.TC_CreateIncidentTest_002.CreateIncidentTest()'><b>CreateIncidentTest</b><br>Test class: com.safvic.testCases.TC_CreateIncidentTest_002</td>
 <td></td>
-<td>22</td>
-<td>com.safvic.testCases.TC_CreateIncidentTest_002@311bf055</td></tr>
+<td>5</td>
+<td>com.safvic.testCases.TC_CreateIncidentTest_002@7d322cad</td></tr>
+<tr>
+<td title='com.safvic.testCases.TC_UpdateIncidentTest_003.UpdateIncidenTest()'><b>UpdateIncidenTest</b><br>Test class: com.safvic.testCases.TC_UpdateIncidentTest_003</td>
+<td></td>
+<td>9</td>
+<td>com.safvic.testCases.TC_UpdateIncidentTest_003@21be3395</td></tr>
 </table><p>
 </body>
 </html>

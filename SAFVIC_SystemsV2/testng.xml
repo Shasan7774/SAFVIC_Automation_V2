@@ -10,8 +10,9 @@
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.safvic.testCases.TC_LoginTest_001" />
-			<class name="com.safvic.testCases.TC_CreateIncidentTest_002" />
-			<class name="com.safvic.testCases.TC_UpdateIncidentTest_003" />
+			<class name="com.safvic.testCases.TC_CreateIncidentTest_002"/>
+			<class name="com.safvic.testCases.TC_UpdateIncidentTest_003"/>
+			<class name="com.safvic.testCases.TC_CreateVictimTest_004"/>
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite --> 

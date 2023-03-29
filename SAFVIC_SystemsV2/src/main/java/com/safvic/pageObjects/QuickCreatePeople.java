@@ -83,11 +83,15 @@ public class QuickCreatePeople {
 	@CacheLookup
 	WebElement checkUnknownPerson;
 
-	@FindBy(how = How.XPATH, using = "")
+	@FindBy(how = How.XPATH, using = "//span[@aria-labelledby='RaceId_label']/span")
 	@CacheLookup
 	WebElement selectRace;
-
-	@FindBy(how = How.XPATH, using = "")
+	
+	@FindBy(how = How.XPATH, using = "//ul[@id='RaceId_listbox']/li[text()='Am Indian']")
+	@CacheLookup
+	WebElement selectRaceOption;
+	
+	@FindBy(how = How.XPATH, using = "//span[@aria-labelledby='SexId_label']/span")
 	@CacheLookup
 	WebElement selectSex;
 
@@ -173,9 +177,13 @@ public class QuickCreatePeople {
 	public void selectPersonRace() {
 		selectRace.click();
 	}
+	
+	public void selectRaceOption() {
+		selectRaceOption.click();
+	}
 
 	public void selectPersonSex() {
-		selectSex.click();
+		selectSex.sendKeys("Male");
 	}
 
 	public void setPersonDOB() {

@@ -1,13 +1,12 @@
 package com.safvic.pageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
+
 
 public class PeopleBasicInfo {
 	WebDriver ldriver;
@@ -57,7 +56,7 @@ public class PeopleBasicInfo {
 	@CacheLookup
 	WebElement selectPrimaryLanguage;
 
-	@FindBy(how = How.XPATH, using = "")
+	@FindBy(how = How.XPATH, using = "//span[@aria-owns='PrimaryLanguage_listbox']/span/span[@aria-label='select']")
 	@CacheLookup
 	WebElement selectPersonIDType;
 
@@ -73,15 +72,25 @@ public class PeopleBasicInfo {
 	@CacheLookup
 	WebElement txtEmail;
 	
-	@FindBy(how = How.XPATH, using = "//input[@id='SpecialNeeds']")
-	@CacheLookup
-	WebElement txtSpecialNeeds;
-
-	@FindBy(how = How.XPATH, using = "")
+	@FindBy(how = How.XPATH, using = "//span[@aria-labelledby='VictimSafeEMail_label']/span")
 	@CacheLookup
 	WebElement clickSafeViaEmail;
-
 	
+	@FindBy(how = How.CSS, using = "#Occupation")
+	@CacheLookup
+	WebElement txtOccupation;
+	
+	@FindBy(how = How.CSS, using = "#PlaceOfEmployment")
+	@CacheLookup
+	WebElement txtNameEmployer;
+	
+	@FindBy(how = How.CSS, using = "#TxSID")
+	@CacheLookup
+	WebElement txtTxSID;
+	
+	@FindBy(how = How.CSS, using = "//input[@id='SpecialNeeds']")
+	@CacheLookup
+	WebElement txtSpecialNeeds;
 
 	@FindBy(how = How.XPATH, using = "//span[@aria-labelledby='RestraintPriorToArrest_label']/span")
 	@CacheLookup
@@ -105,7 +114,7 @@ public class PeopleBasicInfo {
 
 	@FindBy(how = How.XPATH, using = "//textarea[@id='StatementsAfter']")
 	@CacheLookup
-	WebElement StatementsAfter;
+	WebElement txtStatementsMade;
 
 	@FindBy(how = How.XPATH, using = "//span[@aria-labelledby='Elderly_label']/span")
 	@CacheLookup
@@ -172,9 +181,21 @@ public class PeopleBasicInfo {
 	@FindBy(how = How.XPATH, using = "//button[@onclick='onCreate()']")
 	@CacheLookup
 	WebElement btnSaveAddress;
+	
+	@FindBy(how = How.XPATH, using = "//button[normalize-space()='Save']")
+	@CacheLookup
+	WebElement btnSaveBasicInfo;
 
-	public void selectPersonEthnicity() {
+	public void selectEthnicity() {
 		selectEthnicity.click();
+	}
+	
+	public void selectEyeColor() {
+		selectEyeColor.click();
+	}
+	
+	public void selectHairColor() {
+		selectHairColor.click();
 	}
 
 	public void setPersonHeightFeet() {
@@ -222,7 +243,7 @@ public class PeopleBasicInfo {
 	}
 
 	public void enableSafeViaEmail() {
-		toggleSafeViaEmail.click();
+		clickSafeViaEmail.click();
 	}
 
 	public void setPersonOccupation() {
@@ -230,12 +251,17 @@ public class PeopleBasicInfo {
 	}
 
 	public void setEmployerName() {
-		txtEmployerName.sendKeys("Test Employer Of The Person");
+		txtNameEmployer.sendKeys("Test Employer Of The Person");
 	}
 
 	public void setTxSID() {
-		txtEmployerName.sendKeys("Test TxSID: 1234 ");
+		txtTxSID.sendKeys("Test TxSID: 1234 ");
 	}
+	
+	public void setSpecialNeeds() {
+		txtTxSID.sendKeys("Test Person Special Needs");
+	}
+	
 
 	public void enablePlacedIntoHandCuffs() {
 		checkPlacedIntoHandCuffs.click();
@@ -258,7 +284,7 @@ public class PeopleBasicInfo {
 	}
 
 	public void setStatementsAfterMiranda() {
-		StatementsAfter.sendKeys("Test Statementes Made After Miranda");
+		txtStatementsMade.sendKeys("Test Statementes Made After Miranda");
 	}
 
 	public void enablePersonElderly() {
@@ -309,6 +335,10 @@ public class PeopleBasicInfo {
 	}
 	public void saveAddress() {
 		btnSaveAddress.click();
+	}
+	
+	public void savePersonBasicInfo() {
+		btnSaveBasicInfo.click();
 	}
 	
 }

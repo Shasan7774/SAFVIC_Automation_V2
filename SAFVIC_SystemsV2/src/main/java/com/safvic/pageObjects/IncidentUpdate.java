@@ -78,7 +78,7 @@ public class IncidentUpdate {
 	@CacheLookup
 	WebElement selectDispatchedTime;
 	
-	@FindBy(how =How.XPATH, using="1//button[@class='btn btn-success']")
+	@FindBy(how =How.XPATH, using="//button[@class='btn btn-success']")
 	@CacheLookup
 	WebElement btnSave;
 	
