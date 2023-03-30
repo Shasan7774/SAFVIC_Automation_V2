@@ -16,13 +16,22 @@ public class PeopleBasicInfo {
 		PageFactory.initElements(rdriver, this);
 	}
 	
-	@FindBy(how = How.XPATH, using = "")
+	@FindBy(how = How.XPATH, using = "//span[@aria-labelledby='EthnicityId_label']/span")
 	@CacheLookup
 	WebElement selectEthnicity;
 	
-	@FindBy(how = How.XPATH, using = "")
+	@FindBy(how = How.XPATH, using = "//ul[@id='EthnicityId_listbox']/li[text()='Non-Hispanic']")
+	@CacheLookup
+	WebElement selectEthnicityOption;
+	
+	
+	@FindBy(how = How.XPATH, using = "//span[@aria-labelledby='EyeColorId_label']/span")
 	@CacheLookup
 	WebElement selectEyeColor;
+	
+	@FindBy(how = How.XPATH, using = "//ul[@id='EthnicityId_listbox']/li[text()='Non-Hispanic']")
+	@CacheLookup
+	WebElement selectEyeColorOption;
 	
 	@FindBy(how = How.XPATH, using = "")
 	@CacheLookup
