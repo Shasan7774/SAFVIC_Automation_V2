@@ -85,7 +85,9 @@ public class BaseClass {
 
 
 /*
-   //span[@aria-labelledby='RaceId_label']/span
-    //ul[@id='RaceId_listbox']/li[text()='Am Indian']")
- */
-	
+//span[@aria-labelledby='RaceId_label']/span
+//ul[@id='RaceId_listbox']/li[text()='Am Indian']
+
+//span[@aria-labelledby='Victim_label']/span
+
+*/

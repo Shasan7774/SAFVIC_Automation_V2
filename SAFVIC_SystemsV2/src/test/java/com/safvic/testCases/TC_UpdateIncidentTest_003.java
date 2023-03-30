@@ -13,15 +13,20 @@ public class TC_UpdateIncidentTest_003 extends BaseClass{
 		IncidentUpdate iu = new IncidentUpdate(driver);
 		iu.navigateIncidentUpdate();
 		iu.setDistrictInfo();
-		//iu.enableChildrenInvolved();
+		iu.enableChildrenInvolved();
 		iu.setOfficerPrimaryConcern();
 		iu.setSuspectedMethManufacture();
 		iu.setSensitiveIssues();
 		Thread.sleep(2000);
-		//iu.enableCovidExposure();
-		//iu.selectReasonContactPolice();
+		iu.enableCovidExposure();
+		
+		iu.selectHowPoliceContacted();
+		iu.selectHowPoliceContactedOption();
+		iu.selectReasonForContact();
+		iu.selectReasonForContactOption();
+		
 		Thread.sleep(2000);
-		//iu.selectReportedDetails();
+	
 		iu.selectDispatchedDate();
 		iu.selectDispatchedTime();
 		iu.saveIncidentUpdate();

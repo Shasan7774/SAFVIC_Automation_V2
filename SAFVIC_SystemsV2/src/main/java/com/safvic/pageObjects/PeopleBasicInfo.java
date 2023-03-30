@@ -29,13 +29,17 @@ public class PeopleBasicInfo {
 	@CacheLookup
 	WebElement selectEyeColor;
 	
-	@FindBy(how = How.XPATH, using = "//ul[@id='EthnicityId_listbox']/li[text()='Non-Hispanic']")
+	@FindBy(how = How.XPATH, using = "//ul[@id='EyeColorId_listbox']/li[text()='Black']")
 	@CacheLookup
 	WebElement selectEyeColorOption;
 	
-	@FindBy(how = How.XPATH, using = "")
+	@FindBy(how = How.XPATH, using = "//span[@aria-labelledby='HairColorId_label']/span")
 	@CacheLookup
 	WebElement selectHairColor;
+	
+	@FindBy(how = How.XPATH, using = "//ul[@id='HairColorId_listbox']/li[text()='Brown']")
+	@CacheLookup
+	WebElement selectHairColorOption;
 
 	@FindBy(how = How.XPATH, using = "//input[@id='HeightFt']")
 	@CacheLookup
@@ -57,17 +61,25 @@ public class PeopleBasicInfo {
 	@CacheLookup
 	WebElement txtSSN;
 
-	@FindBy(how = How.XPATH, using = "//button[@class='btn btn-success']']")
+	@FindBy(how = How.XPATH, using = "//button[@class='btn btn-success']")
 	@CacheLookup
 	WebElement btnSaveSSN;
 
-	@FindBy(how = How.XPATH, using = "")
+	@FindBy(how = How.XPATH, using = "//span[@aria-labelledby='PrimaryLanguage_label']/span")
 	@CacheLookup
 	WebElement selectPrimaryLanguage;
+	
+	@FindBy(how = How.XPATH, using = "//ul[@id='PrimaryLanguage_listbox']/li[text()='English']")
+	@CacheLookup
+	WebElement selectPrimaryLanguageOption;
 
-	@FindBy(how = How.XPATH, using = "//span[@aria-owns='PrimaryLanguage_listbox']/span/span[@aria-label='select']")
+	@FindBy(how = How.XPATH, using = "//span[@aria-labelledby='PersonIDTypeId_listbox']/span")
 	@CacheLookup
 	WebElement selectPersonIDType;
+	
+	@FindBy(how = How.XPATH, using = "ul[@id='PersonIDTypeId_listbox']/li[text()='Drivers License']")
+	@CacheLookup
+	WebElement selectPersonIDTypeOption;
 
 	@FindBy(how = How.XPATH, using = "//input[@id='IDCardNo']")
 	@CacheLookup
@@ -138,17 +150,21 @@ public class PeopleBasicInfo {
 	@CacheLookup
 	WebElement btnAddNewPhoneNumber;
 
-	@FindBy(how = How.XPATH, using = "//span[@aria-owns='PhoneTypeId_listbox']")
+	@FindBy(how = How.XPATH, using = "//span[@aria-labelledby='PhoneTypeId_label']/span")
 	@CacheLookup
 	WebElement selectPhoneType;
+	
+	@FindBy(how = How.XPATH, using = "//ul[@id='PhoneTypeId_listbox']/li[text()='Home']")
+	@CacheLookup
+	WebElement selectPhoneTypeOption;
 
 	@FindBy(how = How.XPATH, using = "//input[@id='PhoneNumber']")
 	@CacheLookup
 	WebElement txtPhoneNumber;
 
-	@FindBy(how = How.XPATH, using = "")
+	@FindBy(how = How.XPATH, using = "//span[@aria-labelledby='ContactNumber_label']/span")
 	@CacheLookup
-	WebElement togglePrimaryContact;
+	WebElement checkPrimaryContact;
 
 	@FindBy(how = How.XPATH, using = "//button[@onclick='saveOrUpdate(false)']")
 	@CacheLookup
@@ -159,10 +175,14 @@ public class PeopleBasicInfo {
 	@CacheLookup
 	WebElement btnAddNewAddress;
 	
-	@FindBy(how = How.XPATH, using = "//span[@aria-owns='AddressGroupId_listbox']")
+	@FindBy(how = How.XPATH, using = "//span[@aria-labelledby='AddressGroupId_label']/span")
 	@CacheLookup
 	WebElement selectAddressGroup;
-
+	
+	@FindBy(how = How.XPATH, using = "//ul[@id='AddressGroupId_listbox']/li[text()='Home']")
+	@CacheLookup
+	WebElement selectAddressGroupOption;
+	
 	@FindBy(how = How.XPATH, using = "//input[@id='serviceInput']")
 	@CacheLookup
 	WebElement txtAddress1;
@@ -179,9 +199,13 @@ public class PeopleBasicInfo {
 	@CacheLookup
 	WebElement txtState;
 
-	@FindBy(how = How.XPATH, using = "//span[@aria-owns='County_listbox']")
+	@FindBy(how = How.XPATH, using = "//span[@aria-labelledby='County_label']/span")
 	@CacheLookup
 	WebElement selectCounty;
+	
+	@FindBy(how = How.XPATH, using = "//ul[@id='County_listbox']/li[text()='Aransas']")
+	@CacheLookup
+	WebElement selectCountyOption;
 
 	@FindBy(how = How.XPATH, using = "//input[@id='ZipCode']")
 	@CacheLookup
@@ -199,24 +223,36 @@ public class PeopleBasicInfo {
 		selectEthnicity.click();
 	}
 	
+	public void selectEthnicityOption() {
+		selectEthnicityOption.click();
+	}
+	
 	public void selectEyeColor() {
 		selectEyeColor.click();
+	}
+	
+	public void selectEyeColorOption() {
+		selectEyeColorOption.click();
 	}
 	
 	public void selectHairColor() {
 		selectHairColor.click();
 	}
+	
+	public void selectHairColorOption() {
+		selectHairColorOption.click();
+	}
 
 	public void setPersonHeightFeet() {
-		txtHeightFeet.sendKeys("5");
+		txtHeightFeet.sendKeys("2");
 	}
 
 	public void setPersonHeightInch() {
-		txtHeightInch.sendKeys("10");
+		txtHeightInch.sendKeys("5");
 	}
 
 	public void setPersonWeight() {
-		txtWeight.sendKeys("100");
+		txtWeight.sendKeys("50");
 	}
 
 	public void viewSSNPerson() {
@@ -234,9 +270,17 @@ public class PeopleBasicInfo {
 	public void selectPrimaryLanguagePerson() {
 		selectPrimaryLanguage.click();
 	}
+	
+	public void selectPrimaryLanguagePersonOption() {
+		selectPrimaryLanguageOption.click();
+	}
 
 	public void selectPersonIDType() {
 		selectPersonIDType.click();
+	}
+	
+	public void selectPersonIDTypeOption() {
+		selectPersonIDTypeOption.click();
 	}
 
 	public void setPersonIDNo() {
@@ -308,12 +352,23 @@ public class PeopleBasicInfo {
 	public void clickAddNewPhoneNumber() {
 		btnAddNewPhoneNumber.click();
 	}
+	
+	public void selectPhoneType() {
+		selectPhoneType.click();
+	}
+	
+	public void selectPhoneTypeOption() {
+		selectPhoneTypeOption.click();
+	}
+	
 	public void setPhoneNumber() {
 		txtPhoneNumber.sendKeys("123-321-3214");
 	}
+	
 	public void enablePrimaryContact() {
-		togglePrimaryContact.click();
+		 checkPrimaryContact.click();
 	}
+	
 	public void savePhoneNumber() {
 		btnSavePhoneNumber.click();
 	}
@@ -324,6 +379,11 @@ public class PeopleBasicInfo {
 	public void selectAddressGroup() {
 		selectAddressGroup.click();
 	}
+	
+	public void selectAddressGroupOption() {
+		selectAddressGroupOption.click();
+	}
+	
 	public void setAddress1() {
 		txtAddress1.sendKeys("Test Address1");
 	}
@@ -338,6 +398,9 @@ public class PeopleBasicInfo {
 	}
 	public void selectCounty() {
 		selectCounty.click();
+	}
+	public void selectCountyOption() {
+		selectCountyOption.click();
 	}
 	public void setZipCode() {
 		txtZipCode.sendKeys("12345");
