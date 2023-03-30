@@ -9,7 +9,7 @@
     <classes>
       <class name="com.safvic.testCases.TC_CreateVictimTest_004">
         <methods>
-          <include name="CreateVictim"/>
+          <include name="VictimBasicInfo"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>

@@ -1,41 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="10" passed="3" failed="1" skipped="0">
+<testng-results ignored="6" total="11" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-29T15:49:56 BDT" name="Suite" finished-at="2023-03-29T15:50:36 BDT" duration-ms="39771">
+  <suite started-at="2023-03-30T18:11:06 BDT" name="Suite" finished-at="2023-03-30T18:12:00 BDT" duration-ms="54302">
     <groups>
     </groups>
-    <test started-at="2023-03-29T15:49:56 BDT" name="Officer Side Test" finished-at="2023-03-29T15:50:36 BDT" duration-ms="39771">
+    <test started-at="2023-03-30T18:11:06 BDT" name="Officer Side Test" finished-at="2023-03-30T18:12:00 BDT" duration-ms="54302">
       <class name="com.safvic.testCases.TC_CreateIncidentTest_002">
-        <test-method signature="CreateIncidentTest()[pri:0, instance:com.safvic.testCases.TC_CreateIncidentTest_002@7d322cad]" started-at="2023-03-29T15:50:14 BDT" name="CreateIncidentTest" finished-at="2023-03-29T15:50:19 BDT" duration-ms="5126" status="PASS">
+        <test-method signature="CreateIncidentTest()[pri:0, instance:com.safvic.testCases.TC_CreateIncidentTest_002@21be3395]" started-at="2023-03-30T18:11:31 BDT" name="CreateIncidentTest" finished-at="2023-03-30T18:11:35 BDT" duration-ms="4593" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateIncidentTest -->
       </class> <!-- com.safvic.testCases.TC_CreateIncidentTest_002 -->
       <class name="com.safvic.testCases.TC_CreateVictimTest_004">
-        <test-method signature="CreateVictim()[pri:0, instance:com.safvic.testCases.TC_CreateVictimTest_004@4f49f6af]" started-at="2023-03-29T15:50:28 BDT" name="CreateVictim" finished-at="2023-03-29T15:50:36 BDT" duration-ms="7268" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+        <test-method signature="CreateVictim()[pri:0, instance:com.safvic.testCases.TC_CreateVictimTest_004@78452606]" started-at="2023-03-30T18:11:45 BDT" name="CreateVictim" finished-at="2023-03-30T18:11:58 BDT" duration-ms="12512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateVictim -->
+        <test-method signature="VictimBasicInfo()[pri:0, instance:com.safvic.testCases.TC_CreateVictimTest_004@78452606]" started-at="2023-03-30T18:11:58 BDT" name="VictimBasicInfo" finished-at="2023-03-30T18:12:00 BDT" duration-ms="2216" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=111.0.5563.112)
+              <![CDATA[element click intercepted: Element <span unselectable="on" class="k-dropdown-wrap k-state-default">...</span> is not clickable at point (749, 524). Other element would receive the click: <div class="form-body">...</div>
+  (Session info: chrome=111.0.5563.147)
 Build info: version: '4.6.0', revision: '79f1c02ae20'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f8f5592eb56b6d4b760657759e46e447, sendKeysToElement {id=15e37445-30c6-4090-8e45-62633240e741, value=[Ljava.lang.CharSequence;@45900b64}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.112, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\BS702\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60881}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60881/devtoo..., se:cdpVersion: 111.0.5563.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (f8f5592eb56b6d4b760657759e46e447)] -> xpath: //span[@aria-labelledby='SexId_label']/span]
-Session ID: f8f5592eb56b6d4b760657759e46e447]]>
+Command: [bf1af99869fa3b82d15ceea6ca0abe9b, clickElement {id=413954d6-e48a-434b-80a9-175fa7908af9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\BS702\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49430}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49430/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (bf1af99869fa3b82d15ceea6ca0abe9b)] -> xpath: //span[@aria-labelledby='PrimaryLanguage_label']/span]
+Session ID: bf1af99869fa3b82d15ceea6ca0abe9b]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=111.0.5563.112)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span unselectable="on" class="k-dropdown-wrap k-state-default">...</span> is not clickable at point (749, 524). Other element would receive the click: <div class="form-body">...</div>
+  (Session info: chrome=111.0.5563.147)
 Build info: version: '4.6.0', revision: '79f1c02ae20'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f8f5592eb56b6d4b760657759e46e447, sendKeysToElement {id=15e37445-30c6-4090-8e45-62633240e741, value=[Ljava.lang.CharSequence;@45900b64}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.112, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\BS702\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60881}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60881/devtoo..., se:cdpVersion: 111.0.5563.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (f8f5592eb56b6d4b760657759e46e447)] -> xpath: //span[@aria-labelledby='SexId_label']/span]
-Session ID: f8f5592eb56b6d4b760657759e46e447
+Command: [bf1af99869fa3b82d15ceea6ca0abe9b, clickElement {id=413954d6-e48a-434b-80a9-175fa7908af9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\BS702\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49430}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49430/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (bf1af99869fa3b82d15ceea6ca0abe9b)] -> xpath: //span[@aria-labelledby='PrimaryLanguage_label']/span]
+Session ID: bf1af99869fa3b82d15ceea6ca0abe9b
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -49,14 +53,14 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(Driver
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
 at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy34.sendKeys(Unknown Source)
-at com.safvic.pageObjects.QuickCreatePeople.selectPersonSex(QuickCreatePeople.java:186)
-at com.safvic.testCases.TC_CreateVictimTest_004.CreateVictim(TC_CreateVictimTest_004.java:32)
+at jdk.proxy2/jdk.proxy2.$Proxy34.click(Unknown Source)
+at com.safvic.pageObjects.PeopleBasicInfo.selectPrimaryLanguagePerson(PeopleBasicInfo.java:271)
+at com.safvic.testCases.TC_CreateVictimTest_004.VictimBasicInfo(TC_CreateVictimTest_004.java:57)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -87,13 +91,13 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CreateVictim -->
+        </test-method> <!-- VictimBasicInfo -->
       </class> <!-- com.safvic.testCases.TC_CreateVictimTest_004 -->
       <class name="com.safvic.testCases.TC_LoginTest_001">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@2f67a4d3]" started-at="2023-03-29T15:49:56 BDT" name="setup" finished-at="2023-03-29T15:50:00 BDT" duration-ms="3734" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@5e3f861]" started-at="2023-03-30T18:11:06 BDT" name="setup" finished-at="2023-03-30T18:11:11 BDT" duration-ms="4788" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -104,17 +108,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@2f67a4d3]" started-at="2023-03-29T15:50:00 BDT" name="loginTest" finished-at="2023-03-29T15:50:14 BDT" duration-ms="14022" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@5e3f861]" started-at="2023-03-30T18:11:11 BDT" name="loginTest" finished-at="2023-03-30T18:11:31 BDT" duration-ms="19877" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@2f67a4d3]" started-at="2023-03-29T15:50:36 BDT" name="tearDown" finished-at="2023-03-29T15:50:36 BDT" duration-ms="247" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@5e3f861]" started-at="2023-03-30T18:12:00 BDT" name="tearDown" finished-at="2023-03-30T18:12:00 BDT" duration-ms="255" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.safvic.testCases.TC_LoginTest_001 -->
       <class name="com.safvic.testCases.TC_UpdateIncidentTest_003">
-        <test-method signature="UpdateIncidenTest()[pri:0, instance:com.safvic.testCases.TC_UpdateIncidentTest_003@21be3395]" started-at="2023-03-29T15:50:19 BDT" name="UpdateIncidenTest" finished-at="2023-03-29T15:50:28 BDT" duration-ms="9102" status="PASS">
+        <test-method signature="UpdateIncidenTest()[pri:0, instance:com.safvic.testCases.TC_UpdateIncidentTest_003@4f49f6af]" started-at="2023-03-30T18:11:35 BDT" name="UpdateIncidenTest" finished-at="2023-03-30T18:11:45 BDT" duration-ms="9847" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UpdateIncidenTest -->
