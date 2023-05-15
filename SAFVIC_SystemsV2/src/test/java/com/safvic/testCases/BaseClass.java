@@ -59,7 +59,7 @@ public class BaseClass {
 		} else if (browserName.equals("edge")) {
 			System.setProperty("webdriver.edge.driver", rconfig.getEdgeDriverPath());
 			driver = new EdgeDriver();
-			driver.manage().window().maximize();//
+			driver.manage().window().maximize();
 		}
 
 		driver.get(baseURL);
@@ -71,7 +71,7 @@ public class BaseClass {
 		File source = screenShot.getScreenshotAs(OutputType.FILE);
 		String destination = System.getProperty("user.dir") + "\\Screenshots\\" + failedTestCaseName + ".png";
 		FileUtils.copyFile(source, new File(destination));
-		
+		 
 		return destination;
 	}
 

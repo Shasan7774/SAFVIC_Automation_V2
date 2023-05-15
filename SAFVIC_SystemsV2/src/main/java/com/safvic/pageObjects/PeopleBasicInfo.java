@@ -244,11 +244,11 @@ public class PeopleBasicInfo {
 	}
 
 	public void setPersonHeightFeet() {
-		txtHeightFeet.sendKeys("2");
+		txtHeightFeet.sendKeys("4");
 	}
 
 	public void setPersonHeightInch() {
-		txtHeightInch.sendKeys("5");
+		txtHeightInch.sendKeys("4");
 	}
 
 	public void setPersonWeight() {

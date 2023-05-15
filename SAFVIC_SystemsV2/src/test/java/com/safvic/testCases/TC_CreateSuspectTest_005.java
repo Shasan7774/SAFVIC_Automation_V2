@@ -6,39 +6,35 @@ import com.safvic.pageObjects.IncidentUpdate;
 import com.safvic.pageObjects.PeopleBasicInfo;
 import com.safvic.pageObjects.QuickCreatePeople;
 
-public class TC_CreateVictimTest_004 extends BaseClass{
+public class TC_CreateSuspectTest_005 extends BaseClass{
 	//Create Victim
 	@Test
 	public void CreateVictim() throws InterruptedException {
-		QuickCreatePeople victim = new QuickCreatePeople(driver);
+		QuickCreatePeople suspect = new QuickCreatePeople(driver);
 		Thread.sleep(3000);
-		victim.navigatePeople();
-		victim.clickAddPerson();
-		victim.setPersonFirstName();
-		victim.setPersonLastName();
-		victim.setPersonMiddleName();
-		victim.enableAlias();
-		victim.setAliasName();
-		victim.checkPersonVictim();
-		victim.viewPseudonymVictim();
-		victim.confirmViewPseudonymVictim();
-		victim.setPseudoFirstNameVictim();
-		victim.setPseudoLastNameVictim();
-		victim.setPseudoMiddleNameVictim();
 		
+		suspect.navigatePeople();
+		
+		suspect.clickAddPerson();
+		suspect.setPersonFirstName();
+		suspect.setPersonLastName();
+		suspect.setPersonMiddleName();
+		suspect.enableAlias();
+		suspect.setAliasName();
+		suspect.checkPersonSuspect();
 		Thread.sleep(2000);
 		
-        victim.selectPersonRace();
-        victim.selectRaceOption();
-        victim.selectPersonSex();
-        victim.selectSexOption();
-        victim.setPersonDOB();
-        victim.savePersonInitialInformation();
+		suspect.selectPersonRace();
+		suspect.selectRaceOption();
+		suspect.selectPersonSex();
+		suspect.selectSexOption();
+		suspect.setPersonDOB();
+		suspect.savePersonInitialInformation();
         
         Thread.sleep(2000);
 
 	}
-	//Victim Basic Info
+	//Suspect Basic Info
 	/*
 	@Test
 	public void VictimBasicInfo() throws InterruptedException{
