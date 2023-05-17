@@ -1,2 +1,4 @@
-13:13:32.835 [main] INFO  com.safvic.testCases.BaseClass - Login Clicked
-13:13:32.848 [main] INFO  com.safvic.testCases.BaseClass - Navigated to the homepage
+14:54:19.201 [main] INFO  com.safvic.testCases.BaseClass - Login Clicked
+14:54:21.217 [main] INFO  com.safvic.testCases.BaseClass - Login Successful
+14:54:23.783 [main] INFO  com.safvic.testCases.BaseClass - Failed to load the login page
+14:54:26.769 [main] INFO  com.safvic.testCases.BaseClass - Incident Creation Failed

@@ -5,9 +5,9 @@
     <classes>
       <class name="com.safvic.testCases.TC_UpdateIncidentTest_003">
         <methods>
+          <include name="updateIncidenTest"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="UpdateIncidenTest"/>
         </methods>
       </class> <!-- com.safvic.testCases.TC_UpdateIncidentTest_003 -->
     </classes>

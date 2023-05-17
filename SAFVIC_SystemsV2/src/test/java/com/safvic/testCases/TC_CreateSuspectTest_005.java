@@ -9,7 +9,7 @@ import com.safvic.pageObjects.QuickCreatePeople;
 public class TC_CreateSuspectTest_005 extends BaseClass{
 	//Create Victim
 	@Test
-	public void CreateVictim() throws InterruptedException {
+	public void CreateSuspect() throws InterruptedException {
 		QuickCreatePeople suspect = new QuickCreatePeople(driver);
 		Thread.sleep(3000);
 		

@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.safvic.testCases.TC_CreateSuspectTest_005" class="method navigator-link" hash-for-method="CreateVictim">CreateVictim</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.safvic.testCases.TC_UpdateIncidentTest_003" class="method navigator-link" hash-for-method="updateIncidenTest">updateIncidenTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -117,7 +117,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.safvic.testCases.TC_CreateIncidentTest_002" class="method navigator-link" hash-for-method="CreateIncidentTest">CreateIncidentTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.safvic.testCases.TC_CreateSuspectTest_005" class="method navigator-link" hash-for-method="CreateSuspect">CreateSuspect</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -127,12 +127,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.safvic.testCases.TC_UpdateIncidentTest_003" class="method navigator-link" hash-for-method="UpdateIncidenTest">UpdateIncidenTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.safvic.testCases.TC_CreateIncidentTest_002" class="method navigator-link" hash-for-method="createIncidentTest">createIncidentTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.safvic.testCases.TC_LoginTest_001" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.safvic.testCases.TC_LoginTest_001" class="method navigator-link" hash-for-method="siteUrlTest">siteUrlTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -150,38 +155,18 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.safvic.testCases.TC_CreateSuspectTest_005</span>
+              <span class="class-name">com.safvic.testCases.TC_UpdateIncidentTest_003</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="CreateVictim">
-                  </a> <!-- CreateVictim -->
-                  <span class="method-name">CreateVictim</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;li tabindex=&quot;-1&quot; role=&quot;option&quot; unselectable=&quot;on&quot; class=&quot;k-item&quot; aria-selected=&quot;false&quot; data-offset-index=&quot;2&quot;&gt;...&lt;/li&gt; is not clickable at point (749, 504). Other element would receive the click: &lt;li tabindex=&quot;-1&quot; role=&quot;option&quot; unselectable=&quot;on&quot; class=&quot;k-item&quot; aria-selected=&quot;false&quot; data-offset-index=&quot;4&quot;&gt;...&lt;/li&gt;
-  (Session info: chrome=113.0.5672.93)
-Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [142c125155c409750a521d59a641a0dc, clickElement {id=4FA19F64703F9E07C5F05946185D64BE_element_386}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.24 (65f30d4e8051..., userDataDir: C:\Users\BS702\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58375}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58375/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (142c125155c409750a521d59a641a0dc)] -&gt; xpath: //ul[@id=&apos;RaceId_listbox&apos;]/li[text()=&apos;Black&apos;]]
-Session ID: 142c125155c409750a521d59a641a0dc
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy34.click(Unknown Source)
-	at com.safvic.pageObjects.QuickCreatePeople.selectRaceOption(QuickCreatePeople.java:186)
-	at com.safvic.testCases.TC_CreateSuspectTest_005.CreateVictim(TC_CreateSuspectTest_005.java:28)
+                  <a name="updateIncidenTest">
+                  </a> <!-- updateIncidenTest -->
+                  <span class="method-name">updateIncidenTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Incident has been updated successfully] but found []
+	at com.safvic.testCases.TC_UpdateIncidentTest_003.updateIncidenTest(TC_UpdateIncidentTest_003.java:42)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 35 stack frames
+... Removed 33 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -198,6 +183,13 @@ Session ID: 142c125155c409750a521d59a641a0dc
                   <a name="loginTest">
                   </a> <!-- loginTest -->
                   <span class="method-name">loginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="siteUrlTest">
+                  </a> <!-- siteUrlTest -->
+                  <span class="method-name">siteUrlTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -220,14 +212,14 @@ Session ID: 142c125155c409750a521d59a641a0dc
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.safvic.testCases.TC_UpdateIncidentTest_003</span>
+              <span class="class-name">com.safvic.testCases.TC_CreateSuspectTest_005</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="UpdateIncidenTest">
-                  </a> <!-- UpdateIncidenTest -->
-                  <span class="method-name">UpdateIncidenTest</span>
+                  <a name="CreateSuspect">
+                  </a> <!-- CreateSuspect -->
+                  <span class="method-name">CreateSuspect</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -240,9 +232,9 @@ Session ID: 142c125155c409750a521d59a641a0dc
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="CreateIncidentTest">
-                  </a> <!-- CreateIncidentTest -->
-                  <span class="method-name">CreateIncidentTest</span>
+                  <a name="createIncidentTest">
+                  </a> <!-- createIncidentTest -->
+                  <span class="method-name">createIncidentTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -307,32 +299,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'CreateVictim')
-data.setCell(0, 2, 'com.safvic.testCases.TC_CreateVictimTest_004')
-data.setCell(0, 3, 13296);
+data.setCell(0, 1, 'updateIncidenTest')
+data.setCell(0, 2, 'com.safvic.testCases.TC_UpdateIncidentTest_003')
+data.setCell(0, 3, 11417);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'UpdateIncidenTest')
-data.setCell(1, 2, 'com.safvic.testCases.TC_UpdateIncidentTest_003')
-data.setCell(1, 3, 9379);
+data.setCell(1, 1, 'CreateVictim')
+data.setCell(1, 2, 'com.safvic.testCases.TC_CreateVictimTest_004')
+data.setCell(1, 3, 10549);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'CreateVictim')
+data.setCell(2, 1, 'CreateSuspect')
 data.setCell(2, 2, 'com.safvic.testCases.TC_CreateSuspectTest_005')
-data.setCell(2, 3, 7874);
+data.setCell(2, 3, 10071);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'loginTest')
 data.setCell(3, 2, 'com.safvic.testCases.TC_LoginTest_001')
-data.setCell(3, 3, 6804);
+data.setCell(3, 3, 9453);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'CreateIncidentTest')
+data.setCell(4, 1, 'createIncidentTest')
 data.setCell(4, 2, 'com.safvic.testCases.TC_CreateIncidentTest_002')
-data.setCell(4, 3, 2776);
+data.setCell(4, 3, 2983);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'siteUrlTest')
+data.setCell(5, 2, 'com.safvic.testCases.TC_LoginTest_001')
+data.setCell(5, 3, 2562);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 40 seconds</span>
+              <span class="suite-total-time">Total running time: 47 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -362,18 +358,18 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.safvic.testCases.TC_CreateSuspectTest_005</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
                 <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.safvic.testCases.TC_UpdateIncidentTest_003</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">setup</span>
-                <br/>
                 <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -401,44 +397,48 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">3965 ms</span>
+                <span class="method-start">3583 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">siteUrlTest</span>
+                <span class="method-start">13040 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.safvic.testCases.TC_CreateIncidentTest_002</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">CreateIncidentTest</span>
-                <span class="method-start">10776 ms</span>
+                <span class="method-name">createIncidentTest</span>
+                <span class="method-start">15605 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.safvic.testCases.TC_UpdateIncidentTest_003</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">UpdateIncidenTest</span>
-                <span class="method-start">13553 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">updateIncidenTest</span>
+                <span class="method-start">18589 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.safvic.testCases.TC_CreateVictimTest_004</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">CreateVictim</span>
-                <span class="method-start">22933 ms</span>
+                <span class="method-start">30180 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.safvic.testCases.TC_CreateSuspectTest_005</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">CreateVictim</span>
-                <span class="method-start">36231 ms</span>
+                <span class="method-name">CreateSuspect</span>
+                <span class="method-start">40731 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.safvic.testCases.TC_LoginTest_001</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">44292 ms</span>
+                <span class="method-start">50804 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

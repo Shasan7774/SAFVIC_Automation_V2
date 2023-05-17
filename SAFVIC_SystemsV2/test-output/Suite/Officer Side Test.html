@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Officer Side Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon May 15 13:13:22 BDT 2023</td>
+<td>Started on:</td><td>Wed May 17 14:54:08 BDT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>44 seconds (44541 ms)</td>
+<tr><td>Total time:</td><td>51 seconds (51012 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,61 +76,19 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.safvic.testCases.TC_CreateSuspectTest_005.CreateVictim()'><b>CreateVictim</b><br>Test class: com.safvic.testCases.TC_CreateSuspectTest_005</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;li tabindex=&quot;-1&quot; role=&quot;option&quot; unselectable=&quot;on&quot; class=&quot;k-item&quot; aria-selected=&quot;false&quot; data-offset-index=&quot;2&quot;&gt;...&lt;/li&gt; is not clickable at point (749, 504). Other element would receive the click: &lt;li tabindex=&quot;-1&quot; role=&quot;option&quot; unselectable=&quot;on&quot; class=&quot;k-item&quot; aria-selected=&quot;false&quot; data-offset-index=&quot;4&quot;&gt;...&lt;/li&gt;
-  (Session info: chrome=113.0.5672.93)
-Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [142c125155c409750a521d59a641a0dc, clickElement {id=4FA19F64703F9E07C5F05946185D64BE_element_386}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.24 (65f30d4e8051..., userDataDir: C:\Users\BS702\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58375}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58375/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (142c125155c409750a521d59a641a0dc)] -&gt; xpath: //ul[@id=&apos;RaceId_listbox&apos;]/li[text()=&apos;Black&apos;]]
-Session ID: 142c125155c409750a521d59a641a0dc
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy34.click(Unknown Source)
-	at com.safvic.pageObjects.QuickCreatePeople.selectRaceOption(QuickCreatePeople.java:186)
-	at com.safvic.testCases.TC_CreateSuspectTest_005.CreateVictim(TC_CreateSuspectTest_005.java:28)
+<td title='com.safvic.testCases.TC_UpdateIncidentTest_003.updateIncidenTest()'><b>updateIncidenTest</b><br>Test class: com.safvic.testCases.TC_UpdateIncidentTest_003</td>
+<td><div><pre>java.lang.AssertionError: expected [Incident has been updated successfully] but found []
+	at com.safvic.testCases.TC_UpdateIncidentTest_003.updateIncidenTest(TC_UpdateIncidentTest_003.java:42)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1374115041", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1374115041'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;li tabindex=&quot;-1&quot; role=&quot;option&quot; unselectable=&quot;on&quot; class=&quot;k-item&quot; aria-selected=&quot;false&quot; data-offset-index=&quot;2&quot;&gt;...&lt;/li&gt; is not clickable at point (749, 504). Other element would receive the click: &lt;li tabindex=&quot;-1&quot; role=&quot;option&quot; unselectable=&quot;on&quot; class=&quot;k-item&quot; aria-selected=&quot;false&quot; data-offset-index=&quot;4&quot;&gt;...&lt;/li&gt;
-  (Session info: chrome=113.0.5672.93)
-Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [142c125155c409750a521d59a641a0dc, clickElement {id=4FA19F64703F9E07C5F05946185D64BE_element_386}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.24 (65f30d4e8051..., userDataDir: C:\Users\BS702\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58375}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58375/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (142c125155c409750a521d59a641a0dc)] -&gt; xpath: //ul[@id=&apos;RaceId_listbox&apos;]/li[text()=&apos;Black&apos;]]
-Session ID: 142c125155c409750a521d59a641a0dc
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy34.click(Unknown Source)
-	at com.safvic.pageObjects.QuickCreatePeople.selectRaceOption(QuickCreatePeople.java:186)
-	at com.safvic.testCases.TC_CreateSuspectTest_005.CreateVictim(TC_CreateSuspectTest_005.java:28)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace438660480", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace438660480'><pre>java.lang.AssertionError: expected [Incident has been updated successfully] but found []
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at com.safvic.testCases.TC_UpdateIncidentTest_003.updateIncidenTest(TC_UpdateIncidentTest_003.java:42)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -160,8 +118,8 @@ Session ID: 142c125155c409750a521d59a641a0dc
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>7</td>
-<td>com.safvic.testCases.TC_CreateSuspectTest_005@147e2ae7</td></tr>
+<td>11</td>
+<td>com.safvic.testCases.TC_UpdateIncidentTest_003@147e2ae7</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -172,25 +130,30 @@ Session ID: 142c125155c409750a521d59a641a0dc
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.safvic.testCases.TC_UpdateIncidentTest_003.UpdateIncidenTest()'><b>UpdateIncidenTest</b><br>Test class: com.safvic.testCases.TC_UpdateIncidentTest_003</td>
+<td title='com.safvic.testCases.TC_LoginTest_001.loginTest()'><b>loginTest</b><br>Test class: com.safvic.testCases.TC_LoginTest_001</td>
 <td></td>
 <td>9</td>
-<td>com.safvic.testCases.TC_UpdateIncidentTest_003@4f49f6af</td></tr>
+<td>com.safvic.testCases.TC_LoginTest_001@49b2a47d</td></tr>
 <tr>
-<td title='com.safvic.testCases.TC_CreateIncidentTest_002.CreateIncidentTest()'><b>CreateIncidentTest</b><br>Test class: com.safvic.testCases.TC_CreateIncidentTest_002</td>
+<td title='com.safvic.testCases.TC_CreateSuspectTest_005.CreateSuspect()'><b>CreateSuspect</b><br>Test class: com.safvic.testCases.TC_CreateSuspectTest_005</td>
+<td></td>
+<td>10</td>
+<td>com.safvic.testCases.TC_CreateSuspectTest_005@4470fbd6</td></tr>
+<tr>
+<td title='com.safvic.testCases.TC_LoginTest_001.siteUrlTest()'><b>siteUrlTest</b><br>Test class: com.safvic.testCases.TC_LoginTest_001</td>
 <td></td>
 <td>2</td>
-<td>com.safvic.testCases.TC_CreateIncidentTest_002@21be3395</td></tr>
+<td>com.safvic.testCases.TC_LoginTest_001@49b2a47d</td></tr>
+<tr>
+<td title='com.safvic.testCases.TC_CreateIncidentTest_002.createIncidentTest()'><b>createIncidentTest</b><br>Test class: com.safvic.testCases.TC_CreateIncidentTest_002</td>
+<td></td>
+<td>2</td>
+<td>com.safvic.testCases.TC_CreateIncidentTest_002@78452606</td></tr>
 <tr>
 <td title='com.safvic.testCases.TC_CreateVictimTest_004.CreateVictim()'><b>CreateVictim</b><br>Test class: com.safvic.testCases.TC_CreateVictimTest_004</td>
 <td></td>
-<td>13</td>
-<td>com.safvic.testCases.TC_CreateVictimTest_004@78452606</td></tr>
-<tr>
-<td title='com.safvic.testCases.TC_LoginTest_001.loginTest()'><b>loginTest</b><br>Test class: com.safvic.testCases.TC_LoginTest_001</td>
-<td></td>
-<td>6</td>
-<td>com.safvic.testCases.TC_LoginTest_001@5e3f861</td></tr>
+<td>10</td>
+<td>com.safvic.testCases.TC_CreateVictimTest_004@448c8166</td></tr>
 </table><p>
 </body>
 </html>

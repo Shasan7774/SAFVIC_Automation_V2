@@ -60,7 +60,11 @@ public class BaseClass {
 			System.setProperty("webdriver.edge.driver", rconfig.getEdgeDriverPath());
 			driver = new EdgeDriver();
 			driver.manage().window().maximize();
+		} else {
+			System.out.println("Browser Information Unavailable");
+			log.info("Browser Not Found");
 		}
+		
 
 		driver.get(baseURL);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));

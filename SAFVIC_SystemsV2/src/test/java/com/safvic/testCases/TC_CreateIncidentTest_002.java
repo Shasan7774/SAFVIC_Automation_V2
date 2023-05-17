@@ -1,4 +1,4 @@
- package com.safvic.testCases;
+package com.safvic.testCases;
 
 import org.testng.annotations.Test;
 import org.openqa.selenium.By;
@@ -12,10 +12,10 @@ import org.testng.annotations.Test;
 import com.safvic.pageObjects.IncidentCreation;
 import com.safvic.pageObjects.LoginPage;
 
-public class TC_CreateIncidentTest_002 extends BaseClass{
-	
+public class TC_CreateIncidentTest_002 extends BaseClass {
+
 	@Test
-	public void CreateIncidentTest() throws InterruptedException {
+	public void createIncidentTest() throws InterruptedException {
 		IncidentCreation ic = new IncidentCreation(driver);
 		//ic.clickHeaderSettings();
 		//ic.clcikLogout();
@@ -26,6 +26,22 @@ public class TC_CreateIncidentTest_002 extends BaseClass{
 		ic.setIncidentCaseNumber();
 		ic.selectIncidentType();
 		ic.clickCreateIncidentPeople();
+		
+		String actualTitle = driver.getTitle();
+		String expectedTitle = " - SAFV_Site";
+		
+		String toastMessage = driver.findElement(By.className("k-notification-content")).getText();
+
+		System.out.println("Toast Message is:"+toastMessage);
+
+		if(actualTitle.equalsIgnoreCase(expectedTitle)) {
+			Assert.assertEquals(toastMessage, "1233333Information has been saved successfully");
+			log.info("Incident Created Successfully");
+		}
+		else {
+			//Assert.assertTrue(false);
+			log.info("Incident Creation Failed");
+		}
 		
 		/*
 		Assert.assertTrue(validateToastMessageAppearance, "Information has been saved successfully");
@@ -51,6 +67,5 @@ public class TC_CreateIncidentTest_002 extends BaseClass{
 		*/
 		
 	}
-	
 
 }
