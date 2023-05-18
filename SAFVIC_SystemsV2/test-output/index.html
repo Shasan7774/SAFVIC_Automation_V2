@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.safvic.testCases.TC_UpdateIncidentTest_003" class="method navigator-link" hash-for-method="updateIncidenTest">updateIncidenTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -140,6 +126,11 @@
                         <a href="#" panel-name="suite-Suite" title="com.safvic.testCases.TC_LoginTest_001" class="method navigator-link" hash-for-method="siteUrlTest">siteUrlTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.safvic.testCases.TC_UpdateIncidentTest_003" class="method navigator-link" hash-for-method="updateIncidenTest">updateIncidenTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -152,26 +143,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.safvic.testCases.TC_UpdateIncidentTest_003</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="updateIncidenTest">
-                  </a> <!-- updateIncidenTest -->
-                  <span class="method-name">updateIncidenTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Incident has been updated successfully] but found []
-	at com.safvic.testCases.TC_UpdateIncidentTest_003.updateIncidenTest(TC_UpdateIncidentTest_003.java:42)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -220,6 +191,21 @@
                   <a name="CreateSuspect">
                   </a> <!-- CreateSuspect -->
                   <span class="method-name">CreateSuspect</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.safvic.testCases.TC_UpdateIncidentTest_003</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateIncidenTest">
+                  </a> <!-- updateIncidenTest -->
+                  <span class="method-name">updateIncidenTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -303,32 +289,32 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'updateIncidenTest')
 data.setCell(0, 2, 'com.safvic.testCases.TC_UpdateIncidentTest_003')
-data.setCell(0, 3, 11417);
+data.setCell(0, 3, 11823);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'CreateVictim')
 data.setCell(1, 2, 'com.safvic.testCases.TC_CreateVictimTest_004')
-data.setCell(1, 3, 10549);
+data.setCell(1, 3, 11483);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'CreateSuspect')
 data.setCell(2, 2, 'com.safvic.testCases.TC_CreateSuspectTest_005')
-data.setCell(2, 3, 10071);
+data.setCell(2, 3, 11153);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'loginTest')
 data.setCell(3, 2, 'com.safvic.testCases.TC_LoginTest_001')
-data.setCell(3, 3, 9453);
+data.setCell(3, 3, 8883);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'createIncidentTest')
 data.setCell(4, 2, 'com.safvic.testCases.TC_CreateIncidentTest_002')
-data.setCell(4, 3, 2983);
+data.setCell(4, 3, 3168);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'siteUrlTest')
 data.setCell(5, 2, 'com.safvic.testCases.TC_LoginTest_001')
-data.setCell(5, 3, 2562);
+data.setCell(5, 3, 2573);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 47 seconds</span>
+              <span class="suite-total-time">Total running time: 49 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -397,48 +383,46 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">3583 ms</span>
+                <span class="method-start">3645 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">siteUrlTest</span>
-                <span class="method-start">13040 ms</span>
+                <span class="method-start">12532 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.safvic.testCases.TC_CreateIncidentTest_002</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">createIncidentTest</span>
-                <span class="method-start">15605 ms</span>
+                <span class="method-start">15108 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.safvic.testCases.TC_UpdateIncidentTest_003</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">updateIncidenTest</span>
-                <span class="method-start">18589 ms</span>
+                <span class="method-start">18278 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.safvic.testCases.TC_CreateVictimTest_004</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">CreateVictim</span>
-                <span class="method-start">30180 ms</span>
+                <span class="method-start">30102 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.safvic.testCases.TC_CreateSuspectTest_005</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">CreateSuspect</span>
-                <span class="method-start">40731 ms</span>
+                <span class="method-start">41586 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.safvic.testCases.TC_LoginTest_001</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">50804 ms</span>
+                <span class="method-start">52741 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

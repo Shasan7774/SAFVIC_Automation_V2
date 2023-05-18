@@ -1,0 +1,13 @@
+WebDriverWait wait = new WebDriverWait(driver, 10);
+wait.until(ExpectedConditions.elementToBeClickable(test));
+test.click();
+		
+WebDriverWait wait = new WebDriverWait(driver, 10);
+WebElement login = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("test")));
+testbutton.click
+		
+Actions action = new Actions(driver);
+action.moveToElement(ele).perform();
+		
+JavascriptExecutor js = new (JavaScriptExecutor)driver;
+js.executeScript("arguments[0].click();", testElement);

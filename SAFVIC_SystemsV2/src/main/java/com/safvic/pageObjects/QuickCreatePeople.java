@@ -1,5 +1,7 @@
 package com.safvic.pageObjects;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,7 +9,9 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class QuickCreatePeople {
 	WebDriver ldriver;
@@ -179,17 +183,25 @@ public class QuickCreatePeople {
 	}
 
 	public void selectPersonRace() {
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(selectRace));
 		selectRace.click();
 	}
 	
 	public void selectRaceOption() {
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(selectRaceOption));
 		selectRaceOption.click();
 	}
 
 	public void selectPersonSex() {
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(selectSex));
 		selectSex.click();
 	}
 	public void selectSexOption() {
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(selectSexOption));
 		selectSexOption.click();
 	}
 	public void setPersonDOB() {

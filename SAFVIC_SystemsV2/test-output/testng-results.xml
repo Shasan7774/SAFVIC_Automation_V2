@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="8" total="14" passed="5" failed="1" skipped="0">
+<testng-results ignored="8" total="14" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-17T14:54:08 BDT" name="Suite" finished-at="2023-05-17T14:54:59 BDT" duration-ms="51012">
+  <suite started-at="2023-05-18T16:18:01 BDT" name="Suite" finished-at="2023-05-18T16:18:54 BDT" duration-ms="52954">
     <groups>
     </groups>
-    <test started-at="2023-05-17T14:54:08 BDT" name="Officer Side Test" finished-at="2023-05-17T14:54:59 BDT" duration-ms="51012">
+    <test started-at="2023-05-18T16:18:01 BDT" name="Officer Side Test" finished-at="2023-05-18T16:18:54 BDT" duration-ms="52954">
       <class name="com.safvic.testCases.TC_CreateIncidentTest_002">
-        <test-method signature="createIncidentTest()[pri:0, instance:com.safvic.testCases.TC_CreateIncidentTest_002@78452606]" started-at="2023-05-17T14:54:23 BDT" name="createIncidentTest" finished-at="2023-05-17T14:54:26 BDT" duration-ms="2983" status="PASS">
+        <test-method signature="createIncidentTest()[pri:0, instance:com.safvic.testCases.TC_CreateIncidentTest_002@78452606]" started-at="2023-05-18T16:18:16 BDT" name="createIncidentTest" finished-at="2023-05-18T16:18:19 BDT" duration-ms="3168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createIncidentTest -->
       </class> <!-- com.safvic.testCases.TC_CreateIncidentTest_002 -->
       <class name="com.safvic.testCases.TC_CreateVictimTest_004">
-        <test-method signature="CreateVictim()[pri:0, instance:com.safvic.testCases.TC_CreateVictimTest_004@448c8166]" started-at="2023-05-17T14:54:38 BDT" name="CreateVictim" finished-at="2023-05-17T14:54:48 BDT" duration-ms="10549" status="PASS">
+        <test-method signature="CreateVictim()[pri:0, instance:com.safvic.testCases.TC_CreateVictimTest_004@448c8166]" started-at="2023-05-18T16:18:31 BDT" name="CreateVictim" finished-at="2023-05-18T16:18:43 BDT" duration-ms="11483" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateVictim -->
       </class> <!-- com.safvic.testCases.TC_CreateVictimTest_004 -->
       <class name="com.safvic.testCases.TC_CreateSuspectTest_005">
-        <test-method signature="CreateSuspect()[pri:0, instance:com.safvic.testCases.TC_CreateSuspectTest_005@4470fbd6]" started-at="2023-05-17T14:54:48 BDT" name="CreateSuspect" finished-at="2023-05-17T14:54:58 BDT" duration-ms="10071" status="PASS">
+        <test-method signature="CreateSuspect()[pri:0, instance:com.safvic.testCases.TC_CreateSuspectTest_005@4470fbd6]" started-at="2023-05-18T16:18:43 BDT" name="CreateSuspect" finished-at="2023-05-18T16:18:54 BDT" duration-ms="11153" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateSuspect -->
       </class> <!-- com.safvic.testCases.TC_CreateSuspectTest_005 -->
       <class name="com.safvic.testCases.TC_LoginTest_001">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@49b2a47d]" started-at="2023-05-17T14:54:08 BDT" name="setup" finished-at="2023-05-17T14:54:11 BDT" duration-ms="3565" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@49b2a47d]" started-at="2023-05-18T16:18:01 BDT" name="setup" finished-at="2023-05-18T16:18:05 BDT" duration-ms="3627" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -36,65 +36,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@49b2a47d]" started-at="2023-05-17T14:54:11 BDT" name="loginTest" finished-at="2023-05-17T14:54:21 BDT" duration-ms="9453" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@49b2a47d]" started-at="2023-05-18T16:18:05 BDT" name="loginTest" finished-at="2023-05-18T16:18:14 BDT" duration-ms="8883" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="siteUrlTest()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@49b2a47d]" started-at="2023-05-17T14:54:21 BDT" name="siteUrlTest" finished-at="2023-05-17T14:54:23 BDT" duration-ms="2562" status="PASS">
+        <test-method signature="siteUrlTest()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@49b2a47d]" started-at="2023-05-18T16:18:14 BDT" name="siteUrlTest" finished-at="2023-05-18T16:18:16 BDT" duration-ms="2573" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- siteUrlTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@49b2a47d]" started-at="2023-05-17T14:54:58 BDT" name="tearDown" finished-at="2023-05-17T14:54:59 BDT" duration-ms="200" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@49b2a47d]" started-at="2023-05-18T16:18:54 BDT" name="tearDown" finished-at="2023-05-18T16:18:54 BDT" duration-ms="205" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.safvic.testCases.TC_LoginTest_001 -->
       <class name="com.safvic.testCases.TC_UpdateIncidentTest_003">
-        <test-method signature="updateIncidenTest()[pri:0, instance:com.safvic.testCases.TC_UpdateIncidentTest_003@147e2ae7]" started-at="2023-05-17T14:54:26 BDT" name="updateIncidenTest" finished-at="2023-05-17T14:54:38 BDT" duration-ms="11417" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Incident has been updated successfully] but found []]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Incident has been updated successfully] but found []
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at com.safvic.testCases.TC_UpdateIncidentTest_003.updateIncidenTest(TC_UpdateIncidentTest_003.java:42)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="updateIncidenTest()[pri:0, instance:com.safvic.testCases.TC_UpdateIncidentTest_003@147e2ae7]" started-at="2023-05-18T16:18:20 BDT" name="updateIncidenTest" finished-at="2023-05-18T16:18:31 BDT" duration-ms="11823" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateIncidenTest -->

@@ -28,14 +28,14 @@ public class TC_CreateIncidentTest_002 extends BaseClass {
 		ic.clickCreateIncidentPeople();
 		
 		String actualTitle = driver.getTitle();
-		String expectedTitle = " - SAFV_Site";
+		String expectedTitle = "Incident Quick Edit - SAFV_Site";
 		
 		String toastMessage = driver.findElement(By.className("k-notification-content")).getText();
 
 		System.out.println("Toast Message is:"+toastMessage);
 
 		if(actualTitle.equalsIgnoreCase(expectedTitle)) {
-			Assert.assertEquals(toastMessage, "1233333Information has been saved successfully");
+			Assert.assertEquals(toastMessage, "Information has been saved successfully");
 			log.info("Incident Created Successfully");
 		}
 		else {

@@ -7,13 +7,13 @@
   <test thread-count="5" name="Officer Side Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.safvic.testCases.TC_UpdateIncidentTest_003">
+      <class name="com.safvic.testCases.TC_CreateSuspectTest_005">
         <methods>
-          <include name="updateIncidenTest"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="CreateSuspect"/>
         </methods>
-      </class> <!-- com.safvic.testCases.TC_UpdateIncidentTest_003 -->
+      </class> <!-- com.safvic.testCases.TC_CreateSuspectTest_005 -->
     </classes>
   </test> <!-- Officer Side Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
