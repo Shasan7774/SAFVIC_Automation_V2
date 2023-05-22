@@ -1,31 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="8" total="14" passed="6" failed="0" skipped="0">
+<testng-results ignored="10" total="17" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-18T16:18:01 BDT" name="Suite" finished-at="2023-05-18T16:18:54 BDT" duration-ms="52954">
+  <suite started-at="2023-05-22T19:04:19 BDT" name="Suite" finished-at="2023-05-22T19:05:18 BDT" duration-ms="59005">
     <groups>
     </groups>
-    <test started-at="2023-05-18T16:18:01 BDT" name="Officer Side Test" finished-at="2023-05-18T16:18:54 BDT" duration-ms="52954">
+    <test started-at="2023-05-22T19:04:19 BDT" name="Officer Side Test" finished-at="2023-05-22T19:05:18 BDT" duration-ms="59005">
       <class name="com.safvic.testCases.TC_CreateIncidentTest_002">
-        <test-method signature="createIncidentTest()[pri:0, instance:com.safvic.testCases.TC_CreateIncidentTest_002@78452606]" started-at="2023-05-18T16:18:16 BDT" name="createIncidentTest" finished-at="2023-05-18T16:18:19 BDT" duration-ms="3168" status="PASS">
+        <test-method signature="createIncidentTest()[pri:0, instance:com.safvic.testCases.TC_CreateIncidentTest_002@448c8166]" started-at="2023-05-22T19:04:32 BDT" name="createIncidentTest" finished-at="2023-05-22T19:04:35 BDT" duration-ms="2525" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createIncidentTest -->
       </class> <!-- com.safvic.testCases.TC_CreateIncidentTest_002 -->
       <class name="com.safvic.testCases.TC_CreateVictimTest_004">
-        <test-method signature="CreateVictim()[pri:0, instance:com.safvic.testCases.TC_CreateVictimTest_004@448c8166]" started-at="2023-05-18T16:18:31 BDT" name="CreateVictim" finished-at="2023-05-18T16:18:43 BDT" duration-ms="11483" status="PASS">
+        <test-method signature="CreateVictim()[pri:0, instance:com.safvic.testCases.TC_CreateVictimTest_004@15d49048]" started-at="2023-05-22T19:04:47 BDT" name="CreateVictim" finished-at="2023-05-22T19:04:58 BDT" duration-ms="11595" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateVictim -->
       </class> <!-- com.safvic.testCases.TC_CreateVictimTest_004 -->
+      <class name="com.safvic.testCases.TC_AddLocationTest_006">
+        <test-method signature="NavigateLocation()[pri:0, instance:com.safvic.testCases.TC_AddLocationTest_006@503f91c3]" started-at="2023-05-22T19:05:09 BDT" name="NavigateLocation" finished-at="2023-05-22T19:05:18 BDT" duration-ms="8561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigateLocation -->
+      </class> <!-- com.safvic.testCases.TC_AddLocationTest_006 -->
       <class name="com.safvic.testCases.TC_CreateSuspectTest_005">
-        <test-method signature="CreateSuspect()[pri:0, instance:com.safvic.testCases.TC_CreateSuspectTest_005@4470fbd6]" started-at="2023-05-18T16:18:43 BDT" name="CreateSuspect" finished-at="2023-05-18T16:18:54 BDT" duration-ms="11153" status="PASS">
+        <test-method signature="CreateSuspect()[pri:0, instance:com.safvic.testCases.TC_CreateSuspectTest_005@7098b907]" started-at="2023-05-22T19:04:58 BDT" name="CreateSuspect" finished-at="2023-05-22T19:05:09 BDT" duration-ms="11019" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateSuspect -->
       </class> <!-- com.safvic.testCases.TC_CreateSuspectTest_005 -->
       <class name="com.safvic.testCases.TC_LoginTest_001">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@49b2a47d]" started-at="2023-05-18T16:18:01 BDT" name="setup" finished-at="2023-05-18T16:18:05 BDT" duration-ms="3627" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@415b0b49]" started-at="2023-05-22T19:04:19 BDT" name="setup" finished-at="2023-05-22T19:04:23 BDT" duration-ms="3641" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -36,21 +42,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@49b2a47d]" started-at="2023-05-18T16:18:05 BDT" name="loginTest" finished-at="2023-05-18T16:18:14 BDT" duration-ms="8883" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@415b0b49]" started-at="2023-05-22T19:04:23 BDT" name="loginTest" finished-at="2023-05-22T19:04:30 BDT" duration-ms="6861" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="siteUrlTest()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@49b2a47d]" started-at="2023-05-18T16:18:14 BDT" name="siteUrlTest" finished-at="2023-05-18T16:18:16 BDT" duration-ms="2573" status="PASS">
+        <test-method signature="siteUrlTest()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@415b0b49]" started-at="2023-05-22T19:04:30 BDT" name="siteUrlTest" finished-at="2023-05-22T19:04:32 BDT" duration-ms="2556" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- siteUrlTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@49b2a47d]" started-at="2023-05-18T16:18:54 BDT" name="tearDown" finished-at="2023-05-18T16:18:54 BDT" duration-ms="205" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@415b0b49]" started-at="2023-05-22T19:05:18 BDT" name="tearDown" finished-at="2023-05-22T19:05:18 BDT" duration-ms="242" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.safvic.testCases.TC_LoginTest_001 -->
       <class name="com.safvic.testCases.TC_UpdateIncidentTest_003">
-        <test-method signature="updateIncidenTest()[pri:0, instance:com.safvic.testCases.TC_UpdateIncidentTest_003@147e2ae7]" started-at="2023-05-18T16:18:20 BDT" name="updateIncidenTest" finished-at="2023-05-18T16:18:31 BDT" duration-ms="11823" status="PASS">
+        <test-method signature="updateIncidenTest()[pri:0, instance:com.safvic.testCases.TC_UpdateIncidentTest_003@4470fbd6]" started-at="2023-05-22T19:04:35 BDT" name="updateIncidenTest" finished-at="2023-05-22T19:04:47 BDT" duration-ms="11959" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateIncidenTest -->

@@ -1,4 +1,6 @@
 package com.safvic.pageObjects;
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,7 +8,9 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class LocationAdding {
@@ -73,6 +77,10 @@ public class LocationAdding {
 	@CacheLookup
 	WebElement checkDispatchedLocation;
 	
+	@FindBy(how = How.XPATH, using = "//button[@onclick='submitForm()']")
+	@CacheLookup
+	WebElement btnSaveLocation;
+	
 	public void navigateLocation() {
 		navigateLocation.click();
 	}
@@ -81,47 +89,80 @@ public class LocationAdding {
 	}
 	
 	public void selectLocation(){
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(selectLocation));
 		selectLocation.click();
 	}
 	
+	public void selectLocationOption(){
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(selectLocationOption));
+		selectLocationOption.click();
+	}
+	
+	
 	public void selectAddressGroup(){
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(selectAddressGroup));
 		selectAddressGroup.click();
 	}
 	
 	public void selectAddressGroupOption(){
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(selectAddressGroupOption));
 		selectAddressGroupOption.click();
 	}
 	
 	public void setAddress1(){
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(1));
+		wait.until(ExpectedConditions.elementToBeClickable(txtAddress1));
 		txtAddress1.sendKeys("Test Address1");
 	}
 	
 	public void setAddress2(){
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(1));
+		wait.until(ExpectedConditions.elementToBeClickable(txtAddress2));
 		txtAddress2.sendKeys("Test Address2");
 	}
 	
 	public void setCity(){
-		txtAddress2.sendKeys("Test City");
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(1));
+		wait.until(ExpectedConditions.elementToBeClickable(txtCity));
+		txtCity.sendKeys("Test City");
 	}
 	
 	public void setState(){
-		txtAddress2.sendKeys("TS");
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(1));
+		wait.until(ExpectedConditions.elementToBeClickable(txtState));
+		txtState.sendKeys("TS");
 	}
 	
 	public void selectCounty(){
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(selectCounty));
 		selectCounty.click();
 	}
 	
 	public void selectCountyOption(){
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(selectCountyOption));
 		selectCountyOption.click();
 	}
 	
 	public void setZipCode(){
-		selectCountyOption.sendKeys("Test ZipCode:12345");
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(txtZipCode));
+		txtZipCode.sendKeys("Test ZipCode:12345");
 	}
 	
 	public void checkDispatchedLocation(){
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(checkDispatchedLocation));
 		checkDispatchedLocation.click();
+	}
+	
+	public void saveLocation(){
+		btnSaveLocation.click();
 	}
 	
 	

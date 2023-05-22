@@ -14,6 +14,7 @@
 			<class name="com.safvic.testCases.TC_UpdateIncidentTest_003"/>
 			<class name="com.safvic.testCases.TC_CreateVictimTest_004"/>
 			<class name="com.safvic.testCases.TC_CreateSuspectTest_005"/>
+			<class name="com.safvic.testCases.TC_AddLocationTest_006"/>
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite --> 
