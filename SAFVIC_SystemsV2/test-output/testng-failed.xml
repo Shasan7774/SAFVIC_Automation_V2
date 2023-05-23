@@ -7,6 +7,34 @@
   <test thread-count="5" name="Officer Side Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="com.safvic.testCases.TC_LoginTest_001">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.safvic.testCases.TC_LoginTest_001 -->
+      <class name="com.safvic.testCases.TC_CreateVictimTest_004">
+        <methods>
+          <include name="CreateVictim"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.safvic.testCases.TC_CreateVictimTest_004 -->
+      <class name="com.safvic.testCases.TC_CreateSuspectTest_005">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="CreateSuspect"/>
+        </methods>
+      </class> <!-- com.safvic.testCases.TC_CreateSuspectTest_005 -->
+      <class name="com.safvic.testCases.TC_AddLocationTest_006">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="NavigateLocation"/>
+        </methods>
+      </class> <!-- com.safvic.testCases.TC_AddLocationTest_006 -->
       <class name="com.safvic.testCases.TC_UpdateIncidentTest_003">
         <methods>
           <include name="updateIncidenTest"/>
@@ -14,6 +42,13 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.safvic.testCases.TC_UpdateIncidentTest_003 -->
+      <class name="com.safvic.testCases.TC_CreateIncidentTest_002">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="createIncidentTest"/>
+        </methods>
+      </class> <!-- com.safvic.testCases.TC_CreateIncidentTest_002 -->
     </classes>
   </test> <!-- Officer Side Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

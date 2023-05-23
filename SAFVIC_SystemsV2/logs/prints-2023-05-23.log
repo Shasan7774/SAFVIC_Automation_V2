@@ -1,0 +1,7 @@
+19:05:18.524 [main] INFO  com.safvic.testCases.BaseClass - Location Creation Failed
+15:29:42.626 [main] INFO  com.safvic.testCases.BaseClass - Failed to load the login page
+15:32:00.412 [main] INFO  com.safvic.testCases.BaseClass - Officer Email Entered
+15:32:00.469 [main] INFO  com.safvic.testCases.BaseClass - Officer Password Entered
+15:32:09.311 [main] INFO  com.safvic.testCases.BaseClass - Login Clicked
+15:32:11.333 [main] INFO  com.safvic.testCases.BaseClass - Login Successful
+15:32:13.960 [main] INFO  com.safvic.testCases.BaseClass - Failed to load the login page
