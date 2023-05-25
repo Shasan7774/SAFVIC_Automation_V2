@@ -26,15 +26,11 @@ public class TC_UpdateIncidentTest_003 extends BaseClass {
 		iu.dateCPSNotified();
 		iu.txtCPSSafetyIssues();
 		
-		
 		iu.setOfficerPrimaryConcern();
 		iu.setSuspectedMethManufacture();
 		iu.setSensitiveIssues();
 		Thread.sleep(2000);
 		iu.enableCovidExposure();
-		
-		
-
 		
 		iu.selectHowPoliceContacted();
 		iu.selectHowPoliceContactedOption();

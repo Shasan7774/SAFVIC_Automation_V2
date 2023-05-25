@@ -30,44 +30,43 @@ public class OffenseAdding {
 	WebElement btnAddOffenseGroup;
 	
 	//modify
-	@FindBy(how = How.XPATH, using = "//span[@aria-owns='AddressTypeId_listbox']/span")
+	@FindBy(how = How.XPATH, using = "//span[@aria-owns='IncidentPersonId_listbox']/span")
 	@CacheLookup
 	WebElement selectSuspect;
 	
-	@FindBy(how = How.XPATH, using = "//ul[@id='AddressTypeId_listbox']/li[text()='Residence/Home']")
+	@FindBy(how = How.XPATH, using = "//ul[@id='IncidentPersonId_listbox']/li[@data-offset-index='0']")
 	@CacheLookup						
 	WebElement selectSuspectOption;
-	//modify
-	@FindBy(how = How.XPATH, using = "//span[@aria-owns='AddressTypeId_listbox']/span")
+
+	@FindBy(how = How.XPATH, using = "//span[@aria-owns='VictimId_listbox']/span")
 	@CacheLookup
 	WebElement selectVictim;
 	
-	@FindBy(how = How.XPATH, using = "//ul[@id='AddressTypeId_listbox']/li[text()='Residence/Home']")
+	@FindBy(how = How.XPATH, using = "//ul[@id='VictimId_listbox']/li[@data-offset-index='0']")
 	@CacheLookup						
 	WebElement selectVictimOption;
-	//----------------------------
 	
-	@FindBy(how = How.XPATH, using = "")
+	@FindBy(how = How.XPATH, using = "//input[@id = 'DateOfOff']")
 	@CacheLookup						
 	WebElement dateOfoffense;
 	
-	@FindBy(how = How.XPATH, using = "")
+	@FindBy(how = How.XPATH, using = "//input[@id = 'TimeOfOff']")
 	@CacheLookup						
 	WebElement timeOfOffense;
 	
-	@FindBy(how = How.XPATH, using = "")
+	@FindBy(how = How.XPATH, using = "//span[@aria-owns='IncidentLocationId_listbox']/span")
 	@CacheLookup						
 	WebElement selectOffenseLocation;
 	
-	@FindBy(how = How.XPATH, using = "")
+	@FindBy(how = How.XPATH, using = "//ul[@id='IncidentLocationId_listbox']/li[@data-offset-index='0']")
 	@CacheLookup						
 	WebElement selectOffenseLocationOption;
 	
-	@FindBy(how = How.XPATH, using = "")
+	@FindBy(how = How.XPATH, using = "//span[@aria-owns='offenseType_listbox']/span")
 	@CacheLookup						
 	WebElement selectOffenseType;
 
-	@FindBy(how = How.XPATH, using = "")
+	@FindBy(how = How.XPATH, using = "//ul[@id='offenseType_listbox']/li[@data-offset-index='0']")
 	@CacheLookup						
 	WebElement selectOffenseTypeOption;
 	
@@ -86,19 +85,27 @@ public class OffenseAdding {
 	}
 	
 	public void selectSuspect() {
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(selectSuspect));
 		selectSuspect.click();
 	}
 	
 	public void selectSuspectOption() {
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(selectSuspectOption));
 		selectSuspectOption.click();
 	}
 	
 	public void selectVictim() {
-		selectSuspect.click();
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(selectVictim));
+		selectVictim.click();
 	}
 	
 	public void selectVictimOption() {
-		selectSuspectOption.click();
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(selectVictimOption));
+		selectVictimOption.click();
 	}
 	
 	public void setDateOfOffense() {
@@ -110,18 +117,26 @@ public class OffenseAdding {
 	}
 	
 	public void selectOffenseLocation() {
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(selectOffenseLocation));
 		selectOffenseLocation.click();
 	}
 	
 	public void selectOffenseLocationOption() {
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(selectOffenseLocationOption));
 		selectOffenseLocationOption.click();
 	}
 	
 	public void selectOffenseType() {
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(selectOffenseType));
 		selectOffenseType.click();
 	}
 	
 	public void selectOffenseTypeOption() {
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(selectOffenseTypeOption));
 		selectOffenseTypeOption.click();
 	}
 	

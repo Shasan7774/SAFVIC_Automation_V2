@@ -16,12 +16,12 @@ public class TC_LoginTest_001 extends BaseClass {
 			Assert.assertTrue(true);
 			log.info("Login page loaded");
 		} else {
-			//Assert.assertTrue(false);
+			// Assert.assertTrue(false);
 			log.info("Failed to load the login page");
 		}
 	}
-	
-	@Test 
+
+	@Test
 	public void loginTest() throws InterruptedException {
 
 		LoginPage lp = new LoginPage(driver);
@@ -44,7 +44,7 @@ public class TC_LoginTest_001 extends BaseClass {
 			Assert.assertTrue(true);
 			log.info("Login Successful");
 		} else {
-			//Assert.assertTrue(false);
+			// Assert.assertTrue(false);
 			log.info("Login Failed");
 		}
 

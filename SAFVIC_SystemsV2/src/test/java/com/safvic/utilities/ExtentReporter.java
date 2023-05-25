@@ -12,7 +12,7 @@ public class ExtentReporter {
 		String path = System.getProperty("user.dir")+"\\reports\\TestReport.html";
 		ExtentSparkReporter reporter = new ExtentSparkReporter(path);
 		reporter.config().setReportName("SAFVIC Automation Test Results");
-		reporter.config().setDocumentTitle("Test Results");
+		reporter.config().setDocumentTitle("SAFV Test Results");
 		
 		extents = new ExtentReports();
 		extents.attachReporter(reporter);
