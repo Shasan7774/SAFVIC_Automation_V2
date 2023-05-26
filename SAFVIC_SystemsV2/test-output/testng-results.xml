@@ -1,123 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="16" total="26" passed="9" failed="1" skipped="0">
+<testng-results ignored="16" total="26" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-25T19:52:07 BDT" name="Suite" finished-at="2023-05-25T19:53:55 BDT" duration-ms="107683">
+  <suite started-at="2023-05-26T12:21:30 BDT" name="Suite" finished-at="2023-05-26T12:23:43 BDT" duration-ms="132183">
     <groups>
     </groups>
-    <test started-at="2023-05-25T19:52:07 BDT" name="Officer Side Test" finished-at="2023-05-25T19:53:55 BDT" duration-ms="107683">
+    <test started-at="2023-05-26T12:21:30 BDT" name="Officer Side Test" finished-at="2023-05-26T12:23:43 BDT" duration-ms="132183">
       <class name="com.safvic.testCases.TC_CreateIncidentTest_002">
-        <test-method signature="createIncidentTest()[pri:0, instance:com.safvic.testCases.TC_CreateIncidentTest_002@3bcd05cb]" started-at="2023-05-25T19:52:23 BDT" name="createIncidentTest" finished-at="2023-05-25T19:52:25 BDT" duration-ms="2816" status="PASS">
+        <test-method signature="createIncidentTest()[pri:0, instance:com.safvic.testCases.TC_CreateIncidentTest_002@3bcd05cb]" started-at="2023-05-26T12:21:44 BDT" name="createIncidentTest" finished-at="2023-05-26T12:21:47 BDT" duration-ms="2587" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createIncidentTest -->
       </class> <!-- com.safvic.testCases.TC_CreateIncidentTest_002 -->
       <class name="com.safvic.testCases.TC_AddOffenseGroupTest_007">
-        <test-method signature="NavigateOffenses()[pri:0, instance:com.safvic.testCases.TC_AddOffenseGroupTest_007@24959ca4]" started-at="2023-05-25T19:53:10 BDT" name="NavigateOffenses" finished-at="2023-05-25T19:53:21 BDT" duration-ms="10857" status="PASS">
+        <test-method signature="NavigateOffenses()[pri:0, instance:com.safvic.testCases.TC_AddOffenseGroupTest_007@24959ca4]" started-at="2023-05-26T12:22:31 BDT" name="NavigateOffenses" finished-at="2023-05-26T12:22:42 BDT" duration-ms="11125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NavigateOffenses -->
       </class> <!-- com.safvic.testCases.TC_AddOffenseGroupTest_007 -->
       <class name="com.safvic.testCases.TC_AddVehicleTest_009">
-        <test-method signature="AddVehicleInformation()[pri:0, instance:com.safvic.testCases.TC_AddVehicleTest_009@5c86dbc5]" started-at="2023-05-25T19:53:47 BDT" name="AddVehicleInformation" finished-at="2023-05-25T19:53:54 BDT" duration-ms="7069" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='Add Vehicle']"}
-  (Session info: chrome=113.0.5672.127)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [343a2f7d180389d15a966f8a34158aeb, findElement {using=xpath, value=//a[normalize-space()='Add Vehicle']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.24 (65f30d4e8051..., userDataDir: C:\Users\BS702\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54071}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54071/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 343a2f7d180389d15a966f8a34158aeb]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='Add Vehicle']"}
-  (Session info: chrome=113.0.5672.127)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [343a2f7d180389d15a966f8a34158aeb, findElement {using=xpath, value=//a[normalize-space()='Add Vehicle']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.24 (65f30d4e8051..., userDataDir: C:\Users\BS702\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54071}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54071/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 343a2f7d180389d15a966f8a34158aeb
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy34.click(Unknown Source)
-at com.safvic.pageObjects.Vehicles.navigateVehicle(Vehicles.java:109)
-at com.safvic.testCases.TC_AddVehicleTest_009.AddVehicleInformation(TC_AddVehicleTest_009.java:22)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="AddVehicleInformation()[pri:0, instance:com.safvic.testCases.TC_AddVehicleTest_009@5c86dbc5]" started-at="2023-05-26T12:22:55 BDT" name="AddVehicleInformation" finished-at="2023-05-26T12:23:42 BDT" duration-ms="47075" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddVehicleInformation -->
       </class> <!-- com.safvic.testCases.TC_AddVehicleTest_009 -->
       <class name="com.safvic.testCases.TC_CreateVictimTest_004">
-        <test-method signature="CreateVictim()[pri:0, instance:com.safvic.testCases.TC_CreateVictimTest_004@36804139]" started-at="2023-05-25T19:52:38 BDT" name="CreateVictim" finished-at="2023-05-25T19:52:50 BDT" duration-ms="12059" status="PASS">
+        <test-method signature="CreateVictim()[pri:0, instance:com.safvic.testCases.TC_CreateVictimTest_004@36804139]" started-at="2023-05-26T12:21:59 BDT" name="CreateVictim" finished-at="2023-05-26T12:22:11 BDT" duration-ms="12020" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateVictim -->
       </class> <!-- com.safvic.testCases.TC_CreateVictimTest_004 -->
       <class name="com.safvic.testCases.TC_AddLocationTest_006">
-        <test-method signature="NavigateLocation()[pri:0, instance:com.safvic.testCases.TC_AddLocationTest_006@730d2164]" started-at="2023-05-25T19:53:01 BDT" name="NavigateLocation" finished-at="2023-05-25T19:53:10 BDT" duration-ms="9094" status="PASS">
+        <test-method signature="NavigateLocation()[pri:0, instance:com.safvic.testCases.TC_AddLocationTest_006@730d2164]" started-at="2023-05-26T12:22:22 BDT" name="NavigateLocation" finished-at="2023-05-26T12:22:31 BDT" duration-ms="8859" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NavigateLocation -->
       </class> <!-- com.safvic.testCases.TC_AddLocationTest_006 -->
       <class name="com.safvic.testCases.TC_CreateSuspectTest_005">
-        <test-method signature="CreateSuspect()[pri:0, instance:com.safvic.testCases.TC_CreateSuspectTest_005@20bd8be5]" started-at="2023-05-25T19:52:50 BDT" name="CreateSuspect" finished-at="2023-05-25T19:53:01 BDT" duration-ms="11593" status="PASS">
+        <test-method signature="CreateSuspect()[pri:0, instance:com.safvic.testCases.TC_CreateSuspectTest_005@20bd8be5]" started-at="2023-05-26T12:22:11 BDT" name="CreateSuspect" finished-at="2023-05-26T12:22:22 BDT" duration-ms="11024" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateSuspect -->
       </class> <!-- com.safvic.testCases.TC_CreateSuspectTest_005 -->
       <class name="com.safvic.testCases.TC_LoginTest_001">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@147e2ae7]" started-at="2023-05-25T19:52:07 BDT" name="setup" finished-at="2023-05-25T19:52:11 BDT" duration-ms="3826" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@147e2ae7]" started-at="2023-05-26T12:21:30 BDT" name="setup" finished-at="2023-05-26T12:21:34 BDT" duration-ms="3611" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -128,27 +54,27 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@147e2ae7]" started-at="2023-05-25T19:52:11 BDT" name="loginTest" finished-at="2023-05-25T19:52:20 BDT" duration-ms="9210" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@147e2ae7]" started-at="2023-05-26T12:21:34 BDT" name="loginTest" finished-at="2023-05-26T12:21:42 BDT" duration-ms="7612" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="siteUrlTest()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@147e2ae7]" started-at="2023-05-25T19:52:20 BDT" name="siteUrlTest" finished-at="2023-05-25T19:52:23 BDT" duration-ms="2672" status="PASS">
+        <test-method signature="siteUrlTest()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@147e2ae7]" started-at="2023-05-26T12:21:42 BDT" name="siteUrlTest" finished-at="2023-05-26T12:21:44 BDT" duration-ms="2587" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- siteUrlTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@147e2ae7]" started-at="2023-05-25T19:53:54 BDT" name="tearDown" finished-at="2023-05-25T19:53:55 BDT" duration-ms="249" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.safvic.testCases.TC_LoginTest_001@147e2ae7]" started-at="2023-05-26T12:23:42 BDT" name="tearDown" finished-at="2023-05-26T12:23:43 BDT" duration-ms="251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.safvic.testCases.TC_LoginTest_001 -->
       <class name="com.safvic.testCases.TC_UpdateIncidentTest_003">
-        <test-method signature="updateIncidenTest()[pri:0, instance:com.safvic.testCases.TC_UpdateIncidentTest_003@3b6d844d]" started-at="2023-05-25T19:52:25 BDT" name="updateIncidenTest" finished-at="2023-05-25T19:52:38 BDT" duration-ms="12161" status="PASS">
+        <test-method signature="updateIncidenTest()[pri:0, instance:com.safvic.testCases.TC_UpdateIncidentTest_003@3b6d844d]" started-at="2023-05-26T12:21:47 BDT" name="updateIncidenTest" finished-at="2023-05-26T12:21:59 BDT" duration-ms="11975" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateIncidenTest -->
       </class> <!-- com.safvic.testCases.TC_UpdateIncidentTest_003 -->
       <class name="com.safvic.testCases.TC_CreateRiskAssessmentTest_008">
-        <test-method signature="CreateRiskAssessment()[pri:0, instance:com.safvic.testCases.TC_CreateRiskAssessmentTest_008@10289886]" started-at="2023-05-25T19:53:21 BDT" name="CreateRiskAssessment" finished-at="2023-05-25T19:53:47 BDT" duration-ms="25866" status="PASS">
+        <test-method signature="CreateRiskAssessment()[pri:0, instance:com.safvic.testCases.TC_CreateRiskAssessmentTest_008@10289886]" started-at="2023-05-26T12:22:42 BDT" name="CreateRiskAssessment" finished-at="2023-05-26T12:22:55 BDT" duration-ms="13410" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateRiskAssessment -->
