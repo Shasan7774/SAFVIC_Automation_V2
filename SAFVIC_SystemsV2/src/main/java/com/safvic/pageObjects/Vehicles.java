@@ -75,7 +75,7 @@ public class Vehicles {
 	
 	@FindBy(how = How.XPATH, using = "//span[@aria-labelledby='Impounded_label']")
 	@CacheLookup						
-	WebElement checkImpounded;
+	WebElement toggleImpounded;
 	
 	@FindBy(how = How.ID , using = "TowedBy")
 	@CacheLookup						
@@ -89,9 +89,9 @@ public class Vehicles {
 	@CacheLookup						
 	WebElement txtCondition;
 	
-	@FindBy(how = How.ID , using = "//span[@aria-labelledby='OnHold_label']")
+	@FindBy(how = How.XPATH, using = "//span[@aria-labelledby='OnHold_label']")
 	@CacheLookup						
-	WebElement checkOnHold;
+	WebElement toggleOnHold;
 	
 	@FindBy(how = How.ID , using = "ReasonForHold")
 	@CacheLookup						
@@ -99,18 +99,18 @@ public class Vehicles {
 	
 	@FindBy(how = How.XPATH, using = "//span[@aria-labelledby='Photographed_label']")
 	@CacheLookup						
-	WebElement checkPhotographed_label;
+	WebElement togglePhotographed;
 	
 	@FindBy(how = How.XPATH, using = "//div/button[@type='submit']")
 	@CacheLookup						
 	WebElement btnSaveVehicle;
 
 	public void navigateVehicle() {
-		btnAddVehicle.click();
+		tabVehicles.click();
 	}
 	
 	public void addVehicle() {
-		tabVehicles.click();
+		btnAddVehicle.click();
 	}
 	
 	public void selectVehicleOwner() {
@@ -157,12 +157,12 @@ public class Vehicles {
 		txtVIN.sendKeys("VIN:123123");
 	}
 	
-	public void checkImpounded() {
-		checkImpounded.click();
+	public void enableImpounded() {
+		toggleImpounded.click();
 	}
 	
 	public void inputTowedBy() {
-		txtModel.sendKeys("Test Towed By");
+		txtTowedBy.sendKeys("Test Towed By");
 	}
 	
 	public void inputStoredAt() {
@@ -173,16 +173,16 @@ public class Vehicles {
 		txtCondition.sendKeys("Test Vehicle Condition");
 	}
 	
-	public void checkOnHold() {
-		checkOnHold.click();
+	public void enableOnHold() {
+		toggleOnHold.click();
 	}
 	
 	public void inputReasonForHold() {
-		checkOnHold.sendKeys("Test On Hold");
+		txtReasonForHold.sendKeys("Test On Hold");
 	}
 	
-	public void checkPhotographed_label() {
-		checkOnHold.sendKeys("Test Photographed label");
+	public void enablePhotographed() {
+		togglePhotographed.click();
 	}
 	
 	public void saveVehicle() {

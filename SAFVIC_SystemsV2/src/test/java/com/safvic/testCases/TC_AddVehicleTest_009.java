@@ -21,9 +21,9 @@ public class TC_AddVehicleTest_009 extends BaseClass {
 
 		vehicle.navigateVehicle();
 		
-		if (driver.getTitle().equals("Risk Assessment - SAFV_Site")) {
+		if (driver.getTitle().equals("Incident Vehicle - SAFV_Site")) {
 			Assert.assertTrue(true);
-			log.info("Navigated to the Risk Assessment Tab Successfully");
+			log.info("Navigated to the Vehicle Tab Successfully");
 			
 			Thread.sleep(2000);
 			
@@ -40,21 +40,24 @@ public class TC_AddVehicleTest_009 extends BaseClass {
 			vehicle.inputVehicleState();
 			vehicle.inputVehiclePlateYear();
 			vehicle.inputVehicleVIN();
-			vehicle.checkImpounded();
+			
+			vehicle.enableImpounded();
 			vehicle.inputTowedBy();
 			vehicle.inputStoredAt();
 			vehicle.inputVehicleCondition();
-			vehicle.checkOnHold();
+			
+			vehicle.enableOnHold();
 			vehicle.inputReasonForHold();
-			vehicle.checkPhotographed_label();
+			
+			vehicle.enablePhotographed();
+			
 			vehicle.saveVehicle();
 			
 			Thread.sleep(2000);
 
 			String pageSource = driver.getPageSource();
-			String toastMessage = driver.findElement(By.className("k-notification-content")).getText();
-
-			System.out.println("Toast Message is:" + toastMessage);
+			//String toastMessage = driver.findElement(By.className("k-notification-content")).getText();
+			//System.out.println("Toast Message is:" + toastMessage);
 
 			if (pageSource.contains("Incident Vehicle")) {
 				//Assert.assertEquals(toastMessage, "Risk Assessment has been saved successfully");
