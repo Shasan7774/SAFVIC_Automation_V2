@@ -18,6 +18,7 @@
 			<class name="com.safvic.testCases.TC_AddOffenseGroupTest_007"/>
 			<class name="com.safvic.testCases.TC_CreateRiskAssessmentTest_008"/>
 			<class name="com.safvic.testCases.TC_AddVehicleTest_009"/>
+			<class name="com.safvic.testCases.TC_CreateEPORequestTest_010"/>
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite --> 

@@ -1,2 +1,6 @@
-18:17:50.842 [main] INFO  com.safvic.testCases.BaseClass - Navigated to the Vehicle Tab Successfully
-18:17:58.753 [main] INFO  com.safvic.testCases.BaseClass - Vehicle Added Successfully
+19:12:34.481 [main] INFO  com.safvic.testCases.BaseClass - Officer Password Entered
+19:12:46.010 [main] INFO  com.safvic.testCases.BaseClass - Login Clicked
+19:12:48.021 [main] INFO  com.safvic.testCases.BaseClass - Login Successful
+19:12:50.612 [main] INFO  com.safvic.testCases.BaseClass - Failed to load the login page
+19:12:53.923 [main] INFO  com.safvic.testCases.BaseClass - Incident Created Successfully
+19:13:05.879 [main] INFO  com.safvic.testCases.BaseClass - Incident Updated Successfully

@@ -114,7 +114,7 @@ public class LocationAdding {
 	}
 	
 	public void setAddress1(){
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(1));
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(3));
 		wait.until(ExpectedConditions.elementToBeClickable(txtAddress1));
 		txtAddress1.sendKeys("Test Address1");
 	}

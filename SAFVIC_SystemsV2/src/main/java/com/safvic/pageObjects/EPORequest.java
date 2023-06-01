@@ -85,7 +85,7 @@ public class EPORequest {
 	@CacheLookup						
 	WebElement btnSaveEPORequest;
 	
-	@FindBy(how = How.XPATH, using = "(//a[normalize-space()='EPO Request Documents'])[1]")
+	@FindBy(how = How.XPATH, using = "//a[text()='EPO Request Documents']")
 	@CacheLookup						
 	WebElement btnEPORequestDocuments;
 	
@@ -100,103 +100,155 @@ public class EPORequest {
 	@FindBy(how = How.ID , using = "epo-forms-table")
 	@CacheLookup						
 	WebElement tableGeneratedEPOForms;
-	/*
-	@FindBy(how = How.ID , using = "//a[normalize-space()='SEND EPO REQUEST']")
+	
+	@FindBy(how = How.XPATH, using = "//a[text()='SEND EPO REQUEST']")
 	@CacheLookup						
 	WebElement btnSendEPORequest;
 	
-	@FindBy(how = How.XPATH, using = "//a[normalize-space()='SEND EPO REQUEST']")
+	@FindBy(how = How.XPATH, using = "//span[@aria-owns='organizationId_listbox']/span")
 	@CacheLookup						
-	WebElement btnSendEPORequest;
+	WebElement selectJudicialOrganization;
 	
+	@FindBy(how = How.XPATH, using = "//ul[@id='organizationId_listbox']/li[@data-offset-index='1']")
+	@CacheLookup						
+	WebElement selectJudicialOrganizationOption;
 	
+	@FindBy(how = How.XPATH, using = "//button[@class='btn btn-success']")
+	@CacheLookup						
+	WebElement btnSendWithoutSigning;
 	
+	@FindBy(how = How.XPATH, using = "//a[text()='SEND WITH SIGNING']")
+	@CacheLookup						
+	WebElement btnSendWithSigning;
 	
+	@FindBy(how = How.XPATH, using = "(//input[@placeholder='Signer Name'])[2]")
+	@CacheLookup						
+	WebElement txtWitnessName;
 	
+	@FindBy(how = How.XPATH, using = "")
+	@CacheLookup						
+	WebElement selectJudge;
 	
-
-	public void navigateVehicle() {
-		tabVehicles.click();
+	@FindBy(how = How.XPATH, using = "")
+	@CacheLookup						
+	WebElement selectJudgeOption;
+	
+	@FindBy(how = How.ID, using = "create-signing-request")
+	@CacheLookup						
+	WebElement btnCreateSigningRequest;
+	
+	public void navigateEPORequest() {
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(tabEPORequest));
+		tabEPORequest.click();
 	}
 	
-	public void addVehicle() {
-		btnAddVehicle.click();
+	public void createEPORequest() {
+		btnCreateEPOReqest.click();
 	}
 	
-	public void selectVehicleOwner() {
-		selectOwner.click();
+	public void selectOffenseGroup() {
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(selectOffenseGroup));
+		selectOffenseGroup.click();
 	}
 	
-	public void selectVehicleOwnerOption() {
-		selectOwnerOption.click();
+	public void selectOffenseGroupOption() {
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(selectOffenseGroupOption));
+		selectOffenseGroupOption.click();
 	}
 	
-	public void inputVehicleMake() {
-		txtMake.sendKeys("2020");
+	public void enableRequestedByVictim() {
+		toggleRequestedByVictim.click();
 	}
 	
-	public void inputVehicleYear() {
-		txtYear.sendKeys("2021");
+	public void enableRequestedByGuardian() {
+		toggleRequestedByGuardian.click();
 	}
 	
-	public void inputVehicleModel() {
-		txtModel.sendKeys("2022");
+	public void inputGuardianName() {
+		txtGuardianName.sendKeys("Test Guardian Name");
 	}
 	
-	public void inputVehicleBodyStyle() {
-		txtBodyStyle.sendKeys("Ford");
+	public void enableRequestedByOfficer() {
+		toggleRequestedByOfficer.click();
 	}
 	
-	public void inputVehicleColor() {
-		txtColor.sendKeys("Black");
+	public void enableRequestedByState() {
+		toggleRequestedByState.click();
 	}
 	
-	public void inputVehicleLicensePlateNo() {
-		txtLicensePlateNo.sendKeys("GA-121212");
+	public void inputStateAttorneyName() {
+		txtStateAttorneyName.sendKeys("Test State Attorney Name");
 	}
 	
-	public void inputVehicleState() {
-		txtState.sendKeys("Texas");
+	public void enableRequestedByMagistrate() {
+		 toggleRequestedByMagistrate.click();
 	}
 	
-	public void inputVehiclePlateYear() {
-		txtPlateYear.sendKeys("2023");
+	public void inputMagistrateName() {
+		txtMagistrateName.sendKeys("Test Magistrate Name");
 	}
 	
-	public void inputVehicleVIN() {
-		txtVIN.sendKeys("VIN:123123");
+	public void enableHoldRequested() {
+		toggleHoldRequested.click();
 	}
 	
-	public void enableImpounded() {
-		toggleImpounded.click();
+	public void enable24HoldRequested() {
+		toggle24HoldRequested.click();
 	}
 	
-	public void inputTowedBy() {
-		txtTowedBy.sendKeys("Test Towed By");
+	public void inputExplainHold() {
+		txtExplainHold.sendKeys("Test Explain Hold");
 	}
 	
-	public void inputStoredAt() {
-		txtStoredAt.sendKeys("Test Stored At Texas Police Station");
+	public void saveEPORequest() {
+		btnSaveEPORequest.click();
 	}
 	
-	public void inputVehicleCondition() {
-		txtCondition.sendKeys("Test Vehicle Condition");
+	public void generateEPORequestDocs() {
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(btnEPORequestDocuments));
+		btnEPORequestDocuments.click();
 	}
 	
-	public void enableOnHold() {
-		toggleOnHold.click();
+	public void includeAdditionalForms() {
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(chkAllAdditionalForms));
+		chkAllAdditionalForms.click();
 	}
 	
-	public void inputReasonForHold() {
-		txtReasonForHold.sendKeys("Test On Hold");
+	public void generateRequest() {
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(btnGenerateRequest));
+		btnGenerateRequest.click();
 	}
 	
-	public void enablePhotographed() {
-		togglePhotographed.click();
+	public void validateGeneratedEPOFormsTable() {
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(tableGeneratedEPOForms));
+		tableGeneratedEPOForms.isDisplayed();
 	}
 	
-	public void saveVehicle() {
-		btnSaveVehicle.click();
+	public void sendEPORequest() {
+		btnSendEPORequest.click();
 	}
-*/
+	
+	public void selectJudicialOrganization() {
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(selectJudicialOrganization));
+		selectJudicialOrganization.click();
+	}
+	
+	public void selectJudicialOrganizationOption() {
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(selectJudicialOrganizationOption));
+		selectJudicialOrganizationOption.click();;
+	}
+	
+	public void sendEPOReqWithoutSigning() {
+		btnSendWithSigning.click();;
+	}
+	
 }
