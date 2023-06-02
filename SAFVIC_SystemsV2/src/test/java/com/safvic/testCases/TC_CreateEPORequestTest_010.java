@@ -56,7 +56,9 @@ public class TC_CreateEPORequestTest_010 extends BaseClass {
 			Thread.sleep(3000);
 			
 			epoReq.includeAdditionalForms();
+			
 			Thread.sleep(3000);
+			
 			epoReq.generateRequest();
 			
 			//epoReq.validateGeneratedEPOFormsTable();

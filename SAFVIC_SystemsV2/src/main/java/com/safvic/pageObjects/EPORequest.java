@@ -93,7 +93,7 @@ public class EPORequest {
 	@CacheLookup						
 	WebElement chkAllAdditionalForms;
 	
-	@FindBy(how = How.ID , using = "generate-req-button")
+	@FindBy(how = How.XPATH, using = "//a[@id='generate-req-button']")
 	@CacheLookup						
 	WebElement btnGenerateRequest;
 	
@@ -208,30 +208,32 @@ public class EPORequest {
 	}
 	
 	public void generateEPORequestDocs() {
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.elementToBeClickable(btnEPORequestDocuments));
 		btnEPORequestDocuments.click();
 	}
 	
 	public void includeAdditionalForms() {
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.elementToBeClickable(chkAllAdditionalForms));
 		chkAllAdditionalForms.click();
 	}
 	
 	public void generateRequest() {
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.elementToBeClickable(btnGenerateRequest));
 		btnGenerateRequest.click();
 	}
 	
 	public void validateGeneratedEPOFormsTable() {
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.elementToBeClickable(tableGeneratedEPOForms));
 		tableGeneratedEPOForms.isDisplayed();
 	}
 	
 	public void sendEPORequest() {
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(4));
+		wait.until(ExpectedConditions.elementToBeClickable(btnSendEPORequest));
 		btnSendEPORequest.click();
 	}
 	

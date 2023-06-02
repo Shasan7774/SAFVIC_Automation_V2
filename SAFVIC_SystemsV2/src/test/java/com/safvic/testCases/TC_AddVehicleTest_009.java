@@ -56,11 +56,11 @@ public class TC_AddVehicleTest_009 extends BaseClass {
 			Thread.sleep(2000);
 
 			String pageSource = driver.getPageSource();
-			//String toastMessage = driver.findElement(By.className("k-notification-content")).getText();
-			//System.out.println("Toast Message is:" + toastMessage);
+			String toastMessage = driver.findElement(By.className("k-notification-content")).getText();
+			System.out.println("Toast Message is:" + toastMessage);
 
 			if (pageSource.contains("Incident Vehicle")) {
-				//Assert.assertEquals(toastMessage, "Risk Assessment has been saved successfully");
+				Assert.assertEquals(toastMessage, "Vehicle added successfully.");
 				log.info("Vehicle Added Successfully");
 			} else {
 				// Assert.assertTrue(false);

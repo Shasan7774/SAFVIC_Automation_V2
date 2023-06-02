@@ -7,20 +7,13 @@
   <test thread-count="5" name="Officer Side Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.safvic.testCases.TC_CreateEPORequestTest_010">
+      <class name="com.safvic.testCases.TC_CreateRiskAssessmentTest_008">
         <methods>
+          <include name="CreateRiskAssessment"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="CreateEPORequest"/>
         </methods>
-      </class> <!-- com.safvic.testCases.TC_CreateEPORequestTest_010 -->
-      <class name="com.safvic.testCases.TC_AddOffenseGroupTest_007">
-        <methods>
-          <include name="setup"/>
-          <include name="NavigateOffenses"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.safvic.testCases.TC_AddOffenseGroupTest_007 -->
+      </class> <!-- com.safvic.testCases.TC_CreateRiskAssessmentTest_008 -->
     </classes>
   </test> <!-- Officer Side Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
