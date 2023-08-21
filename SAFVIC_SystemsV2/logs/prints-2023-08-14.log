@@ -1,0 +1,6 @@
+15:13:39.985 [main] INFO  com.safvic.testCases.BaseClass - Location Creation Failed
+15:13:42.529 [main] INFO  com.safvic.testCases.BaseClass - Navigated to the Offense page sucessfully
+15:13:49.419 [main] INFO  com.safvic.testCases.BaseClass - Failed to add offense group
+15:13:51.964 [main] INFO  com.safvic.testCases.BaseClass - Navigated to the Risk Assessment Tab Successfully
+15:14:01.174 [main] INFO  com.safvic.testCases.BaseClass - Failed to Create Risk Assessment
+15:14:03.707 [main] INFO  com.safvic.testCases.BaseClass - Navigated to the Vehicle Tab Successfully

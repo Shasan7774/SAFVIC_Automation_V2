@@ -8,9 +8,12 @@ import com.safvic.pageObjects.IncidentUpdate;
 import com.safvic.pageObjects.LocationAdding;
 import com.safvic.pageObjects.PeopleBasicInfo;
 import com.safvic.pageObjects.QuickCreatePeople;
+import com.safvic.util.JiraPolicy;
 
 public class TC_AddLocationTest_006 extends BaseClass {
-	// Add Incident Location
+	//Add Incident Location
+	
+	//@JiraPolicy(logTicket=true)
 	@Test
 	public void NavigateLocation() throws InterruptedException {
 		LocationAdding addLoc = new LocationAdding(driver);
@@ -23,6 +26,7 @@ public class TC_AddLocationTest_006 extends BaseClass {
 			log.info("Navigated to incident location sucessfully");
 
 			addLoc.clickAddLocation();
+			Thread.sleep(2000);
 			addLoc.selectLocation();
 			addLoc.selectLocationOption();
 			addLoc.selectAddressGroup();

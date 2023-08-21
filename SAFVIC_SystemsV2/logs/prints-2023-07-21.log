@@ -1,0 +1,7 @@
+15:46:45.074 [main] INFO  com.safvic.testCases.BaseClass - Officer Email Entered
+15:46:45.238 [main] INFO  com.safvic.testCases.BaseClass - Officer Password Entered
+15:47:34.440 [main] INFO  com.safvic.testCases.BaseClass - Login Clicked
+15:47:36.469 [main] INFO  com.safvic.testCases.BaseClass - Login Successful
+15:47:39.332 [main] INFO  com.safvic.testCases.BaseClass - Failed to load the login page
+15:47:51.527 [main] INFO  com.safvic.testCases.BaseClass - Incident Created Successfully
+15:48:11.741 [main] INFO  com.safvic.testCases.BaseClass - Incident Updated Successfully

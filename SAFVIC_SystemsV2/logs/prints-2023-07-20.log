@@ -1,0 +1,6 @@
+14:26:07.528 [main] INFO  com.safvic.testCases.BaseClass - Navigated to the Offense page sucessfully
+14:26:16.834 [main] INFO  com.safvic.testCases.BaseClass - Failed to add offense group
+14:26:19.978 [main] INFO  com.safvic.testCases.BaseClass - Navigated to the Risk Assessment Tab Successfully
+14:26:30.207 [main] INFO  com.safvic.testCases.BaseClass - Failed to Create Risk Assessment
+14:26:32.834 [main] INFO  com.safvic.testCases.BaseClass - Navigated to the Vehicle Tab Successfully
+14:26:41.730 [main] INFO  com.safvic.testCases.BaseClass - Vehicle Added Successfully

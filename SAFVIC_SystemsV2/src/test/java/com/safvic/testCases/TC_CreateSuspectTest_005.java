@@ -5,9 +5,12 @@ import org.testng.annotations.Test;
 import com.safvic.pageObjects.IncidentUpdate;
 import com.safvic.pageObjects.PeopleBasicInfo;
 import com.safvic.pageObjects.QuickCreatePeople;
+import com.safvic.util.JiraPolicy;
 
 public class TC_CreateSuspectTest_005 extends BaseClass{
-	//Create Victim
+	//Create Suspect Test
+	
+	//@JiraPolicy(logTicket=true)
 	@Test
 	public void CreateSuspect() throws InterruptedException {
 		QuickCreatePeople suspect = new QuickCreatePeople(driver);

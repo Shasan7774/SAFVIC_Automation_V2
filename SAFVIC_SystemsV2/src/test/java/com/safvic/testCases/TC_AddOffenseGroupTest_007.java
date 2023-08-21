@@ -9,9 +9,12 @@ import com.safvic.pageObjects.LocationAdding;
 import com.safvic.pageObjects.OffenseAdding;
 import com.safvic.pageObjects.PeopleBasicInfo;
 import com.safvic.pageObjects.QuickCreatePeople;
+import com.safvic.util.JiraPolicy;
 
 public class TC_AddOffenseGroupTest_007 extends BaseClass {
-	// Add Incident Location
+	//Add Offense Group
+	
+	//@JiraPolicy(logTicket=true)
 	@Test
 	public void NavigateOffenses() throws InterruptedException {
 		OffenseAdding addOff = new OffenseAdding(driver);
@@ -23,26 +26,30 @@ public class TC_AddOffenseGroupTest_007 extends BaseClass {
 			Assert.assertTrue(true);
 			log.info("Navigated to the Offense page sucessfully");
 			
-			Thread.sleep(2000);
 			
 			addOff.addOffenseGroup();
 			driver.navigate().refresh();
 			
+			Thread.sleep(2000);
+			
 			addOff.selectSuspect();
 			addOff.selectSuspectOption();
+			
 			addOff.selectVictim();
 			addOff.selectVictimOption();
+			
 			addOff.setDateOfOffense();
 			addOff.setTimeOfOffense();
+			
 			addOff.selectOffenseLocation();
 			addOff.selectOffenseLocationOption();
+			
 			addOff.selectOffenseType();
 			addOff.selectOffenseTypeOption();
+			
 			addOff.saveOffenseGroup();
 			
-
 			Thread.sleep(2000);
-
 			String pageSource = driver.getPageSource();
 			String toastMessage = driver.findElement(By.className("k-notification-content")).getText();
 

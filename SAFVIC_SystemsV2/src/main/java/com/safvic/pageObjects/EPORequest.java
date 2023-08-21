@@ -21,7 +21,7 @@ public class EPORequest {
 		PageFactory.initElements(rdriver,this);
 	}
 	
-	@FindBy(how=How.XPATH, using="//span[normalize-space()='EPO/BOOKING']")
+	@FindBy(how=How.XPATH, using="//span[normalize-space()='EPO/Booking']")
 	@CacheLookup
 	WebElement tabEPORequest;
 	
@@ -97,7 +97,7 @@ public class EPORequest {
 	@CacheLookup						
 	WebElement btnGenerateRequest;
 	
-	@FindBy(how = How.ID , using = "epo-forms-table")
+	@FindBy(how = How.XPATH , using = "//table[@id='epo-forms-table']")
 	@CacheLookup						
 	WebElement tableGeneratedEPOForms;
 	
@@ -208,49 +208,49 @@ public class EPORequest {
 	}
 	
 	public void generateEPORequestDocs() {
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(5));
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(3));
 		wait.until(ExpectedConditions.elementToBeClickable(btnEPORequestDocuments));
 		btnEPORequestDocuments.click();
 	}
 	
 	public void includeAdditionalForms() {
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(5));
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(3));
 		wait.until(ExpectedConditions.elementToBeClickable(chkAllAdditionalForms));
 		chkAllAdditionalForms.click();
 	}
 	
 	public void generateRequest() {
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(5));
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(3));
 		wait.until(ExpectedConditions.elementToBeClickable(btnGenerateRequest));
 		btnGenerateRequest.click();
 	}
 	
 	public void validateGeneratedEPOFormsTable() {
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(5));
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(3));
 		wait.until(ExpectedConditions.elementToBeClickable(tableGeneratedEPOForms));
 		tableGeneratedEPOForms.isDisplayed();
 	}
 	
 	public void sendEPORequest() {
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(4));
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(3));
 		wait.until(ExpectedConditions.elementToBeClickable(btnSendEPORequest));
 		btnSendEPORequest.click();
 	}
 	
 	public void selectJudicialOrganization() {
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(3));
 		wait.until(ExpectedConditions.elementToBeClickable(selectJudicialOrganization));
 		selectJudicialOrganization.click();
 	}
 	
 	public void selectJudicialOrganizationOption() {
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(3));
 		wait.until(ExpectedConditions.elementToBeClickable(selectJudicialOrganizationOption));
-		selectJudicialOrganizationOption.click();;
+		selectJudicialOrganizationOption.click();
 	}
 	
 	public void sendEPOReqWithoutSigning() {
-		btnSendWithSigning.click();;
+		btnSendWithSigning.click();
 	}
 	
 }

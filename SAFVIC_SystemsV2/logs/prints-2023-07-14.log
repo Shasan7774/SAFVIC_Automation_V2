@@ -1,0 +1,6 @@
+18:02:10.564 [main] INFO  com.safvic.testCases.BaseClass - Failed to load the login page
+18:02:14.431 [main] INFO  com.safvic.testCases.BaseClass - Incident Created Successfully
+18:02:30.483 [main] INFO  com.safvic.testCases.BaseClass - Incident Updated Successfully
+18:02:57.718 [main] INFO  com.safvic.testCases.BaseClass - Navigated to incident location sucessfully
+18:03:06.227 [main] INFO  com.safvic.testCases.BaseClass - Location Creation Failed
+18:03:08.894 [main] INFO  com.safvic.testCases.BaseClass - Navigated to the Offense page sucessfully

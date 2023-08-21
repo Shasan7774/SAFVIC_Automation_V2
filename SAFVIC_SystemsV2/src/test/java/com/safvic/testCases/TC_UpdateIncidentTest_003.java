@@ -7,9 +7,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.safvic.pageObjects.IncidentUpdate;
+import com.safvic.util.JiraPolicy;
 
 public class TC_UpdateIncidentTest_003 extends BaseClass {
-
+	//Update Incident Information 
+	//@JiraPolicy(logTicket=true)
 	@Test
 	public void updateIncidenTest() throws InterruptedException {
 		Thread.sleep(3000);
@@ -32,13 +34,15 @@ public class TC_UpdateIncidentTest_003 extends BaseClass {
 		Thread.sleep(2000);
 		iu.enableCovidExposure();
 		
+		Thread.sleep(2000);
 		iu.selectHowPoliceContacted();
 		iu.selectHowPoliceContactedOption();
+		
+		Thread.sleep(2000);
 		iu.selectReasonForContact();
 		iu.selectReasonForContactOption();
 
 		Thread.sleep(2000);
-
 		iu.selectDispatchedDate();
 		iu.selectDispatchedTime();
 		iu.saveIncidentUpdate();

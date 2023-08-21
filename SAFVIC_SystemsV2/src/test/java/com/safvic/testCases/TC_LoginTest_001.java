@@ -3,9 +3,12 @@ package com.safvic.testCases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.safvic.pageObjects.LoginPage;
+import com.safvic.util.JiraPolicy;
 
 public class TC_LoginTest_001 extends BaseClass {
-
+	//Login page loaded
+	
+	//@JiraPolicy(logTicket=true)
 	@Test
 	public void siteUrlTest() throws InterruptedException {
 		driver.get(baseURL);
@@ -20,7 +23,9 @@ public class TC_LoginTest_001 extends BaseClass {
 			log.info("Failed to load the login page");
 		}
 	}
-
+	//Successfully logged in
+	
+	//@JiraPolicy(logTicket=true)
 	@Test
 	public void loginTest() throws InterruptedException {
 

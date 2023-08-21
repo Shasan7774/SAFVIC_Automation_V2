@@ -1,0 +1,6 @@
+17:21:16.268 [main] INFO  com.safvic.testCases.BaseClass - Incident Created Successfully
+17:21:32.691 [main] INFO  com.safvic.testCases.BaseClass - Incident Updated Successfully
+17:22:03.993 [main] INFO  com.safvic.testCases.BaseClass - Navigated to incident location sucessfully
+17:22:12.758 [main] INFO  com.safvic.testCases.BaseClass - Location Creation Failed
+17:22:15.461 [main] INFO  com.safvic.testCases.BaseClass - Navigated to the Offense page sucessfully
+17:22:24.443 [main] INFO  com.safvic.testCases.BaseClass - Failed to add offense group

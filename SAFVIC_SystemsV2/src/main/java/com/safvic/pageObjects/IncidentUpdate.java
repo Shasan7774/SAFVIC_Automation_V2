@@ -148,25 +148,25 @@ public class IncidentUpdate {
 	}
 
 	public void selectHowPoliceContacted() {
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(3));
 		wait.until(ExpectedConditions.elementToBeClickable(selectHowPoliceContacted));
 		selectHowPoliceContacted.click();
 	}
 
 	public void selectHowPoliceContactedOption() {
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(3));
 		wait.until(ExpectedConditions.elementToBeClickable(selectHowPoliceContactedOption));
 		selectHowPoliceContactedOption.click();
 	}
 
 	public void selectReasonForContact() {
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(3));
 		wait.until(ExpectedConditions.elementToBeClickable(selectReasonForContact));
 		selectReasonForContact.click();
 	}
 
 	public void selectReasonForContactOption() {
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(3));
 		wait.until(ExpectedConditions.elementToBeClickable(selectReasonForContactOption));
 		selectReasonForContactOption.click();
 	}

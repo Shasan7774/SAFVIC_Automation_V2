@@ -177,25 +177,25 @@ public class RiskAssessment {
 	}
 	
 	public void selectSuspect() {
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(3));
 		wait.until(ExpectedConditions.elementToBeClickable(selectSuspect));
 		selectSuspect.click();
 	}
 	
 	public void selectSuspectOption() {
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(3));
 		wait.until(ExpectedConditions.elementToBeClickable(selectSuspectOption));
 		selectSuspectOption.click();
 	}
 	
 	public void selectVictim() {
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(3));
 		wait.until(ExpectedConditions.elementToBeClickable(selectVictim));
 		selectVictim.click();
 	}
 	
 	public void selectVictimOption() {
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(3));
 		wait.until(ExpectedConditions.elementToBeClickable(selectVictimOption));
 		selectVictimOption.click();
 	}

@@ -11,9 +11,12 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.safvic.pageObjects.IncidentCreation;
 import com.safvic.pageObjects.LoginPage;
+import com.safvic.util.JiraPolicy;
 
 public class TC_CreateIncidentTest_002 extends BaseClass {
-
+	//Create Incident 
+	
+	//@JiraPolicy(logTicket=true)
 	@Test
 	public void createIncidentTest() throws InterruptedException {
 		IncidentCreation ic = new IncidentCreation(driver);

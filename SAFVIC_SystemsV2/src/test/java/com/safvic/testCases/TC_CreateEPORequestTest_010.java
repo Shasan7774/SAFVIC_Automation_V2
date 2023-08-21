@@ -12,69 +12,74 @@ import com.safvic.pageObjects.PeopleBasicInfo;
 import com.safvic.pageObjects.QuickCreatePeople;
 import com.safvic.pageObjects.RiskAssessment;
 import com.safvic.pageObjects.Vehicles;
+import com.safvic.util.JiraPolicy;
 
 public class TC_CreateEPORequestTest_010 extends BaseClass {
-	// Add Incident Location
+	//Create EPO Request
+	
+	//@JiraPolicy(logTicket=true)
 	@Test
 	public void CreateEPORequest() throws InterruptedException {
 		EPORequest epoReq = new EPORequest(driver);
 		Thread.sleep(2000);
 
 		epoReq.navigateEPORequest();
-		
+
 		if (driver.getTitle().equals("EPO Request - SAFV_Site")) {
 			Assert.assertTrue(true);
 			log.info("Navigated to EPO Request Successfully");
-			
+
 			Thread.sleep(2000);
-			
+
 			epoReq.createEPORequest();
-			
+
 			driver.navigate().refresh();
 			
+			Thread.sleep(2000);
 			epoReq.selectOffenseGroup();
 			epoReq.selectOffenseGroupOption();
+			
+			Thread.sleep(2000);
 			epoReq.enableRequestedByVictim();
 			epoReq.enableRequestedByGuardian();
 			epoReq.inputGuardianName();
 			epoReq.enableRequestedByOfficer();
-			
+
 			epoReq.enableRequestedByState();
 			epoReq.inputStateAttorneyName();
-			
+
 			epoReq.enableRequestedByMagistrate();
 			epoReq.inputMagistrateName();
-			
+
 			epoReq.enableHoldRequested();
 			epoReq.enable24HoldRequested();
 			epoReq.inputExplainHold();
-			
+
 			epoReq.saveEPORequest();
-			
+
 			epoReq.generateEPORequestDocs();
-			
-			Thread.sleep(3000);
-			
+
+			Thread.sleep(2000);
 			epoReq.includeAdditionalForms();
-			
-			Thread.sleep(3000);
-			
+
+			Thread.sleep(2000);
 			epoReq.generateRequest();
 			
-			//epoReq.validateGeneratedEPOFormsTable();
-			//epoReq.sendEPORequest();
-			//epoReq.selectJudicialOrganization();
-			//epoReq.selectJudicialOrganizationOption();
-			//epoReq.sendEPOReqWithoutSigning();
-			
-			
+			Thread.sleep(4000);
+			epoReq.validateGeneratedEPOFormsTable();
+			epoReq.sendEPORequest();
+			epoReq.selectJudicialOrganization();
+			epoReq.selectJudicialOrganizationOption();
+			epoReq.sendEPOReqWithoutSigning();
 
 			String pageSource = driver.getPageSource();
-			//String toastMessage = driver.findElement(By.className("k-notification-content")).getText();
-			//System.out.println("Toast Message is:" + toastMessage);
+			// String toastMessage =
+			// driver.findElement(By.className("k-notification-content")).getText();
+			// System.out.println("Toast Message is:" + toastMessage);
 
 			if (pageSource.contains("Update EPO : Sent Without Signing to JUDGE ORG")) {
-				//Assert.assertEquals(toastMessage, "Risk Assessment has been saved successfully");
+				// Assert.assertEquals(toastMessage, "Risk Assessment has been saved
+				// successfully");
 				log.info("EPO Request Sent Successfully");
 			} else {
 				// Assert.assertTrue(false);

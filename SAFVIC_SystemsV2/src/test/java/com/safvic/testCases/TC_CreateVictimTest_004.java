@@ -11,12 +11,16 @@ import org.testng.annotations.Test;
 import com.safvic.pageObjects.IncidentUpdate;
 import com.safvic.pageObjects.PeopleBasicInfo;
 import com.safvic.pageObjects.QuickCreatePeople;
+import com.safvic.util.JiraPolicy;
 
 public class TC_CreateVictimTest_004 extends BaseClass{
-	//Create Victim
+	//Create Victim  Test 
+	
+	//@JiraPolicy(logTicket=true)
 	@Test
 	public void CreateVictim() throws InterruptedException {
 		QuickCreatePeople victim = new QuickCreatePeople(driver);
+		
 		Thread.sleep(3000);
 		victim.navigatePeople();
 		victim.clickAddPerson();
@@ -33,11 +37,12 @@ public class TC_CreateVictimTest_004 extends BaseClass{
 		victim.setPseudoMiddleNameVictim();
 		
 		Thread.sleep(2000);
-		
         victim.selectPersonRace();
         victim.selectRaceOption();
+        
         victim.selectPersonSex();
         victim.selectSexOption();
+        
         victim.setPersonDOB();
         victim.savePersonInitialInformation();
         

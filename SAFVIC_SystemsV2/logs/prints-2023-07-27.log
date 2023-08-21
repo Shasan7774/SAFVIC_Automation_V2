@@ -1,0 +1,6 @@
+14:16:20.500 [main] INFO  com.safvic.testCases.BaseClass - Navigated to incident location sucessfully
+14:16:28.905 [main] INFO  com.safvic.testCases.BaseClass - Location Creation Failed
+14:16:31.477 [main] INFO  com.safvic.testCases.BaseClass - Navigated to the Offense page sucessfully
+14:16:39.122 [main] INFO  com.safvic.testCases.BaseClass - Failed to add offense group
+14:16:41.726 [main] INFO  com.safvic.testCases.BaseClass - Navigated to the Risk Assessment Tab Successfully
+14:16:52.031 [main] INFO  com.safvic.testCases.BaseClass - Failed to Create Risk Assessment

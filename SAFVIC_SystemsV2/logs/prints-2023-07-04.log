@@ -1,0 +1,5 @@
+16:29:48.676 [main] INFO  com.safvic.testCases.BaseClass - Navigated to incident location sucessfully
+16:29:55.003 [main] INFO  com.safvic.testCases.BaseClass - Location Creation Failed
+16:29:57.620 [main] INFO  com.safvic.testCases.BaseClass - Navigated to the Offense page sucessfully
+16:30:05.188 [main] INFO  com.safvic.testCases.BaseClass - Navigated to the Risk Assessment Tab Successfully
+16:30:10.289 [main] INFO  com.safvic.testCases.BaseClass - Navigated to the Vehicle Tab Successfully

@@ -11,9 +11,12 @@ import com.safvic.pageObjects.PeopleBasicInfo;
 import com.safvic.pageObjects.QuickCreatePeople;
 import com.safvic.pageObjects.RiskAssessment;
 import com.safvic.pageObjects.Vehicles;
+import com.safvic.util.JiraPolicy;
 
 public class TC_AddVehicleTest_009 extends BaseClass {
-	// Add Incident Location
+	//Add Vehicle
+	
+	//@JiraPolicy(logTicket=true)
 	@Test
 	public void AddVehicleInformation() throws InterruptedException {
 		Vehicles vehicle = new Vehicles(driver);
@@ -26,11 +29,13 @@ public class TC_AddVehicleTest_009 extends BaseClass {
 			log.info("Navigated to the Vehicle Tab Successfully");
 			
 			Thread.sleep(2000);
-			
 			vehicle.addVehicle();
 			driver.navigate().refresh();
+			
+			Thread.sleep(2000);
 			vehicle.selectVehicleOwner();
 			vehicle.selectVehicleOwnerOption();
+			
 			vehicle.inputVehicleMake();
 			vehicle.inputVehicleYear();
 			vehicle.inputVehicleModel();
@@ -54,7 +59,6 @@ public class TC_AddVehicleTest_009 extends BaseClass {
 			vehicle.saveVehicle();
 			
 			Thread.sleep(2000);
-
 			String pageSource = driver.getPageSource();
 			String toastMessage = driver.findElement(By.className("k-notification-content")).getText();
 			System.out.println("Toast Message is:" + toastMessage);

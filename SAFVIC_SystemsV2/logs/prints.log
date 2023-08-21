@@ -1,1 +1,4 @@
-14:45:13.934 [main] INFO  com.safvic.testCases.BaseClass - Failed to Send EPO Request
+18:12:00.524 [main] INFO  com.safvic.testCases.BaseClass - Failed to Create Risk Assessment
+18:12:03.255 [main] INFO  com.safvic.testCases.BaseClass - Navigated to the Vehicle Tab Successfully
+18:12:11.865 [main] INFO  com.safvic.testCases.BaseClass - Vehicle Added Successfully
+18:12:14.498 [main] INFO  com.safvic.testCases.BaseClass - Navigated to EPO Request Successfully

@@ -85,25 +85,25 @@ public class OffenseAdding {
 	}
 	
 	public void selectSuspect() {
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(3));
 		wait.until(ExpectedConditions.elementToBeClickable(selectSuspect));
 		selectSuspect.click();
 	}
 	
 	public void selectSuspectOption() {
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(3));
 		wait.until(ExpectedConditions.elementToBeClickable(selectSuspectOption));
 		selectSuspectOption.click();
 	}
 	
 	public void selectVictim() {
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(3));
 		wait.until(ExpectedConditions.elementToBeClickable(selectVictim));
 		selectVictim.click();
 	}
 	
 	public void selectVictimOption() {
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(3));
 		wait.until(ExpectedConditions.elementToBeClickable(selectVictimOption));
 		selectVictimOption.click();
 	}
@@ -117,25 +117,25 @@ public class OffenseAdding {
 	}
 	
 	public void selectOffenseLocation() {
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(3));
 		wait.until(ExpectedConditions.elementToBeClickable(selectOffenseLocation));
 		selectOffenseLocation.click();
 	}
 	
 	public void selectOffenseLocationOption() {
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(3));
 		wait.until(ExpectedConditions.elementToBeClickable(selectOffenseLocationOption));
 		selectOffenseLocationOption.click();
 	}
 	
 	public void selectOffenseType() {
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(3));
 		wait.until(ExpectedConditions.elementToBeClickable(selectOffenseType));
 		selectOffenseType.click();
 	}
 	
 	public void selectOffenseTypeOption() {
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(3));
 		wait.until(ExpectedConditions.elementToBeClickable(selectOffenseTypeOption));
 		selectOffenseTypeOption.click();
 	}
