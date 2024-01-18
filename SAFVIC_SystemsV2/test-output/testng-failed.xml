@@ -7,13 +7,15 @@
   <test thread-count="5" name="Officer Side Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.safvic.testCases.TC_CreateEPORequestTest_010">
+      <class name="com.safvic.testCases.TC_QuickBookTest_011">
         <methods>
+          <include name="createQuickBookTest"/>
+          <include name="createQuickBookVictimBasicInfo"/>
+          <include name="createQuickBookOffenseTest"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="CreateEPORequest"/>
         </methods>
-      </class> <!-- com.safvic.testCases.TC_CreateEPORequestTest_010 -->
+      </class> <!-- com.safvic.testCases.TC_QuickBookTest_011 -->
     </classes>
   </test> <!-- Officer Side Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

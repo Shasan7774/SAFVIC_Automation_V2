@@ -1,0 +1,6 @@
+14:53:05.686 [main] INFO  com.safvic.testCases.BaseClass - Incident Updated Successfully
+14:53:31.201 [main] INFO  com.safvic.testCases.BaseClass - Navigated to incident location sucessfully
+14:53:39.030 [main] INFO  com.safvic.testCases.BaseClass - Location Creation Failed
+14:53:41.592 [main] INFO  com.safvic.testCases.BaseClass - Navigated to the Offense page sucessfully
+14:53:51.029 [main] INFO  com.safvic.testCases.BaseClass - Failed to add offense group
+14:54:05.898 [main] INFO  com.safvic.testCases.BaseClass - Navigated to the Vehicle Tab Successfully

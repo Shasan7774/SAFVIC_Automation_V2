@@ -1,0 +1,6 @@
+18:46:42.872 [main] INFO  com.safvic.testCases.BaseClass - Navigated to the Vehicle Tab Successfully
+18:46:51.945 [main] INFO  com.safvic.testCases.BaseClass - Navigated to EPO Request Successfully
+18:47:18.545 [main] INFO  com.safvic.testCases.BaseClass - Failed to Send EPO Request
+12:12:37.560 [main] INFO  com.safvic.testCases.BaseClass - Officer Email Entered
+12:12:37.623 [main] INFO  com.safvic.testCases.BaseClass - Officer Password Entered
+12:12:53.225 [main] INFO  com.safvic.testCases.BaseClass - Login Clicked

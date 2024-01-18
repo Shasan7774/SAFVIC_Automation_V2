@@ -1,0 +1,6 @@
+15:45:03.673 [main] INFO  com.safvic.testCases.BaseClass - Incident Created Successfully
+15:45:22.116 [main] INFO  com.safvic.testCases.BaseClass - Incident Updated Successfully
+15:45:48.338 [main] INFO  com.safvic.testCases.BaseClass - Navigated to incident location sucessfully
+15:45:57.397 [main] INFO  com.safvic.testCases.BaseClass - Location Creation Failed
+15:45:59.937 [main] INFO  com.safvic.testCases.BaseClass - Navigated to the Offense page sucessfully
+15:46:07.572 [main] INFO  com.safvic.testCases.BaseClass - Navigated to the Risk Assessment Tab Successfully

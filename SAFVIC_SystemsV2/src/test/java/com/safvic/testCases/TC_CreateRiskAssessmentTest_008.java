@@ -13,9 +13,9 @@ import com.safvic.pageObjects.RiskAssessment;
 import com.safvic.util.JiraPolicy;
 
 public class TC_CreateRiskAssessmentTest_008 extends BaseClass {
-	//Create Risk Assessment
-	
-	//@JiraPolicy(logTicket=true)
+	// Create Risk Assessment
+
+	// @JiraPolicy(logTicket=true)
 	@Test
 	public void CreateRiskAssessment() throws InterruptedException {
 		RiskAssessment riAss = new RiskAssessment(driver);
@@ -26,20 +26,20 @@ public class TC_CreateRiskAssessmentTest_008 extends BaseClass {
 		if (driver.getTitle().equals("Risk Assessment - SAFV_Site")) {
 			Assert.assertTrue(true);
 			log.info("Navigated to the Risk Assessment Tab Successfully");
-			
+
 			Thread.sleep(2000);
-			
+
 			riAss.createRiskAssessment();
 			driver.navigate().refresh();
-			
+
 			Thread.sleep(2000);
 			riAss.selectSuspect();
 			riAss.selectSuspectOption();
-			
+
 			Thread.sleep(2000);
 			riAss.selectVictim();
 			riAss.selectVictimOption();
-			
+
 			riAss.checkFamilyViolence();
 			riAss.checkUsedThreatenedWeapon();
 			riAss.checkThreatenedToKill();
@@ -67,12 +67,12 @@ public class TC_CreateRiskAssessmentTest_008 extends BaseClass {
 			riAss.checkPriorContacts();
 			riAss.checkCourtAction();
 			riAss.inputAdditionalInfo();
-			//riAss.inputPriorProtectiveOrder();
-			//Thread.sleep(2000);
+			// riAss.inputPriorProtectiveOrder();
+			// Thread.sleep(2000);
 			riAss.inputDateTimeRiskAss();
-			riAss.saveOffenseGroup();
-			
-			//Thread.sleep(2000);
+			riAss.saveRiskAssessment();
+
+			// Thread.sleep(2000);
 
 			String pageSource = driver.getPageSource();
 			String toastMessage = driver.findElement(By.className("k-notification-content")).getText();

@@ -5,13 +5,14 @@ import org.testng.annotations.Test;
 import com.safvic.pageObjects.IncidentUpdate;
 import com.safvic.pageObjects.PeopleBasicInfo;
 import com.safvic.pageObjects.QuickCreatePeople;
+import com.safvic.pageObjects.SuspectInfoTab;
 import com.safvic.util.JiraPolicy;
 
 public class TC_CreateSuspectTest_005 extends BaseClass{
 	//Create Suspect Test
 	
 	//@JiraPolicy(logTicket=true)
-	@Test
+	@Test(priority = 1)
 	public void CreateSuspect() throws InterruptedException {
 		QuickCreatePeople suspect = new QuickCreatePeople(driver);
 		Thread.sleep(3000);
@@ -35,7 +36,40 @@ public class TC_CreateSuspectTest_005 extends BaseClass{
 		suspect.savePersonInitialInformation();
         
         Thread.sleep(2000);
-
+        
+        //Add Suspect Address 
+        suspect.addNewAddress();
+        suspect.selectAddressGroup();
+        suspect.selectAddressGroupOption();
+        suspect.txtAddress1();
+        suspect.txtAddress2();
+        suspect.txtCity();
+        suspect.txtState();
+        suspect.selectCounty();
+        suspect.selectCountyOption();
+        suspect.addZipCode();
+        suspect.btnSaveAddress();
+        
+        Thread.sleep(3000);
+	}
+	//Arrest  the Suspect
+	@Test(priority = 2)
+	public void ArrestSuspect() throws InterruptedException {
+		SuspectInfoTab suspectTab = new SuspectInfoTab(driver);
+		
+		suspectTab.navigateToSuspectTab();
+		Thread.sleep(2000);
+		suspectTab.enabeleSuspectOnScene();
+		suspectTab.enabeleSuspectArrestedOnScene();
+		suspectTab.setDateOfArrest();
+		suspectTab.setTimeOfArrest();
+		suspectTab.setDateOfBooking();
+		suspectTab.setTimeOfBooking();
+		suspectTab.copyFromLocation();
+		suspectTab.selectLocation();
+		suspectTab.copyLocation();
+		Thread.sleep(2000);
+		suspectTab.saveSuspectTabInfo();
 	}
 	//Suspect Basic Info
 	/*

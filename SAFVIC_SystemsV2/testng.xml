@@ -8,18 +8,10 @@
 	</listeners>
 	
 	<test thread-count="5" name="Officer Side Test">
-		<parameter name="browser" value="chrome" />
+		<parameter name="browser" value="chrome"/>
 		<classes>
-			<class name="com.safvic.testCases.TC_LoginTest_001" />
-			<class name="com.safvic.testCases.TC_CreateIncidentTest_002"/> 
-			<class name="com.safvic.testCases.TC_UpdateIncidentTest_003"/>
-			<class name="com.safvic.testCases.TC_CreateVictimTest_004"/>
-			<class name="com.safvic.testCases.TC_CreateSuspectTest_005"/>
-			<class name="com.safvic.testCases.TC_AddLocationTest_006"/>
-			<class name="com.safvic.testCases.TC_AddOffenseGroupTest_007"/>
-			<class name="com.safvic.testCases.TC_CreateRiskAssessmentTest_008"/>
-			<class name="com.safvic.testCases.TC_AddVehicleTest_009"/>
-			<class name="com.safvic.testCases.TC_CreateEPORequestTest_010"/>
+			<class name="com.safvic.testCases.TC_LoginTest_001"/>
+			<class name="com.safvic.testCases.TC_QuickBookTest_011"/> 	
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite --> 

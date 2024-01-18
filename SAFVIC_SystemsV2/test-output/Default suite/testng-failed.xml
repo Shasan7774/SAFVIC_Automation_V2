@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.safvic.testCases.TC_CreateRiskAssessmentTest_008">
+      <class name="com.safvic.testCases.TC_CreateSuspectTest_005">
         <methods>
-          <include name="CreateRiskAssessment"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="ArrestSuspect"/>
+          <include name="CreateSuspect"/>
         </methods>
-      </class> <!-- com.safvic.testCases.TC_CreateRiskAssessmentTest_008 -->
+      </class> <!-- com.safvic.testCases.TC_CreateSuspectTest_005 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

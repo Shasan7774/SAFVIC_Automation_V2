@@ -110,7 +110,53 @@ public class QuickCreatePeople {
 	@FindBy(how = How.XPATH, using = "//input[@id='Age']")
 	@CacheLookup
 	WebElement personAge;
-
+	
+	//Suspect Address
+	@FindBy(how = How.XPATH, using = "//button[@data-target='#addressModelCreate']")
+	@CacheLookup
+	WebElement btnAddNewAddress;
+	
+	@FindBy(how = How.XPATH, using = "//span[@aria-labelledby='AddressGroupId_label']/span")
+	@CacheLookup
+	WebElement selectAddressGroup;
+	
+	@FindBy(how = How.XPATH, using = "//ul[@id='AddressGroupId_listbox']/li[text()='Home']")
+	@CacheLookup
+	WebElement selectAddressGroupOption;
+	
+	@FindBy(how = How.XPATH, using = "//input[@id='serviceInput']")
+	@CacheLookup
+	WebElement txtAddress1; 
+	
+	@FindBy(how = How.XPATH, using = "//input[@id='Address2']")
+	@CacheLookup
+	WebElement txtAddress2; 
+	
+	@FindBy(how = How.XPATH, using = "//input[@id='City']")
+	@CacheLookup
+	WebElement txtCity; 
+	
+	@FindBy(how = How.XPATH, using = "//input[@id='State']")
+	@CacheLookup
+	WebElement txtState;
+	
+	@FindBy(how = How.XPATH, using = "//span[@aria-labelledby='County_label']/span")
+	@CacheLookup
+	WebElement selectCounty;
+	
+	@FindBy(how = How.XPATH, using = "//ul[@id='County_listbox']/li[text()='Anderson']")
+	@CacheLookup
+	WebElement selectCountyOption; 
+	
+	@FindBy(how = How.XPATH, using = "//input[@id='ZipCode']")
+	@CacheLookup
+	WebElement txtZipCode;  
+	
+	@FindBy(how = How.XPATH, using = "//button[@onclick='onCreate()']")
+	@CacheLookup
+	WebElement btnSaveAddress;
+	//End of Address
+	
 	@FindBy(how = How.XPATH, using = "//*[text()='Save & Show More']")
 	@CacheLookup
 	WebElement btnSaveShowMore;
@@ -207,6 +253,59 @@ public class QuickCreatePeople {
 	public void setPersonDOB() {
 		personDOB.sendKeys("t");
 	}
+	//Suspect Address
+	public void addNewAddress() {
+		btnAddNewAddress.click();
+	}
+	
+	public void selectAddressGroup() {
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(selectAddressGroup));
+		selectAddressGroup.click();
+	}
+	
+	public void selectAddressGroupOption() {		
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(selectAddressGroupOption));
+		selectAddressGroupOption.click();
+	}
+	
+	public void txtAddress1() {
+		txtAddress1.sendKeys("TestAddress1");
+	}
+	
+	public void txtAddress2() {
+		txtAddress2.sendKeys("Test Address2");
+	}
+	
+	public void txtCity() {
+		txtCity.sendKeys("Test City");
+	}
+	
+	public void txtState() {
+		txtState.sendKeys("Test State");
+	}
+	
+	public void selectCounty() {
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(selectCounty));
+		selectCounty.click();
+	}
+	
+	public void selectCountyOption() {
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(selectCountyOption));
+		selectCountyOption.click();
+	}
+	
+	public void addZipCode() {
+		txtZipCode.sendKeys("12345");
+	}
+	
+	public void btnSaveAddress() {
+		btnSaveAddress.click();
+	}
+	
 	public void savePersonInitialInformation() {
 		btnSaveShowMore.click();
 	}

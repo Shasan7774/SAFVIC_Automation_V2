@@ -21,7 +21,7 @@ public class RiskAssessment {
 		PageFactory.initElements(rdriver,this);
 	}
 	
-	@FindBy(how=How.XPATH, using="//span[normalize-space()='Risk Ass.']")
+	@FindBy(how=How.XPATH, using="//span[normalize-space()='Risk Asmnt.']")
 	@CacheLookup
 	WebElement tabRiskAssessment;
 	
@@ -150,17 +150,21 @@ public class RiskAssessment {
 	@CacheLookup						
 	WebElement courtAction;
 
-	@FindBy(how = How.XPATH, using = "//textarea[@id = 'AdditionalInformation']")
+	@FindBy(how = How.XPATH, using = "//textarea[@id ='AdditionalInformation']")
 	@CacheLookup						
 	WebElement txtAdditionalInfo;
 	
-	@FindBy(how = How.XPATH, using = "//textarea[@id = 'PriorProtectiveOrder']")
+	@FindBy(how = How.XPATH, using = "//textarea[@id ='PriorProtectiveOrder']")
 	@CacheLookup						
 	WebElement txtPriorProtectiveOrder;
 	
 	@FindBy(how = How.XPATH, using = "//input[@id ='AssessmentDate']")
 	@CacheLookup						
 	WebElement dateTimeOfRiskAss;
+	
+	@FindBy(how = How.XPATH, using = "//button[@onclick='viewModelRiskAssessment.nextTab()']")
+	@CacheLookup
+	WebElement btnSaveAndNextRiskAss;
 	
 	@FindBy(how = How.XPATH, using = "//div/button[@type='submit']")
 	@CacheLookup
@@ -316,7 +320,7 @@ public class RiskAssessment {
 		dateTimeOfRiskAss.sendKeys("t");
 	}
 	
-	public void saveOffenseGroup() {
+	public void saveRiskAssessment() {
 		btnSaveRiskAss.click();
 	}
 

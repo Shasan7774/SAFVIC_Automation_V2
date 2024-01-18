@@ -61,7 +61,7 @@ public class IncidentCreation {
 	public void selectIncidentType() {
 		incidentType.click();
 		Select sel = new  Select(ldriver.findElement(By.cssSelector("#IncidentTypeId")));
-		sel.selectByVisibleText("Sexual Assault");
+		sel.selectByVisibleText("Assault FV");
 	}
 	public void clickIncidentType() {
 		clickIncidentType.click();

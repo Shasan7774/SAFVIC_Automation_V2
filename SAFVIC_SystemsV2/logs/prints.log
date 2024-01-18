@@ -1,4 +1,6 @@
-18:12:00.524 [main] INFO  com.safvic.testCases.BaseClass - Failed to Create Risk Assessment
-18:12:03.255 [main] INFO  com.safvic.testCases.BaseClass - Navigated to the Vehicle Tab Successfully
-18:12:11.865 [main] INFO  com.safvic.testCases.BaseClass - Vehicle Added Successfully
-18:12:14.498 [main] INFO  com.safvic.testCases.BaseClass - Navigated to EPO Request Successfully
+11:45:49.420 [main] INFO  com.safvic.testCases.BaseClass - Navigated to EPO Request Successfully
+15:41:37.344 [main] INFO  com.safvic.testCases.BaseClass - Officer Email Entered
+15:41:37.404 [main] INFO  com.safvic.testCases.BaseClass - Officer Password Entered
+15:41:48.565 [main] INFO  com.safvic.testCases.BaseClass - Login Clicked
+15:41:50.582 [main] INFO  com.safvic.testCases.BaseClass - Login Successful
+15:41:53.172 [main] INFO  com.safvic.testCases.BaseClass - Failed to load the login page
